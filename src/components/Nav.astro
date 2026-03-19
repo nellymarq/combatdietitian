@@ -1,0 +1,84 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/calsanova', label: 'Calsanova' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-brand-900/95 backdrop-blur-sm border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2">
+        <span class="text-xl font-bold tracking-tight">
+          <span class="text-white">COMBAT</span><span class="text-accent-500">DIETITIAN</span>
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-8">
+        {links.map(link => (
+          <a
+            href={link.href}
+            class:list={[
+              'text-sm font-medium tracking-wide uppercase transition-colors',
+              currentPath === link.href ? 'text-accent-500' : 'text-white/70 hover:text-white',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white text-sm font-semibold px-5 py-2 rounded transition-colors"
+        >
+          Book Consultation
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden text-white/70 hover:text-white"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      {links.map(link => (
+        <a
+          href={link.href}
+          class:list={[
+            'block py-2 text-sm font-medium tracking-wide uppercase',
+            currentPath === link.href ? 'text-accent-500' : 'text-white/70',
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="block mt-2 bg-accent-500 text-white text-sm font-semibold px-5 py-2 rounded text-center"
+      >
+        Book Consultation
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

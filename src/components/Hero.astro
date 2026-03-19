@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  cta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+}
+
+const { title, subtitle, cta, secondaryCta } = Astro.props;
+---
+
+<section class="relative min-h-[85vh] flex items-center justify-center pt-16">
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-800/50 to-brand-900"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
+      <Fragment set:html={title} />
+    </h1>
+    <p class="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
+      {subtitle}
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      {cta && (
+        <a
+          href={cta.href}
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          {cta.label}
+        </a>
+      )}
+      {secondaryCta && (
+        <a
+          href={secondaryCta.href}
+          class="border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          {secondaryCta.label}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

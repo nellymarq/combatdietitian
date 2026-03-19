@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    title: 'Tactical Nutrition Consulting',
+    description: 'Periodized nutrition strategies for military operators, law enforcement, firefighters, and first responders. We understand the demands of shift work, unpredictable schedules, and high-stress environments.',
+    features: [
+      'Mission-specific fueling protocols',
+      'Shift-work meal timing optimization',
+      'Heat/cold stress nutrition strategies',
+      'Body composition management for PT standards',
+    ],
+  },
+  {
+    title: 'Combat Sports Performance',
+    description: 'From weight cuts to fight-night fueling, we manage the entire nutrition arc of your camp. MMA, boxing, wrestling, BJJ, and Muay Thai athletes trust us with their most critical prep.',
+    features: [
+      'Scientific weight cut protocols',
+      'Fight camp periodization',
+      'Recovery and rehydration strategies',
+      'Supplement audit and optimization',
+    ],
+  },
+  {
+    title: 'Elite Athletic Performance',
+    description: 'High-level nutrition programming for athletes who demand more from their bodies. We work with strength athletes, endurance competitors, and team sport professionals.',
+    features: [
+      'Macronutrient periodization',
+      'Competition-day nutrition plans',
+      'Injury recovery nutrition support',
+      'Travel and away-game meal strategies',
+    ],
+  },
+  {
+    title: 'Calsanova AI Platform Access',
+    description: 'Every consulting client receives full access to the Calsanova platform — our proprietary AI-powered nutrition tracking and planning system.',
+    features: [
+      'Photo-based meal logging with AI macro estimation',
+      'Personalized AI meal plans adapted to your schedule',
+      'Live video consultation sessions',
+      'Wearable integration (Apple Health, Garmin, Whoop, etc.)',
+    ],
+  },
+];
+
+const packages = [
+  {
+    name: 'Recon',
+    description: 'One-time deep dive',
+    features: ['90-minute initial assessment', 'Custom nutrition blueprint', '30-day meal plan', 'Calsanova access (30 days)'],
+    highlight: false,
+  },
+  {
+    name: 'Operator',
+    description: 'Ongoing monthly coaching',
+    features: ['Everything in Recon', 'Bi-weekly check-ins', 'Adaptive meal plan updates', 'Priority messaging', 'Calsanova access (unlimited)'],
+    highlight: true,
+  },
+  {
+    name: 'Command',
+    description: 'Team & unit packages',
+    features: ['Everything in Operator', 'Multi-athlete dashboard', 'Team nutrition briefs', 'Custom meal prep guides', 'Dedicated support line'],
+    highlight: false,
+  },
+];
+---
+
+<Layout title="Services | Combat Dietitian">
+  <Nav />
+
+  <Hero
+    title='Services Built for the <span class="text-accent-500">Arena</span>'
+    subtitle="Whether you're on the battlefield, in the cage, or on the platform — our nutrition consulting is tailored to performers who operate under pressure."
+  />
+
+  <!-- Services detail -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Our Services"
+        title="What We Offer"
+      />
+
+      <div class="space-y-8">
+        {services.map((service, i) => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 lg:p-10">
+            <div class="lg:flex lg:items-start lg:gap-10">
+              <div class="lg:flex-1">
+                <h3 class="text-2xl font-bold mb-3">{service.title}</h3>
+                <p class="text-white/60 leading-relaxed">{service.description}</p>
+              </div>
+              <ul class="mt-6 lg:mt-0 lg:w-80 space-y-2 shrink-0">
+                {service.features.map(f => (
+                  <li class="flex items-start gap-2 text-white/70 text-sm">
+                    <span class="text-accent-500 mt-0.5">&check;</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Packages"
+        title="Choose Your Mission Profile"
+        subtitle="All packages include Calsanova platform access and evidence-based nutrition protocols."
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {packages.map(pkg => (
+          <div class:list={[
+            'rounded-xl p-8 border transition-colors',
+            pkg.highlight
+              ? 'bg-accent-500/10 border-accent-500/40'
+              : 'bg-brand-800/40 border-white/5 hover:border-white/10',
+          ]}>
+            {pkg.highlight && (
+              <span class="text-accent-500 text-xs font-bold uppercase tracking-widest">Most Popular</span>
+            )}
+            <h3 class="text-2xl font-bold mt-2">{pkg.name}</h3>
+            <p class="text-white/50 text-sm mt-1">{pkg.description}</p>
+            <ul class="mt-6 space-y-3">
+              {pkg.features.map(f => (
+                <li class="flex items-start gap-2 text-white/70 text-sm">
+                  <span class="text-accent-500 mt-0.5">&check;</span>
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="/contact"
+              class:list={[
+                'block mt-8 text-center font-semibold py-3 rounded-lg transition-colors',
+                pkg.highlight
+                  ? 'bg-accent-500 hover:bg-accent-600 text-white'
+                  : 'border border-white/20 hover:border-white/40 text-white',
+              ]}
+            >
+              Get Started
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

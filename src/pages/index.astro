@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    icon: '&#9876;',
+    title: 'Tactical Nutrition',
+    description: 'Periodized nutrition plans for military, law enforcement, and first responders operating in high-stress, unpredictable environments.',
+  },
+  {
+    icon: '&#9889;',
+    title: 'Combat Sports',
+    description: 'Weight cuts, fight camp fueling, and recovery protocols for MMA, boxing, wrestling, and BJJ athletes.',
+  },
+  {
+    icon: '&#9881;',
+    title: 'AI-Powered Tracking',
+    description: 'Every client gets access to Calsanova — our proprietary platform with photo-based food logging, AI meal plans, and real-time analytics.',
+  },
+];
+
+const stats = [
+  { value: '500+', label: 'Athletes Served' },
+  { value: '98%', label: 'Client Retention' },
+  { value: '24/7', label: 'AI Support' },
+];
+---
+
+<Layout title="Combat Dietitian | Marques Performance Systems">
+  <Nav />
+
+  <Hero
+    title='Fuel the <span class="text-accent-500">Fight.</span><br />Own the <span class="text-accent-500">Performance.</span>'
+    subtitle="Elite nutrition consulting for tactical athletes, fighters, and high performers — backed by science, powered by AI."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+    secondaryCta={{ label: 'Explore Calsanova', href: '/calsanova' }}
+  />
+
+  <!-- Stats bar -->
+  <section class="bg-brand-800/50 border-y border-white/5">
+    <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-3 gap-4 text-center">
+      {stats.map(stat => (
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-accent-500">{stat.value}</div>
+          <div class="text-sm text-white/50 mt-1">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="What We Do"
+        title="Performance Nutrition, Reimagined"
+        subtitle="We combine hands-on dietitian expertise with cutting-edge AI to deliver results that traditional consulting can't match."
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {services.map(service => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-accent-500/30 transition-colors">
+            <div class="text-3xl mb-4" set:html={service.icon} />
+            <h3 class="text-xl font-bold mb-3">{service.title}</h3>
+            <p class="text-white/60 leading-relaxed">{service.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/services" class="text-accent-400 hover:text-accent-500 font-medium transition-colors">
+          View All Services &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calsanova teaser -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">Our Technology</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">
+          Meet <span class="text-gold-400">Calsanova</span>
+        </h2>
+        <p class="mt-4 text-white/60 text-lg leading-relaxed">
+          Every MPS client gets access to our proprietary AI nutrition platform. Snap a photo of your meal for instant macro analysis. Get personalized meal plans that adapt to your training schedule. Track everything in one place.
+        </p>
+        <ul class="mt-6 space-y-3">
+          {['AI-powered food recognition', 'Adaptive meal planning', 'Live video consultations', 'Wearable integrations'].map(item => (
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="text-accent-500 text-lg">&check;</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <a
+          href="/calsanova"
+          class="inline-block mt-8 bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-6 py-3 rounded-lg transition-colors"
+        >
+          Learn More About Calsanova
+        </a>
+      </div>
+      <div class="bg-brand-800/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center min-h-[300px]">
+        <div class="text-center text-white/30">
+          <div class="text-6xl mb-4">&#128241;</div>
+          <p class="text-sm">Calsanova Platform Preview</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Ready to Optimize Your Nutrition?</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Whether you're a tactical operator, combat athlete, or high performer — we'll build a plan that fits your mission.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block mt-8 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+      >
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

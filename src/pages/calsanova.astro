@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Footer from '../components/Footer.astro';
+
+const features = [
+  {
+    icon: '&#128247;',
+    title: 'AI Food Recognition',
+    description: 'Snap a photo of any meal. Our Claude Vision-powered engine instantly identifies foods and estimates macros — no manual logging.',
+  },
+  {
+    icon: '&#129370;',
+    title: 'Smart Meal Plans',
+    description: 'Multi-agent AI generates personalized meal plans adapted to your training schedule, goals, dietary preferences, and what\'s in season.',
+  },
+  {
+    icon: '&#127909;',
+    title: 'Live Video Consultations',
+    description: 'Meet face-to-face with your dietitian via built-in video. Sessions include real-time transcription and AI-generated follow-up notes.',
+  },
+  {
+    icon: '&#128200;',
+    title: 'Analytics Dashboard',
+    description: 'Track nutrition trends, macro compliance, and goal adherence with interactive charts that surface what matters.',
+  },
+  {
+    icon: '&#9000;',
+    title: 'Wearable Integration',
+    description: 'Sync data from Apple Health, Garmin, Oura, Fitbit, Whoop, and Polar for a complete picture of training load and recovery.',
+  },
+  {
+    icon: '&#129504;',
+    title: 'Kiwi Research Assistant',
+    description: 'PubMed-integrated AI assistant that answers sports nutrition questions with evidence-based citations. Your personal research analyst.',
+  },
+];
+---
+
+<Layout title="Calsanova | AI Nutrition Platform | Combat Dietitian">
+  <Nav />
+
+  <Hero
+    title='<span class="text-gold-400">Calsanova</span><br />AI Nutrition Platform'
+    subtitle="The technology behind Combat Dietitian. Every client gets access to our proprietary AI-powered nutrition tracking, meal planning, and analytics platform."
+    cta={{ label: 'Get Access — Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Features grid -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Platform Features"
+        title="Everything You Need in One Place"
+        subtitle="Calsanova replaces your food diary, meal planner, macro calculator, and research tools — all powered by AI."
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map(feature => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-gold-500/30 transition-colors">
+            <div class="text-3xl mb-4" set:html={feature.icon} />
+            <h3 class="text-xl font-bold mb-3">{feature.title}</h3>
+            <p class="text-white/60 leading-relaxed">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="How It Works"
+        title="From Plate to Plan in Seconds"
+      />
+
+      <div class="space-y-8">
+        {[
+          { step: '01', title: 'Log Your Meals', description: 'Take a photo or quick-enter your food. AI handles the macro math.' },
+          { step: '02', title: 'Get Your Plan', description: 'Receive AI-generated meal plans tailored to your training load, goals, and preferences.' },
+          { step: '03', title: 'Track Progress', description: 'Watch your trends on the analytics dashboard. Your dietitian reviews the same data in real-time.' },
+          { step: '04', title: 'Consult Live', description: 'Jump into a video session with your dietitian. AI generates SOAP notes and action items automatically.' },
+        ].map(item => (
+          <div class="flex items-start gap-6">
+            <span class="text-accent-500 text-3xl font-black shrink-0 w-12">{item.step}</span>
+            <div>
+              <h3 class="text-xl font-bold">{item.title}</h3>
+              <p class="text-white/60 mt-1">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">
+        Calsanova Is Included with Every <span class="text-accent-500">MPS</span> Consultation
+      </h2>
+      <p class="mt-4 text-white/60 text-lg">
+        No separate subscription. No extra fees. Book a consultation and get immediate access to the full platform.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block mt-8 bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+      >
+        Book Your Consultation
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
