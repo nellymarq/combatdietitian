@@ -30,6 +30,7 @@ const { title, subtitle, cta, secondaryCta } = Astro.props;
       {secondaryCta && (
         <a
           href={secondaryCta.href}
+          {...(secondaryCta.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           class="border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3.5 rounded-lg text-lg transition-colors"
         >
           {secondaryCta.label}
