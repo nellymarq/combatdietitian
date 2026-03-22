@@ -25,7 +25,6 @@ const services = [
 
 const stats = [
   { value: '500+', label: 'Athletes Served' },
-  { value: '98%', label: 'Client Retention' },
   { value: '24/7', label: 'AI Support' },
 ];
 ---
@@ -42,7 +41,7 @@ const stats = [
 
   <!-- Stats bar -->
   <section class="bg-brand-800/50 border-y border-white/5">
-    <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-3 gap-4 text-center">
+    <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-2 gap-4 text-center">
       {stats.map(stat => (
         <div>
           <div class="text-3xl sm:text-4xl font-black text-accent-500">{stat.value}</div>
@@ -105,11 +104,68 @@ const stats = [
           Learn More About Calsanova
         </a>
       </div>
-      <div class="bg-brand-800/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center min-h-[300px]">
-        <div class="text-center text-white/30">
-          <div class="text-6xl mb-4">&#128241;</div>
-          <p class="text-sm">Calsanova Platform Preview</p>
-        </div>
+      <div class="bg-brand-800/60 border border-white/10 rounded-2xl overflow-hidden">
+        <img src="/athlete-dashboard.jpg" alt="Calsanova athlete dashboard" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Who I've Worked With -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Experience"
+        title="Trusted by Operators & Athletes"
+      />
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        {[
+          { name: 'USAF Pararescue', detail: 'Special Operations' },
+          { name: 'Professional UFC', detail: 'Fight Camp Nutrition' },
+          { name: 'SEC Athletics', detail: 'Collegiate Performance' },
+          { name: 'Law Enforcement', detail: 'Tactical Units' },
+        ].map(org => (
+          <div class="text-center p-6 bg-brand-800/40 border border-white/5 rounded-xl">
+            <h3 class="text-white font-bold">{org.name}</h3>
+            <p class="text-white/40 text-sm mt-1">{org.detail}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Results"
+        title="What Clients Say"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            quote: 'The precision of the weight cut protocol was unlike anything I had before. Made weight comfortably and felt strong on fight night.',
+            name: 'Professional MMA Fighter',
+            context: 'UFC Athlete',
+          },
+          {
+            quote: 'Understanding how to fuel around unpredictable mission schedules changed the game for me and my team.',
+            name: 'USAF Operator',
+            context: 'Special Operations',
+          },
+          {
+            quote: 'Calsanova makes it effortless to stay on track. The AI meal plans adapt to my training load automatically.',
+            name: 'D1 Athlete',
+            context: 'Collegiate Football',
+          },
+        ].map(t => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <p class="text-white/70 leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+            <div class="mt-6 pt-4 border-t border-white/5">
+              <p class="text-white font-semibold text-sm">{t.name}</p>
+              <p class="text-white/40 text-xs">{t.context}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>

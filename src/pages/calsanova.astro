@@ -70,8 +70,29 @@ const features = [
     </div>
   </section>
 
-  <!-- How it works -->
+  <!-- Platform screenshots -->
   <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="See It in Action"
+        title="Built for Performance Athletes"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[
+          { src: '/athlete-dashboard.jpg', alt: 'Athlete dashboard with nutrition overview and analytics' },
+          { src: '/meal-plan.jpg', alt: 'AI-generated personalized meal plan' },
+          { src: '/recipes.jpg', alt: 'Recipe library with macro-calculated meals' },
+        ].map(img => (
+          <div class="bg-brand-800/60 border border-white/10 rounded-xl overflow-hidden">
+            <img src={img.src} alt={img.alt} class="w-full h-auto" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-20 px-4">
     <div class="max-w-4xl mx-auto">
       <SectionHeading
         label="How It Works"
