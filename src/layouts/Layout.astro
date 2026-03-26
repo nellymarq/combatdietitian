@@ -5,9 +5,10 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
 
-const { title, description = 'Combat Dietitian by Marques Performance Systems — Tactical and performance dietitian with professional UFC experience. Elite nutrition for operators, fighters, and weight-class athletes. Powered by Calsanova AI.' } = Astro.props;
+const { title, description = 'Combat Dietitian by Marques Performance Systems — Tactical and performance dietitian with professional UFC experience. Elite nutrition for operators, fighters, and weight-class athletes. Powered by Calsanova AI.', ogImage = 'https://combatdietitian.com/og-image.png' } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,13 +24,13 @@ const { title, description = 'Combat Dietitian by Marques Performance Systems �
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://combatdietitian.com/og-image.png" />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:url" content="https://combatdietitian.com" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://combatdietitian.com/og-image.png" />
+    <meta name="twitter:image" content={ogImage} />
     <title>{title}</title>
     <script defer data-domain="combatdietitian.com" src="https://plausible.io/js/script.js"></script>
     <SchemaMarkup />
