@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you work with personnel stationed at nearby military bases?',
+    answer: 'Yes. We serve active duty, reserve, and guard personnel from Patrick Space Force Base, Naval Air Warfare Center Training Systems Division in Orlando, and the broader Central Florida military community. All services are remote, so your duty station location does not limit access.',
+  },
+  {
+    question: 'Can you help with nutrition for SWAT or SRT selection preparation?',
+    answer: 'Absolutely. Selection courses demand sustained high-volume output — running, rucking, obstacle courses, and scenario work over multiple days. We build caloric and hydration protocols that support this kind of training while managing body composition for the PT standards you need to pass.',
+  },
+  {
+    question: 'How do you handle nutrition planning around unpredictable call-outs?',
+    answer: 'Unpredictability is the defining feature of tactical work, and our plans are designed for it. We build flexible meal frameworks with prepared options that travel well, fast options when plans change, and recovery protocols for post-incident decompression. The Calsanova app makes logging easy even on the worst days.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Nutrition in Orlando | Combat Dietitian"
+  description="Tactical nutrition for Orlando-area military, law enforcement, and first responders. USAF PJ-experienced dietitian. Remote consulting — book your session."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Nutrition Consultant in <span class="text-accent-500">Orlando</span>'
+    subtitle="Fueling strategies for Central Florida's military operators, law enforcement officers, and first responders — from a dietitian with USAF Pararescue experience."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Central Florida supports a significant tactical community. Patrick Space Force Base handles space launch operations and hosts the 920th Rescue Wing — one of the Air Force Reserve's premier combat search and rescue units. The Naval Air Warfare Center in Orlando develops training systems for the fleet. Orange County Sheriff's Office, Orlando PD, and surrounding agencies maintain tactical teams that respond to one of the most visited metropolitan areas in the world. These operators need nutrition strategies that account for Florida's heat, long shifts in kit, and the physical demands of staying mission-ready year-round.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Tactical Nutrition for Central Florida's Operators"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Orlando's tactical community is often overlooked compared to larger military hubs, but the operational demands are real. The 920th Rescue Wing at Patrick SFB deploys pararescuemen and combat rescue officers worldwide. Local law enforcement manages security for theme parks hosting tens of millions of visitors annually, requiring sustained readiness that most departments never face.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, developed nutrition protocols for USAF Pararescue — the same career field that operates out of Patrick SFB. His understanding of PJ-level physical demands, heat stress management, and operational nutrition translates directly to the needs of Central Florida's tactical professionals across military, law enforcement, and fire rescue.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Tactical Services Include</h3>
+          <ul class="space-y-3">
+            {['Heat stress nutrition and hydration protocols', 'Shift-work and on-call meal frameworks', 'Selection course and PT test fueling', 'Body composition for duty standards', 'Calsanova AI for field and shift tracking'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="How We Support Orlando Tactical Professionals"
+        subtitle="Nutrition programming that adapts to duty schedules, climate, and operational demands."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Duty and Lifestyle Assessment',
+            description: 'We document your schedule — shift rotation, PT times, training sessions, sleep windows, and meal access. Orlando operators face unique constraints including theme park detail, outdoor operations in subtropical heat, and variable call volumes.',
+          },
+          {
+            step: '02',
+            title: 'Climate-Adapted Plan',
+            description: 'Nutrition and hydration protocols built for Florida\'s climate. Electrolyte targets increase in summer months. Caloric frameworks account for the metabolic cost of body armor in heat. Meals are designed to be portable and heat-stable.',
+          },
+          {
+            step: '03',
+            title: 'Sustained Monitoring',
+            description: 'Calsanova tracks daily intake and body composition trends. We check in regularly to adjust for schedule changes, deployments, training cycles, or upcoming fitness tests. The plan evolves with your operational tempo.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Orlando Tactical Professionals"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Stay Mission-Ready in Central Florida</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get nutrition consulting designed for the operators who keep Central Florida safe — from a dietitian who has supported special operations firsthand.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do I need to be in Miami for in-person sessions?',
+    answer: 'No. All Combat Dietitian services are delivered remotely via video consultations and our Calsanova AI platform. You get the same elite-level nutrition coaching whether you train at American Top Team in Coconut Creek or a garage gym in Wynwood.',
+  },
+  {
+    question: 'Can you work with my Miami-based coaching staff?',
+    answer: 'Absolutely. We regularly coordinate with strength coaches, athletic trainers, and fight coaches across South Florida. Nutrition programming integrates directly with your existing training plan.',
+  },
+  {
+    question: 'What sports do you work with beyond MMA?',
+    answer: 'We work with any athlete who demands high performance — baseball players in the Marlins system, University of Miami athletes, triathletes training in the heat, CrossFit competitors, and more. If you push your body hard, we can optimize your fueling.',
+  },
+];
+---
+
+<Layout
+  title="Sports Dietitian in Miami | Combat Dietitian"
+  description="Board-certified sports dietitian serving Miami athletes. Personalized nutrition plans for MMA, endurance, and team sports. Book a free consultation today."
+>
+  <Nav />
+
+  <Hero
+    title='Sports Dietitian in <span class="text-accent-500">Miami</span>'
+    subtitle="Board-certified sports dietitian with professional UFC and USAF Pararescue experience — now serving Miami's elite athletes with remote nutrition consulting powered by AI."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Miami is a year-round training hub. Between the heat, humidity, and relentless competition calendar, athletes here face unique fueling challenges that most generic meal plans ignore. Whether you're grinding through two-a-days at a South Florida gym or preparing for competition season, your nutrition needs to account for sweat losses, heat adaptation, and the metabolic demands of training in a subtropical climate. That's where a board-certified sports dietitian with real-world experience makes the difference.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Built for Miami's Athletic Culture"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Miami is home to one of the densest concentrations of combat sport talent in the country. Gyms like American Top Team, Killcliff FC, and MMA Masters have produced UFC champions and world-class grapplers. The region also supports professional baseball, soccer, and a massive recreational fitness scene.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, brings professional UFC fighter nutrition experience and USAF Pararescue tactical nutrition expertise to Miami's athlete community. That means you're working with someone who understands the stakes — not a generalist reading from a textbook.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What Sets Us Apart</h3>
+          <ul class="space-y-3">
+            {['RD and CSSD board-certified credentials', 'Professional UFC nutrition experience', 'Heat and humidity fueling strategies', 'Every client gets Calsanova AI platform access', 'Fully remote — no commute through Miami traffic'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="How It Works"
+        subtitle="A structured approach to sports nutrition that adapts to your training, competition schedule, and lifestyle."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Assessment',
+            description: 'We start with a comprehensive intake — training history, body composition goals, bloodwork review, competition calendar, and dietary preferences. This is the foundation.',
+          },
+          {
+            step: '02',
+            title: 'Custom Plan',
+            description: 'You receive a periodized nutrition plan synced to your training phases. Macros, meal timing, hydration targets, and supplement recommendations — all tailored to your sport and schedule.',
+          },
+          {
+            step: '03',
+            title: 'Ongoing Optimization',
+            description: 'Through Calsanova AI tracking and regular video check-ins, we adjust your plan in real time based on performance data, body composition changes, and how you feel.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Common Questions from Miami Athletes"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Ready to Train and Eat Like a Pro?</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get the same caliber of sports nutrition consulting that professional UFC fighters and military operators rely on — from anywhere in Miami.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

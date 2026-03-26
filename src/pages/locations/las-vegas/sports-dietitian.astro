@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Can you coordinate with the UFC Performance Institute?',
+    answer: 'We operate independently but can work alongside any performance team. If you train at the PI or any Las Vegas gym, we integrate our nutrition programming with your existing coaching staff to avoid conflicting protocols.',
+  },
+  {
+    question: 'How do you handle nutrition for athletes who travel to Vegas for fight week?',
+    answer: 'We build travel-specific nutrition plans that account for flight schedules, hotel access, and limited kitchen facilities. Fight week nutrition is fully mapped out before you land in Las Vegas, including restaurant recommendations and delivery options near the host hotel.',
+  },
+  {
+    question: 'Do you work with Vegas-based team sport athletes too?',
+    answer: 'Yes. Las Vegas is home to the Raiders, Golden Knights, Aces, and Lights FC. We work with athletes across all sports who need structured, science-based nutrition programming — not just combat sports.',
+  },
+];
+---
+
+<Layout
+  title="Sports Dietitian in Las Vegas | Combat Dietitian"
+  description="Elite sports dietitian for Las Vegas athletes. UFC-proven nutrition strategies for fighters, team sport pros, and endurance athletes. Book now."
+>
+  <Nav />
+
+  <Hero
+    title='Sports Dietitian in <span class="text-accent-500">Las Vegas</span>'
+    subtitle="Professional UFC nutrition experience meets board-certified sports dietetics. Serving Las Vegas athletes remotely with personalized, AI-powered nutrition consulting."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Las Vegas is where athletes come to compete at the highest level. The UFC Performance Institute, world-class boxing gyms, and a growing roster of professional sports teams have turned this city into a year-round athletic proving ground. But training in the desert brings its own challenges — extreme dry heat, altitude considerations, and the constant temptation of a city built around indulgence. Athletes here need a sports dietitian who understands high performance in demanding conditions, not someone peddling generic meal templates.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Proven in the Fight Capital of the World"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Las Vegas hosts more major combat sport events than any city on Earth. The UFC Apex, T-Mobile Arena, and MGM Grand have seen thousands of professional fights. Behind every one of those performances is a nutrition strategy — or the absence of one.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, has worked with professional UFC fighters on fight camp nutrition, weight cuts, and competition-day fueling. That experience is now available to every Las Vegas athlete through remote consulting and the Calsanova AI platform. You get UFC-caliber nutrition support regardless of your roster status.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What You Get</h3>
+          <ul class="space-y-3">
+            {['Board-certified RD with CSSD specialization', 'Direct professional UFC nutrition experience', 'Desert climate hydration protocols', 'Calsanova AI platform for daily tracking', 'Remote delivery — no Vegas traffic required'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Your Performance Nutrition Roadmap"
+        subtitle="Structured, periodized, and adapted to your training cycle and competition schedule."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Deep-Dive Assessment',
+            description: 'Training schedule, competition calendar, body composition data, bloodwork, dietary history, and performance goals. We leave nothing on the table.',
+          },
+          {
+            step: '02',
+            title: 'Periodized Nutrition Plan',
+            description: 'Macronutrient targets, meal timing, hydration protocols, and supplement recommendations — all mapped to your training phases from off-season through competition.',
+          },
+          {
+            step: '03',
+            title: 'Real-Time Adjustments',
+            description: 'Calsanova AI handles daily tracking while we handle the big-picture strategy. Bi-weekly video check-ins ensure your plan evolves with your performance.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Las Vegas Athletes"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Perform at the Level Vegas Demands</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Whether you're fighting at the Apex or competing across the valley, get nutrition consulting from someone who has been in your corner.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

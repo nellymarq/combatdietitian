@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Why is a sports dietitian based in Melbourne, Florida?',
+    answer: 'Melbourne is the home base of Marques Performance Systems, LLC. While all services are delivered remotely, being headquartered on the Space Coast gives us deep familiarity with the Brevard County athletic and tactical community. Local athletes benefit from a dietitian who understands the area firsthand.',
+  },
+  {
+    question: 'Do you work with high school and youth athletes on the Space Coast?',
+    answer: 'We primarily work with adult athletes and tactical professionals. For younger athletes, we recommend starting with a consultation to determine if our services are the right fit. We focus on performance nutrition, not general pediatric dietetics.',
+  },
+  {
+    question: 'Can you support athletes training for Ironman or triathlon events in Brevard?',
+    answer: 'Yes. The Space Coast is a popular training ground for endurance athletes — flat terrain, warm weather, and events like the Space Coast Marathon. We build periodized nutrition plans for endurance sports with a focus on fueling long training blocks, race-day nutrition, and recovery.',
+  },
+];
+---
+
+<Layout
+  title="Sports Dietitian Melbourne FL | Combat Dietitian"
+  description="Sports dietitian headquartered in Melbourne, FL. Personalized nutrition for Space Coast athletes. UFC and military experience. Book your consultation."
+>
+  <Nav />
+
+  <Hero
+    title='Sports Dietitian in <span class="text-accent-500">Melbourne, FL</span>'
+    subtitle="Headquartered right here on the Space Coast. Board-certified sports dietitian with professional UFC and USAF Pararescue experience serving Melbourne and Brevard County athletes."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Melbourne and the Brevard County Space Coast have a quietly competitive athletic scene. From CrossFit and powerlifting communities to competitive runners training along the Indian River, surfers working the Brevard beaches, and a growing combat sports presence — athletes here train hard but often lack access to the specialized nutrition expertise available in larger metro areas. That gap is exactly why Marques Performance Systems is headquartered here. World-class sports nutrition consulting shouldn't require a drive to Orlando or Miami.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="World-Class Nutrition on the Space Coast"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Melbourne, FL is the headquarters of Marques Performance Systems, LLC — the company behind Combat Dietitian. This is home base. Nelson Marques, RD, CSSD, lives and works in the Brevard County community, bringing the same professional UFC fighter nutrition and USAF Pararescue tactical nutrition experience that serves clients nationwide to the Space Coast's local athletic community.
+          </p>
+          <p>
+            The area supports a diverse group of athletes. Florida Institute of Technology fields NCAA Division II teams. Eastern Florida State College has competitive athletics. Local gyms produce competitive powerlifters, CrossFit athletes, and combat sport competitors. Patrick Space Force Base and nearby military installations bring tactical athletes into the region. All of them can benefit from evidence-based sports nutrition.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">The Home-Field Advantage</h3>
+          <ul class="space-y-3">
+            {['Headquartered in Melbourne — this is our community', 'Board-certified RD with CSSD specialization', 'Professional UFC and USAF PJ experience', 'Calsanova AI platform for daily tracking', 'Remote delivery with local understanding'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Your Path to Better Performance"
+        subtitle="Structured nutrition consulting that meets you where you are and takes you where you want to go."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Full Assessment',
+            description: 'We evaluate your training, competition schedule, body composition, bloodwork, dietary history, and goals. Space Coast athletes face the same heat and humidity challenges as the rest of Florida — and we plan for it.',
+          },
+          {
+            step: '02',
+            title: 'Tailored Nutrition Plan',
+            description: 'Macronutrient targets, meal timing, hydration protocols, and supplement recommendations — all customized to your sport, training phase, and the realities of living on the Space Coast.',
+          },
+          {
+            step: '03',
+            title: 'Ongoing Support',
+            description: 'Calsanova AI handles daily tracking. We handle the strategy through regular video check-ins. Your plan adapts as your training load, competition schedule, and body composition change.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Space Coast Athletes"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Your Local Sports Dietitian, World-Class Results</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Melbourne is our home. Get the same caliber of nutrition consulting that professional fighters and military operators rely on — right here on the Space Coast.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

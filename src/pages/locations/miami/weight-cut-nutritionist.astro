@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'How far out from a fight should I start working with you on a weight cut?',
+    answer: 'Ideally 8-12 weeks out for a full camp approach. However, we can work with tighter timelines if needed. The earlier we start, the less aggressive the cut needs to be — which means better performance on fight night.',
+  },
+  {
+    question: 'Do you work with amateur fighters in South Florida too?',
+    answer: 'Yes. Whether you are headlining a UFC card or competing in your first amateur bout at an ATT smoker, the principles of a safe, effective weight cut are the same. We scale the protocol to your level and experience.',
+  },
+  {
+    question: 'What makes your weight cut approach different from what my coach tells me?',
+    answer: 'Most coaches rely on water loading and sauna protocols passed down through gym culture. We use evidence-based methods — manipulating sodium, fiber, and fluid with precision timing — while monitoring biomarkers. The result is a more comfortable cut with less performance loss.',
+  },
+];
+---
+
+<Layout
+  title="Weight Cut Nutritionist in Miami | Combat Dietitian"
+  description="Safe, science-based weight cut protocols for Miami MMA fighters and combat athletes. UFC-level nutrition expertise. Start your consultation now."
+>
+  <Nav />
+
+  <Hero
+    title='Weight Cut Nutritionist in <span class="text-accent-500">Miami</span>'
+    subtitle="Evidence-based weight cut protocols from a dietitian who has managed cuts for professional UFC fighters. Serving Miami's combat sports community remotely."
+    cta={{ label: 'Start Your Cut Protocol', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        South Florida fighters know the stakes of a bad weight cut. You've seen teammates gas out in the first round because they drained themselves to make weight, or miss the scale entirely and lose a percentage of their purse. In Miami's heat and humidity, the margin for error gets even thinner — dehydration compounds faster, and recovery windows shrink. A weight cut nutritionist who understands both the science and the fight game can be the difference between showing up depleted and showing up dangerous.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Miami's Fight Scene Deserves Better Cuts"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            South Florida is MMA territory. American Top Team, Killcliff FC, MMA Masters, Sanford MMA — the concentration of elite combat sport gyms here is unmatched outside of Las Vegas. Fighters at every level, from amateur smokers to UFC main events, are cutting weight regularly.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, has managed weight cuts for professional UFC fighters and understands the pressure of making weight when your career is on the line. That experience now serves the broader Miami fight community through remote consulting and the Calsanova AI platform.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Our Weight Cut Protocol Includes</h3>
+          <ul class="space-y-3">
+            {['Fight camp nutrition periodization', 'Water and sodium manipulation timelines', 'Post-weigh-in rehydration and refeed strategy', 'Daily check-ins during fight week', 'Real-time tracking via Calsanova AI'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Your Weight Cut Timeline"
+        subtitle="A phased approach that protects performance while getting you to the scale on target."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Camp Nutrition Setup',
+            description: 'We establish your walking weight, target weight class, and training load. From there, we build a caloric and macronutrient framework for the full camp — not just fight week.',
+          },
+          {
+            step: '02',
+            title: 'Gradual Reduction Phase',
+            description: 'Controlled body fat reduction through the first 6-8 weeks of camp. The goal is to minimize the amount of acute water weight you need to cut in the final days.',
+          },
+          {
+            step: '03',
+            title: 'Fight Week Execution',
+            description: 'Precise sodium, carb, fiber, and fluid manipulation in the final 5-7 days. Post-weigh-in, we execute a structured rehydration and refeed to maximize fight-night performance.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Weight Cut Questions from Miami Fighters"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Make Weight Without Sacrificing Performance</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Stop guessing your way through fight week. Get a weight cut protocol built by a dietitian who has done this at the UFC level.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Get Your Cut Protocol
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

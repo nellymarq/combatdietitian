@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'I train at multiple gyms across the city — can you still build me a plan?',
+    answer: 'Absolutely. Many NYC athletes train at different locations throughout the week. Your nutrition plan is built around your total training load and schedule, not a single gym location. Calsanova tracks everything regardless of where you are.',
+  },
+  {
+    question: 'How do you handle meal planning in a city where most people eat out?',
+    answer: 'New York athletes eat differently than suburban athletes, and we plan for that. We build restaurant-compatible macro targets, identify go-to meals at chains and local spots near your gym and office, and create strategies for eating out without derailing your plan.',
+  },
+  {
+    question: 'Do you work with combat sport athletes training in NYC?',
+    answer: 'Yes. NYC has a deep combat sports scene — Renzo Gracie Academy, Gleason\'s Gym, Church Street Boxing, and dozens of MMA gyms across the boroughs. We work with fighters, grapplers, and boxers at every level from amateur to professional.',
+  },
+];
+---
+
+<Layout
+  title="Sports Dietitian in New York | Combat Dietitian"
+  description="Board-certified sports dietitian for New York athletes. From MMA to marathon, get personalized nutrition plans backed by UFC experience. Book today."
+>
+  <Nav />
+
+  <Hero
+    title='Sports Dietitian in <span class="text-accent-500">New York</span>'
+    subtitle="Board-certified sports dietitian serving New York's competitive athletes. Professional UFC experience. USAF special operations background. All delivered remotely through AI-powered consulting."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        New York athletes operate on a different clock. Early morning training sessions before work, lunchtime sessions squeezed into a 45-minute window, evening sparring after a 10-hour day. Your nutrition has to work around a schedule that doesn't stop moving. Add in the reality of eating in a city where every block has a restaurant and meal prep space is a luxury, and most athletes end up winging it. The result is inconsistent fueling, missed macros, and performance that plateaus despite hard training.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Elite Nutrition for the City That Never Stops"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            New York City produces world-class athletes across every discipline. From the boxing gyms of Brooklyn to the BJJ academies of Manhattan, from CrossFit boxes in Queens to track clubs in the Bronx — the athletic talent density here is staggering. But the city's lifestyle makes consistent nutrition harder than almost anywhere else.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, designed nutrition protocols for environments where schedules are unpredictable and conditions are demanding — USAF Pararescue and professional UFC fight camps. That same approach translates perfectly to the chaos of training and competing in New York City.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Why NYC Athletes Choose Us</h3>
+          <ul class="space-y-3">
+            {['Meal plans that work with NYC restaurant culture', 'Schedule-adaptive nutrition for busy professionals', 'Board-certified RD with CSSD credentials', 'Calsanova AI — snap a photo, get instant macros', 'Remote consulting — no subway commute to appointments'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Sports Nutrition That Fits Your Life"
+        subtitle="Structured enough to drive results, flexible enough to survive a New York schedule."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Lifestyle Assessment',
+            description: 'Beyond training data, we map your daily routine — commute, work schedule, gym times, sleep patterns, and eating habits. Nutrition plans that ignore your life don\'t last.',
+          },
+          {
+            step: '02',
+            title: 'Urban-Adapted Plan',
+            description: 'Macro targets with meal options for home cooking, delivery, dining out, and grab-and-go. Pre-mapped restaurant orders for your regular spots. Competition-day protocols when events come up.',
+          },
+          {
+            step: '03',
+            title: 'Continuous Refinement',
+            description: 'Log meals with Calsanova\'s photo-based AI tracker from anywhere in the city. We review data and adjust weekly through check-ins, keeping your nutrition dialed as your life shifts.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from New York Athletes"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Stop Letting NYC Beat Your Nutrition</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get a nutrition plan that works with the pace of New York — not against it. Built by a dietitian who thrives in chaos.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

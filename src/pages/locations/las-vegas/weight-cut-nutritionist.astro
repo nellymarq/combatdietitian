@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Can you manage my weight cut if I fly into Vegas for fight week?',
+    answer: 'Yes. Most of the weight cut protocol happens during camp — wherever you train. For fight week in Las Vegas, we provide a detailed day-by-day plan covering meals, fluid intake, sodium timing, and post-weigh-in recovery. We stay in contact throughout via Calsanova and direct messaging.',
+  },
+  {
+    question: 'How is your approach different from the PI nutritionists?',
+    answer: 'The UFC Performance Institute serves a broad roster with institutional protocols. We provide highly individualized, one-on-one attention through your entire camp and fight week. You are not sharing your dietitian with 30 other fighters during the most critical week of your preparation.',
+  },
+  {
+    question: 'What weight classes have you managed cuts for?',
+    answer: 'We have managed cuts across multiple weight classes from flyweight through heavyweight in MMA, as well as boxing and wrestling weight classes. The protocols are the same in principle — the variables change based on your body composition, walking weight, and timeline.',
+  },
+];
+---
+
+<Layout
+  title="Weight Cut Nutritionist Las Vegas | Combat Dietitian"
+  description="UFC-proven weight cut protocols for Las Vegas fighters. Science-based cutting, rehydration, and fight-night fueling. Contact us today."
+>
+  <Nav />
+
+  <Hero
+    title='Weight Cut Nutritionist in <span class="text-accent-500">Las Vegas</span>'
+    subtitle="The fight capital of the world deserves fight-tested weight cut protocols. UFC-level expertise, delivered remotely through science and AI."
+    cta={{ label: 'Start Your Cut Protocol', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Every major fight card in Las Vegas has at least one fighter who missed weight. The commission scale doesn't care about your effort, your brand, or your ranking — you either make the number or you don't. In a city where fights happen almost weekly at the Apex, T-Mobile Arena, and the MGM Grand, the demand for reliable weight cut management has never been higher. Fighters are realizing that leaving their cut to gym folklore is a career risk they can't afford.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Weight Cuts Managed at the Highest Level"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Las Vegas isn't just where fights happen — it's where careers are made or broken on a scale. Missing weight costs fighters 20-30% of their purse, damages their reputation, and can mean the difference between a title shot and getting cut from the roster.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, has managed weight cuts for professional UFC fighters with zero missed weights. His approach combines gradual body composition manipulation during camp with precise water and sodium protocols during fight week — all monitored through the Calsanova AI platform for real-time adjustments.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">The Full Weight Cut Package</h3>
+          <ul class="space-y-3">
+            {['Full camp nutrition periodization (8-12 weeks)', 'Weight class optimization analysis', 'Fight week water and sodium protocol', 'Post-weigh-in rehydration and refeed plan', 'Daily monitoring via Calsanova during fight week'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="From Camp to Scale to Cage"
+        subtitle="A complete weight management arc — not just a fight-week hack."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Weight Class Strategy',
+            description: 'We analyze your body composition, walking weight, and competitive history to determine if you are in the optimal weight class — or if a move up or down makes strategic sense.',
+          },
+          {
+            step: '02',
+            title: 'Camp-Long Nutrition',
+            description: 'Controlled caloric manipulation across the training camp. We reduce body fat gradually so fight week is about fine-tuning, not crisis management.',
+          },
+          {
+            step: '03',
+            title: 'Fight Week Execution',
+            description: 'A precise daily protocol for the final 7 days: sodium loading and depletion, fluid timing, fiber manipulation, and a fully mapped post-weigh-in recovery plan to restore performance capacity.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Weight Cut Questions from Vegas Fighters"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Never Miss Weight Again</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get a weight cut protocol built by a dietitian who has managed UFC-level cuts — and never had a fighter miss the mark.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Get Your Cut Protocol
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

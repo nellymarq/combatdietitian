@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SchemaMarkup from '../components/SchemaMarkup.astro';
 
 interface Props {
   title: string;
@@ -31,6 +32,7 @@ const { title, description = 'Combat Dietitian by Marques Performance Systems â€
     <meta name="twitter:image" content="https://combatdietitian.com/og-image.png" />
     <title>{title}</title>
     <script defer data-domain="combatdietitian.com" src="https://plausible.io/js/script.js"></script>
+    <SchemaMarkup />
   </head>
   <body class="bg-brand-900 text-white">
     <slot />

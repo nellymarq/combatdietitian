@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'I compete at regional MMA events in the tri-state area — is this service for me?',
+    answer: 'Absolutely. You don\'t need to be on a UFC roster to benefit from professional-grade weight cut management. Regional fighters competing at events sanctioned by the NYSAC or NJSACB need the same precision. A botched cut at any level costs you the fight before it starts.',
+  },
+  {
+    question: 'Can you help me cut weight for a grappling or BJJ tournament?',
+    answer: 'Yes. Grappling tournaments often have same-day weigh-ins, which requires a completely different approach than 24-hour weigh-ins in MMA. We design protocols specifically for ADCC, IBJJF, and NAGA-style competitions where you need to perform within hours of stepping on the scale.',
+  },
+  {
+    question: 'How do I manage my diet during fight camp when I eat out most meals in NYC?',
+    answer: 'We build your fight camp nutrition around your real eating habits. That includes macro-friendly orders at restaurants near your gym, delivery options that hit your targets, and portable meals for training days. You don\'t need a home kitchen to execute a precision weight cut.',
+  },
+];
+---
+
+<Layout
+  title="Weight Cut Nutritionist New York | Combat Dietitian"
+  description="Professional weight cut management for NYC fighters. UFC-experienced dietitian with science-based protocols for MMA, boxing, and grappling. Call today."
+>
+  <Nav />
+
+  <Hero
+    title='Weight Cut Nutritionist in <span class="text-accent-500">New York</span>'
+    subtitle="Professional weight cut protocols for New York's combat athletes. From Brooklyn boxing gyms to Manhattan BJJ academies — UFC-level precision, delivered remotely."
+    cta={{ label: 'Start Your Cut Protocol', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        New York's combat sports scene has exploded since MMA was legalized in the state in 2016. Madison Square Garden now hosts UFC pay-per-views. Barclays Center draws major boxing cards. The NYSAC sanctions regional MMA events across the five boroughs and upstate. With more fighters competing at every level, the demand for competent weight cut management has surged — but most NYC fighters are still relying on outdated sauna-and-spit methods passed down from training partners who learned it the same way.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="NYC Fighters Deserve Professional-Grade Cuts"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            New York City has legendary fight gyms — Gleason's in DUMBO, Renzo Gracie on West 30th, Church Street Boxing in Tribeca, Tiger Schulmann's across the boroughs. These gyms produce talent, but nutrition and weight management are usually left to the fighter to figure out on their own.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, fills that gap. With hands-on experience managing weight cuts for professional UFC fighters, he brings a level of precision that most NYC fighters have never had access to. Every protocol is individualized, evidence-based, and monitored in real time through the Calsanova platform.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What the Protocol Covers</h3>
+          <ul class="space-y-3">
+            {['Full camp caloric and macro planning', 'NYC-specific meal strategies (dining out, delivery, prep)', 'Sodium and water manipulation for fight week', 'Same-day weigh-in protocols for grappling', 'Post-weigh-in recovery and fight-night fueling'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Weight Cut Management for NYC Fighters"
+        subtitle="Built around the realities of training and living in New York City."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Fight Camp Intake',
+            description: 'We assess your current body composition, target weight class, fight date, training schedule, and daily lifestyle. NYC fighters have unique constraints — small apartments, long commutes, limited prep time — and we plan around them.',
+          },
+          {
+            step: '02',
+            title: 'Progressive Weight Management',
+            description: 'Body fat comes down gradually over weeks through structured caloric phases. We identify your go-to restaurants, delivery orders, and prep-friendly meals that keep you on target without requiring a full kitchen.',
+          },
+          {
+            step: '03',
+            title: 'Fight Week Precision',
+            description: 'The final 7 days are fully scripted — every meal, every fluid target, every sodium dose. We monitor your weight daily via Calsanova and adjust in real time. Post-weigh-in, you get a detailed refeed and rehydration protocol.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Weight Cut Questions from NYC Fighters"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Cut Weight Like a Pro in the City That Never Sleeps</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get UFC-caliber weight cut management designed for how New York fighters actually live and train.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Get Your Cut Protocol
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you understand the physical demands of SOUTHCOM operations?',
+    answer: 'Yes. Nelson Marques, RD, CSSD, has direct experience with USAF Pararescue and special operations nutrition. He understands the demands of hot-weather deployments, irregular feeding schedules, and the caloric throughput required for sustained operations in tropical environments.',
+  },
+  {
+    question: 'Can you help our unit prepare for PT tests and selection courses?',
+    answer: 'Absolutely. We build nutrition protocols specifically around physical fitness test preparation and special operations selection pipelines. Fueling for high-volume endurance output is different from general fitness, and we program accordingly.',
+  },
+  {
+    question: 'Is this covered by any military benefits or unit funding?',
+    answer: 'We are a private practice and do not bill insurance directly. However, many units have MWR or Human Performance Optimization funds that can cover nutrition consulting. We can provide documentation to support reimbursement requests.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Nutrition in Miami | Combat Dietitian"
+  description="Tactical nutrition consulting for Miami-area military, law enforcement, and first responders. USAF PJ experience. Remote services available now."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Nutrition Consultant in <span class="text-accent-500">Miami</span>'
+    subtitle="Nutrition strategies for military operators, federal agents, and first responders in South Florida — from a dietitian who served alongside USAF Pararescue."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        South Florida's tactical community operates in one of the most demanding environments in the country. Between SOUTHCOM operations, Coast Guard interdiction missions, Miami-Dade SWAT callouts, and federal law enforcement task forces, operators here face extreme heat, unpredictable schedules, and sustained physical output. Standard nutrition advice doesn't account for 14-hour shifts in body armor under the South Florida sun. You need fueling strategies designed by someone who has worked inside the special operations community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Purpose-Built for South Florida Operators"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Miami is a hub for military and federal operations. US Southern Command (SOUTHCOM) is headquartered in Doral. Homestead Air Reserve Base supports Air Force Reserve and Air National Guard units. The Coast Guard's District 7 runs Caribbean and Eastern Pacific operations from Miami. Add in Miami-Dade Police, FBI, DEA, and CBP — and the density of tactical professionals here is significant.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, developed nutrition protocols for USAF Pararescue operators — some of the most physically demanding roles in the military. That experience translates directly to the fueling challenges faced by Miami's law enforcement and military personnel operating in hot, humid conditions.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Tactical Nutrition Services Include</h3>
+          <ul class="space-y-3">
+            {['Mission-specific fueling protocols', 'Shift-work meal timing optimization', 'Heat stress hydration strategies', 'Body composition for PT standards', 'Calsanova AI tracking for irregular schedules'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="How Tactical Nutrition Consulting Works"
+        subtitle="Structured around the realities of operational life — not a 9-to-5 eating schedule."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Operational Assessment',
+            description: 'We evaluate your duty schedule, physical demands, training volume, body composition goals, and any upcoming selection courses or deployments. Everything is built around your reality.',
+          },
+          {
+            step: '02',
+            title: 'Adaptive Nutrition Plan',
+            description: 'You receive a flexible meal framework that works across shift rotations, field exercises, and training days. Includes pre-packaged meal strategies and fast-prep options for operational tempo.',
+          },
+          {
+            step: '03',
+            title: 'Ongoing Monitoring',
+            description: 'Through Calsanova AI and scheduled check-ins, we track body composition, performance markers, and adherence — adjusting the plan as your schedule and operational demands shift.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Miami Tactical Professionals"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Fuel Your Mission, Not Just Your Day</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get nutrition consulting built for the operational demands of tactical professionals in South Florida.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

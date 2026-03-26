@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you work with Las Vegas Metro Police tactical teams?',
+    answer: 'We work with law enforcement tactical operators from any agency. Whether you are on LVMPD SWAT, a federal agent stationed in Las Vegas, or a Nevada Highway Patrol trooper, we build nutrition protocols around your specific duty demands and schedule.',
+  },
+  {
+    question: 'How do you address nutrition for desert heat operations?',
+    answer: 'Desert heat dramatically increases fluid and electrolyte needs. We build hydration protocols with specific sodium, potassium, and fluid targets calibrated to ambient temperature and exertion level. This is not generic "drink more water" advice — it is precise, monitored intake.',
+  },
+  {
+    question: 'Can you support a full tactical unit or just individuals?',
+    answer: 'Both. Our Command package is designed for teams and units — it includes a multi-athlete dashboard, team nutrition briefs, and custom meal prep guides that work within unit logistics and dining facility constraints.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Nutrition Las Vegas | Combat Dietitian"
+  description="Tactical nutrition consulting for Las Vegas military and law enforcement. Desert operations fueling from a USAF PJ-experienced dietitian. Book now."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Nutrition Consultant in <span class="text-accent-500">Las Vegas</span>'
+    subtitle="Desert heat. 12-hour shifts. High-stakes operations. Nutrition consulting built for the tactical professionals protecting Las Vegas and training at Nellis AFB."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Las Vegas sits in the Mojave Desert, and the tactical professionals operating here face environmental stress that most nutrition plans completely ignore. Nellis Air Force Base hosts Red Flag exercises and advanced tactical training in 115-degree heat. LVMPD runs one of the busiest metro police forces in the country. Nevada Test and Training Range personnel operate in some of the most remote terrain in the Lower 48. If your nutrition strategy doesn't account for extreme heat, fluid loss, and sustained caloric demand, you are operating at a deficit before the mission even starts.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Designed for Desert Operators"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Nellis AFB is one of the premier tactical training installations in the US military. It hosts the USAF Weapons School, aggressor squadrons, and joint force exercises that bring operators from every branch to the Las Vegas area. Beyond the military, LVMPD's SWAT team, Nevada National Guard, and numerous federal agencies maintain a significant tactical presence in the region.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, built his career supporting USAF Pararescue operators in austere, high-stress environments. That means he understands what it takes to maintain cognitive and physical performance when conditions are brutal and schedules are unpredictable.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What We Deliver</h3>
+          <ul class="space-y-3">
+            {['Desert heat hydration and electrolyte protocols', 'Shift-work and irregular schedule meal plans', 'PT test and selection course fueling', 'Body armor operational nutrition strategies', 'Calsanova AI for tracking in field conditions'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Tactical Nutrition for the Desert Environment"
+        subtitle="Every protocol accounts for heat, operational tempo, and the realities of tactical duty."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Duty Profile Analysis',
+            description: 'We map your operational tempo — shift patterns, physical demands, training schedule, and deployment windows. This drives every nutrition decision we make.',
+          },
+          {
+            step: '02',
+            title: 'Environment-Specific Plan',
+            description: 'Hydration targets calibrated to desert conditions. Caloric frameworks that account for body armor wear and sustained outdoor operations. Meal prep strategies that work without reliable refrigeration.',
+          },
+          {
+            step: '03',
+            title: 'Performance Tracking',
+            description: 'We monitor body weight trends, hydration status indicators, and performance markers through Calsanova. Protocols adjust as seasons, assignments, and training loads change.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Las Vegas Tactical Professionals"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Operate at Full Capacity in Any Condition</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get nutrition consulting from a dietitian who has fueled special operations in the harshest environments.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

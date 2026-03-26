@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
@@ -151,6 +153,59 @@ const packages = [
             >
               Get Started
             </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Service Areas"
+        title="Available Nationwide"
+        subtitle="All consulting is delivered remotely. We work with athletes and operators across the country."
+      />
+
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        {[
+          { city: 'Miami', href: '/locations/miami/sports-dietitian' },
+          { city: 'Las Vegas', href: '/locations/las-vegas/sports-dietitian' },
+          { city: 'New York', href: '/locations/new-york/sports-dietitian' },
+          { city: 'Orlando', href: '/locations/orlando/sports-dietitian' },
+          { city: 'Melbourne, FL', href: '/locations/melbourne-fl/sports-dietitian' },
+        ].map(loc => (
+          <a href={loc.href} class="bg-brand-800/40 border border-white/5 rounded-xl p-4 text-center hover:border-accent-500/30 transition-colors">
+            <span class="text-white font-semibold text-sm">{loc.city}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        {[
+          { label: 'Weight Cut Nutrition', cities: [
+            { name: 'Miami', href: '/locations/miami/weight-cut-nutritionist' },
+            { name: 'Las Vegas', href: '/locations/las-vegas/weight-cut-nutritionist' },
+            { name: 'New York', href: '/locations/new-york/weight-cut-nutritionist' },
+            { name: 'Orlando', href: '/locations/orlando/weight-cut-nutritionist' },
+            { name: 'Melbourne', href: '/locations/melbourne-fl/weight-cut-nutritionist' },
+          ]},
+          { label: 'Tactical Nutrition', cities: [
+            { name: 'Miami', href: '/locations/miami/tactical-nutrition' },
+            { name: 'Las Vegas', href: '/locations/las-vegas/tactical-nutrition' },
+            { name: 'New York', href: '/locations/new-york/tactical-nutrition' },
+            { name: 'Orlando', href: '/locations/orlando/tactical-nutrition' },
+            { name: 'Melbourne', href: '/locations/melbourne-fl/tactical-nutrition' },
+          ]},
+        ].map(group => (
+          <div class="bg-brand-800/20 border border-white/5 rounded-xl p-6">
+            <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-3">{group.label}</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+              {group.cities.map(c => (
+                <a href={c.href} class="text-xs text-white/50 hover:text-accent-400 transition-colors">{c.name}</a>
+              ))}
+            </div>
           </div>
         ))}
       </div>

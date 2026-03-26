@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Are there combat sport events in the Brevard County area?',
+    answer: 'Yes. Regional MMA and kickboxing promotions run events throughout Central and East Florida. Brevard County fighters also compete at events in Orlando, Tampa, and Jacksonville — all within driving distance. We prepare you for competition regardless of where the event takes place.',
+  },
+  {
+    question: 'I am relatively new to competing — do I even need a weight cut nutritionist?',
+    answer: 'Especially if you are new. Your first few weight cuts set the patterns you will follow for your entire career. Starting with a professional protocol means you learn safe, effective methods from day one instead of picking up bad habits that become harder to break.',
+  },
+  {
+    question: 'Can you help me decide which weight class to compete in?',
+    answer: 'Yes. Weight class selection is a strategic decision that affects your entire career. We analyze your body composition, frame size, strength-to-weight ratio, and how much weight you can safely cut to determine your optimal competitive weight class.',
+  },
+];
+---
+
+<Layout
+  title="Weight Cut Nutritionist Melbourne FL | Combat Dietitian"
+  description="Weight cut management for Melbourne, FL combat athletes. UFC-experienced dietitian headquartered on the Space Coast. Science-based protocols — call today."
+>
+  <Nav />
+
+  <Hero
+    title='Weight Cut Nutritionist in <span class="text-accent-500">Melbourne, FL</span>'
+    subtitle="Professional weight cut protocols from a UFC-experienced dietitian headquartered right here on the Space Coast. Science over guesswork, every time."
+    cta={{ label: 'Start Your Cut Protocol', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Brevard County fighters don't have the same access to fight nutrition specialists that athletes in Miami or Las Vegas take for granted. Most Space Coast combat athletes manage their weight cuts alone or with advice from coaches whose expertise is in technique, not nutrition science. The result is unnecessarily brutal cuts, poor fight-night performance, and sometimes missed weight at events they've spent weeks preparing for. Having a professional weight cut nutritionist headquartered locally — someone who has managed cuts at the UFC level — changes that equation entirely.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="UFC-Level Cuts on the Space Coast"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Combat Dietitian is headquartered in Melbourne, FL. This is our backyard. While we serve fighters nationwide through remote consulting, there's something meaningful about bringing elite-level weight cut expertise to the community where we live and work.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, has managed weight cuts for professional UFC fighters — the highest level of MMA competition in the world. That same level of precision, monitoring, and evidence-based protocol design is available to every fighter on the Space Coast, from first-time amateurs to seasoned professionals competing across Florida's regional circuit.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Full Weight Cut Service</h3>
+          <ul class="space-y-3">
+            {['Weight class optimization analysis', 'Full camp nutrition periodization', 'Fight week water and sodium protocol', 'Post-weigh-in rehydration and refeed', 'Calsanova AI monitoring throughout camp'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Your Weight Cut, Done Right"
+        subtitle="A professional approach to making weight — no sauna suits, no crash diets, no guessing."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Assessment and Planning',
+            description: 'Body composition analysis, walking weight history, target weight class evaluation, and fight date timeline. We determine exactly how much reduction comes from fat loss versus acute methods.',
+          },
+          {
+            step: '02',
+            title: 'Structured Camp Nutrition',
+            description: 'A phased nutrition plan that reduces body fat gradually across training camp. Higher calories on heavy training days, controlled deficits during lighter phases. Tracked daily through Calsanova.',
+          },
+          {
+            step: '03',
+            title: 'Fight Week Execution',
+            description: 'Precision daily protocols for the final week — sodium, water, fiber, and carb manipulation timed to the hour. Post-weigh-in, a structured recovery plan gets you fueled and hydrated for competition.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Space Coast Fighters"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Professional Weight Cuts, Right Here on the Space Coast</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        You don't need to travel to a big city for big-time weight cut management. We're headquartered here and ready to work.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Get Your Cut Protocol
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

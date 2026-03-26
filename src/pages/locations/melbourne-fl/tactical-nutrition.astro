@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you work with the 920th Rescue Wing at Patrick SFB?',
+    answer: 'We work with tactical operators from any unit, including personnel assigned to the 920th Rescue Wing. Nelson Marques, RD, CSSD, has direct experience with USAF Pararescue nutrition — the same career field that operates within the 920th. That shared understanding of PJ-level demands makes our protocols immediately relevant.',
+  },
+  {
+    question: 'Can you support Brevard County fire rescue personnel?',
+    answer: 'Yes. Firefighters face sustained physical demands in full PPE, often in Florida heat. We build nutrition and hydration protocols that account for the caloric cost of structural firefighting, wildland operations, and the irregular eating patterns that come with station life and call volume.',
+  },
+  {
+    question: 'Is this service available to my entire squad or team?',
+    answer: 'Yes. Our Command package is designed for teams and units. It includes individual nutrition plans for each member, a team dashboard for leadership, group nutrition briefs, and scalable meal prep guides. Contact us to discuss unit pricing.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Nutrition Melbourne FL | Combat Dietitian"
+  description="Tactical nutrition for Melbourne FL military and first responders. Headquartered on the Space Coast. USAF PJ-experienced dietitian. Book your consultation."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Nutrition Consultant in <span class="text-accent-500">Melbourne, FL</span>'
+    subtitle="Headquartered on the Space Coast. Tactical nutrition consulting for Patrick SFB operators, Brevard County law enforcement, and first responders — from a dietitian with USAF Pararescue roots."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        The Space Coast is more than rockets. Patrick Space Force Base is home to the 920th Rescue Wing — the only combat search and rescue unit in the Air Force Reserve, staffed with Pararescuemen and combat rescue officers who deploy worldwide. Brevard County's sheriff's office, Melbourne PD, and local fire rescue agencies maintain tactical capabilities in a region that stretches from Titusville to Sebastian. These operators need nutrition strategies that go beyond basic meal planning, and until now, accessing that level of expertise meant looking outside the county. Not anymore.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Your Local Tactical Nutrition Expert"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Marques Performance Systems is headquartered in Melbourne, FL — steps from the community we serve. Nelson Marques, RD, CSSD, built his career supporting USAF Pararescue operators, the same community that has a permanent presence at Patrick Space Force Base. That isn't a coincidence — it's a commitment to serving the tactical professionals in our own backyard.
+          </p>
+          <p>
+            Beyond the military connection, Brevard County's law enforcement and fire rescue personnel face the same fundamental challenges: irregular schedules, extreme heat exposure, sustained physical demands, and limited access to quality nutrition during duty hours. Our protocols are built specifically for these realities.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What Space Coast Operators Get</h3>
+          <ul class="space-y-3">
+            {['PJ-informed tactical nutrition protocols', 'Florida heat stress hydration management', 'Shift-work and on-call meal frameworks', 'PT test and fitness assessment fueling', 'Calsanova AI for tracking on and off duty'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Tactical Nutrition Built for the Space Coast"
+        subtitle="From Patrick SFB to Brevard County fire stations — nutrition that works in your environment."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Operator Profile',
+            description: 'We assess your specific role, duty schedule, physical demands, training program, and performance goals. A PJ on deployment readiness has different needs than a county firefighter on a 48/96 schedule — and we program accordingly.',
+          },
+          {
+            step: '02',
+            title: 'Mission-Ready Nutrition',
+            description: 'A flexible nutrition framework built around your operational reality. Includes station-friendly meal prep, field-portable options, hydration targets for Florida conditions, and caloric frameworks for varying activity levels.',
+          },
+          {
+            step: '03',
+            title: 'Continuous Adaptation',
+            description: 'Calsanova AI tracks your intake and body composition trends. We adjust protocols around deployments, TDY assignments, seasonal schedule changes, and upcoming fitness evaluations.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Space Coast Tactical Professionals"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Same Community. Same Mission. Better Fuel.</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        We're headquartered on the Space Coast because this is where we belong — serving the operators, firefighters, and law enforcement professionals who protect this community.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

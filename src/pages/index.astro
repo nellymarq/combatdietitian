@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
@@ -165,6 +167,29 @@ const stats = [
               <p class="text-white/40 text-xs">{t.context}</p>
             </div>
           </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Nationwide"
+        title="Serving Athletes & Operators Everywhere"
+      />
+      <div class="flex flex-wrap justify-center gap-4">
+        {[
+          { city: 'Miami', href: '/locations/miami/sports-dietitian' },
+          { city: 'Las Vegas', href: '/locations/las-vegas/sports-dietitian' },
+          { city: 'New York', href: '/locations/new-york/sports-dietitian' },
+          { city: 'Orlando', href: '/locations/orlando/sports-dietitian' },
+          { city: 'Melbourne, FL', href: '/locations/melbourne-fl/sports-dietitian' },
+        ].map(loc => (
+          <a href={loc.href} class="bg-brand-800/40 border border-white/5 rounded-lg px-6 py-3 hover:border-accent-500/30 transition-colors">
+            <span class="text-white font-semibold text-sm">{loc.city}</span>
+          </a>
         ))}
       </div>
     </div>

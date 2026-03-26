@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'I train at Hard Knocks 365 — do you work with their fighters?',
+    answer: 'We work with fighters from any gym. If you train at Hard Knocks, Gracie Barra Orlando, MMA University, or any other Central Florida gym, we integrate our weight cut protocols with your coaching staff\'s training plan. The nutrition side is ours — the fighting side is theirs.',
+  },
+  {
+    question: 'How does cutting weight in Florida heat differ from other climates?',
+    answer: 'Florida\'s heat and humidity mean you\'re already losing more water and electrolytes during training than fighters in drier or cooler climates. This changes the math on water cuts — we have to be more conservative with acute dehydration strategies and more aggressive with early-camp body fat reduction to compensate.',
+  },
+  {
+    question: 'Do you work with amateur fighters doing their first weight cut?',
+    answer: 'Yes, and this is arguably when a professional weight cut nutritionist matters most. First-time cutters are the most vulnerable to doing it wrong — crash dieting, excessive sauna use, or cutting too much too fast. We teach you the right way from the start so you build sustainable habits.',
+  },
+];
+---
+
+<Layout
+  title="Weight Cut Nutritionist Orlando | Combat Dietitian"
+  description="Evidence-based weight cut protocols for Orlando MMA fighters and combat athletes. UFC-experienced dietitian. Remote consulting — start your cut today."
+>
+  <Nav />
+
+  <Hero
+    title='Weight Cut Nutritionist in <span class="text-accent-500">Orlando</span>'
+    subtitle="Science-based weight management for Central Florida's growing combat sports scene. Professional UFC cut experience. AI-powered tracking through every phase of camp."
+    cta={{ label: 'Start Your Cut Protocol', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Orlando's combat sports scene has grown steadily over the past decade. From established gyms like Hard Knocks 365 — which has produced multiple UFC fighters — to the expanding amateur circuit across Central Florida, more fighters here are competing at higher levels. But the nutrition infrastructure hasn't kept pace. Most Orlando fighters are still managing their own weight cuts using methods they learned from YouTube or a training partner who barely made weight last time. In Florida's heat, that approach is a recipe for a bad weigh-in and a worse performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Professional Cuts for Central Florida Fighters"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Central Florida's fight scene extends well beyond Orlando proper. Fighters train across the I-4 corridor from Tampa to Daytona, with active gyms in Kissimmee, Sanford, Altamonte Springs, and Winter Park. Regional promotions like Xtreme Fighting Championships and Fury Fighting Championship give local fighters regular opportunities to compete.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, provides the same caliber of weight cut management to these fighters that professional UFC athletes receive. His evidence-based approach prioritizes gradual body composition change during camp, minimizes acute water cutting, and optimizes post-weigh-in recovery — all monitored through the Calsanova AI platform.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Your Weight Cut Protocol Includes</h3>
+          <ul class="space-y-3">
+            {['Camp-long macro and calorie periodization', 'Florida heat-adjusted hydration protocols', 'Fight week water and sodium manipulation', 'Post-weigh-in refeed and rehydration plan', 'Daily Calsanova monitoring during fight week'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Weight Cut Management for Orlando Fighters"
+        subtitle="From the first day of camp to the moment you step in the cage."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Baseline and Target',
+            description: 'We establish your walking weight, body fat percentage, target weight class, and fight date. Then we calculate exactly how much needs to come off as body fat versus acute water weight.',
+          },
+          {
+            step: '02',
+            title: 'Camp Nutrition Phases',
+            description: 'Caloric intake is structured in phases — higher volume during heavy training weeks, tighter during taper. We track via Calsanova and adjust based on body weight trends and training performance.',
+          },
+          {
+            step: '03',
+            title: 'Fight Week and Recovery',
+            description: 'The final 7 days follow a precise daily protocol. Sodium loading, water manipulation, fiber reduction, and a structured weigh-in morning routine. Post-scale, a timed refeed and rehydration plan restores your competitive capacity.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Orlando Fighters"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Own the Scale, Own the Fight</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Stop leaving your weight cut to chance. Get a professional protocol backed by UFC experience and sports science.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Get Your Cut Protocol
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,111 @@
+---
+/**
+ * JSON-LD structured data for SEO.
+ * Drop into Layout.astro <head> via: <SchemaMarkup />
+ */
+---
+
+<!-- Organization + Person + WebSite schema -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://combatdietitian.com/#business",
+      "name": "Combat Dietitian",
+      "alternateName": "Marques Performance Systems, LLC",
+      "url": "https://combatdietitian.com",
+      "logo": "https://combatdietitian.com/logo.webp",
+      "image": "https://combatdietitian.com/og-image.png",
+      "description": "Tactical and performance dietitian with USAF Pararescue and professional UFC experience. Elite nutrition consulting for special operators, fighters, and weight-class athletes.",
+      "email": "thecombatdietitian@gmail.com",
+      "founder": { "@id": "https://combatdietitian.com/#person" },
+      "sameAs": [
+        "https://www.instagram.com/combatdietitian/",
+        "https://www.linkedin.com/in/nelsonmarquesrd/"
+      ],
+      "serviceType": [
+        "Sports Nutrition Consulting",
+        "Tactical Nutrition Consulting",
+        "Weight Cut Management",
+        "Fight Camp Nutrition",
+        "Performance Dietetics"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Nutrition Consulting Packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Recon — One-Time Assessment",
+              "description": "90-minute initial assessment, custom nutrition blueprint, 30-day meal plan, and 30 days of Calsanova AI platform access."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Operator — Monthly Coaching",
+              "description": "Ongoing nutrition coaching with bi-weekly check-ins, adaptive meal plan updates, priority messaging, and unlimited Calsanova access."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Command — Team & Unit Packages",
+              "description": "Multi-athlete nutrition management with team dashboard, nutrition briefs, custom meal prep guides, and dedicated support."
+            }
+          }
+        ]
+      },
+      "knowsAbout": [
+        "Sports Dietetics",
+        "Tactical Nutrition",
+        "Weight Cutting Protocols",
+        "Fight Camp Nutrition Periodization",
+        "Military Performance Nutrition",
+        "Combat Sports Nutrition",
+        "Macronutrient Periodization",
+        "Body Composition Management"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://combatdietitian.com/#person",
+      "name": "Nelson Marques",
+      "jobTitle": "Performance Dietitian",
+      "url": "https://combatdietitian.com/about",
+      "image": "https://combatdietitian.com/headshot.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/nelsonmarquesrd/"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional License",
+          "name": "Registered Dietitian (RD)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Board Certification",
+          "name": "Board Certified Specialist in Sports Dietetics (CSSD)"
+        }
+      ],
+      "worksFor": { "@id": "https://combatdietitian.com/#business" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://combatdietitian.com/#website",
+      "url": "https://combatdietitian.com",
+      "name": "Combat Dietitian",
+      "publisher": { "@id": "https://combatdietitian.com/#business" }
+    }
+  ]
+})} />

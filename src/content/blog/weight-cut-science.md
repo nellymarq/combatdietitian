@@ -32,3 +32,7 @@ The dangers are real. Severe dehydration reduces cerebral spinal fluid volume, m
 ## The Bottom Line
 
 A well-executed weight cut is a science-driven protocol that starts weeks before fight week. If your plan begins on Monday for a Saturday weigh-in, you are already behind. Work with a sports dietitian who understands the physiology, the timeline, and the stakes.
+
+---
+
+**Need a weight cut protocol?** Combat Dietitian works with fighters in [Miami](/locations/miami/weight-cut-nutritionist), [Las Vegas](/locations/las-vegas/weight-cut-nutritionist), [New York](/locations/new-york/weight-cut-nutritionist), [Orlando](/locations/orlando/weight-cut-nutritionist), and [nationwide](/contact). [Book a consultation →](/contact)

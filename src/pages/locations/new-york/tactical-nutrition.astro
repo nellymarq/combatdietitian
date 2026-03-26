@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you have experience with the demands NYPD ESU operators face?',
+    answer: 'While we work with tactical operators from all agencies, we understand the specific demands of urban tactical operations — long static holds in body armor, rapid building entries, maritime operations in harbor units, and the caloric cost of operating in full kit in both summer heat and winter cold. Our protocols are built for this reality.',
+  },
+  {
+    question: 'How do you handle nutrition for rotating shift schedules?',
+    answer: 'Shift rotation is one of the biggest nutrition disruptors for tactical professionals. We build flexible meal frameworks that adapt to day, evening, and overnight shifts — adjusting meal timing, caffeine protocols, and caloric distribution to maintain energy and body composition regardless of your rotation.',
+  },
+  {
+    question: 'Can you help me prepare for a federal law enforcement academy or selection?',
+    answer: 'Yes. We have experience building nutrition protocols for selection-level physical demands. Whether you are headed to FLETC, a SWAT selection course, or a military special operations pipeline, we design your fueling to support the sustained high-volume training these courses require.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Nutrition in New York | Combat Dietitian"
+  description="Tactical nutrition consulting for NYPD, FDNY, and NYC-area military operators. Special operations nutrition expertise delivered remotely. Book today."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Nutrition Consultant in <span class="text-accent-500">New York</span>'
+    subtitle="Nutrition consulting for NYPD ESU, FDNY, federal agents, and military operators in the New York metro area. Built by a dietitian with USAF Pararescue experience."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        New York City's tactical community is one of the largest and most diverse in the country. NYPD's Emergency Service Unit operates across five boroughs handling barricaded subjects, hostage rescues, and counter-terrorism. FDNY runs one of the busiest fire departments in the world. The FBI, Secret Service, US Marshals, and Homeland Security Investigations all maintain major field offices in Manhattan. These operators work long, unpredictable hours in a city where eating well is harder than it should be — and the physical demands of their jobs leave no room for suboptimal fueling.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Feeding the Force That Protects New York"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            NYPD ESU is among the most capable tactical law enforcement units in the world. FDNY responds to more calls annually than any other fire department. Fort Hamilton and the surrounding military installations add Army, Navy, and Coast Guard personnel to the mix. New York's tactical professionals face a unique combination of urban operational demands and the lifestyle challenges of living in one of the world's most expensive and fast-paced cities.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, built nutrition protocols for USAF Pararescue — operators who work in high-stress, unpredictable environments with zero tolerance for performance failure. That same methodology now serves New York's tactical community through remote consulting and the Calsanova AI platform.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">Tactical Services for NYC Operators</h3>
+          <ul class="space-y-3">
+            {['Shift-rotation meal timing strategies', 'Urban operational fueling (body armor, foot patrols)', 'PT test and promotional exam fitness nutrition', 'Cold and hot weather operational hydration', 'Calsanova AI for on-the-go meal tracking'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="Nutrition That Works on New York Time"
+        subtitle="Built for operators who never know when their shift will end or their next meal will come."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Operational Intake',
+            description: 'We document your shift schedule, unit demands, commute time, sleep patterns, gym access, and eating environment. NYC operators face constraints that suburban tactical professionals don\'t — and we plan for every one of them.',
+          },
+          {
+            step: '02',
+            title: 'Shift-Adapted Nutrition',
+            description: 'Your meal plan rotates with your schedule. Day shift, evening tour, overnight — each gets its own framework. We include grab-and-go options, bodega-friendly picks, and meals that survive a locker or cruiser.',
+          },
+          {
+            step: '03',
+            title: 'Performance Maintenance',
+            description: 'Regular check-ins and Calsanova tracking keep you accountable and on target. We adjust for overtime weeks, detail assignments, and the seasonal demands of operating in New York\'s weather extremes.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from NYC Tactical Professionals"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Your City Depends on You. Your Body Depends on Fuel.</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get tactical nutrition consulting from a dietitian who understands what operators demand from their bodies.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,154 @@
+---
+export const prerender = true;
+
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Hero from '../../../components/Hero.astro';
+import SectionHeading from '../../../components/SectionHeading.astro';
+import Footer from '../../../components/Footer.astro';
+
+const faqs = [
+  {
+    question: 'Do you work with athletes at UCF or other Central Florida colleges?',
+    answer: 'Yes. We work with collegiate athletes who want additional nutrition support beyond what their school provides. Whether you are a scholarship athlete at UCF, a club sport competitor, or training at a local performance facility, we build plans that complement your existing program.',
+  },
+  {
+    question: 'How does training in Florida heat affect my nutrition plan?',
+    answer: 'Significantly. Heat and humidity increase sweat rate, electrolyte loss, and caloric expenditure. We build your hydration protocols around Central Florida\'s climate with specific sodium, potassium, and fluid targets. This is not optional for performance — it is foundational.',
+  },
+  {
+    question: 'Can you work with my existing coach or trainer in Orlando?',
+    answer: 'Absolutely. We regularly collaborate with strength coaches, athletic trainers, and sport coaches. Nutrition programming integrates with your training plan — we just need to understand your current volume, intensity, and periodization to align everything properly.',
+  },
+];
+---
+
+<Layout
+  title="Sports Dietitian in Orlando | Combat Dietitian"
+  description="Sports dietitian serving Orlando athletes with personalized nutrition plans. UFC and military nutrition experience. Remote consulting available — book now."
+>
+  <Nav />
+
+  <Hero
+    title='Sports Dietitian in <span class="text-accent-500">Orlando</span>'
+    subtitle="Board-certified sports dietitian with UFC and USAF Pararescue experience. Serving Orlando's athletes with remote, AI-powered nutrition consulting built for Central Florida's demands."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- Opening paragraph -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-white/70 leading-relaxed">
+        Central Florida is an athletic proving ground. Between the year-round outdoor training conditions, a growing MMA scene, UCF's expanding athletics program, and the proximity to the US National Team training facilities at the USTA campus in Lake Nona, Orlando athletes have access to world-class facilities. What many still lack is world-class nutrition support. Training hard in Florida heat without a structured fueling plan is like running a high-performance engine on cheap gas — you'll feel it in your recovery, your body composition, and your results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Combat Dietitian -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Combat Dietitian"
+        title="Performance Nutrition for Central Florida Athletes"
+      />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-white/70 leading-relaxed">
+          <p>
+            Orlando and the broader Central Florida region have grown into a serious sports hub. UCF fields competitive Division I teams. The Orlando City soccer club and Orlando Pride draw athletes from around the world. MMA gyms like Hard Knocks 365 have produced UFC contenders. The area's proximity to military installations — including Patrick Space Force Base and the Naval Warfare Center — brings a steady stream of tactical athletes into the region.
+          </p>
+          <p>
+            Nelson Marques, RD, CSSD, combines professional UFC fight nutrition experience with USAF special operations tactical nutrition expertise. That dual background means he can work with any athlete in the Orlando area — from a UCF wrestler to a professional soccer player to a recreational triathlete training in Lake Nona.
+          </p>
+        </div>
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4">What Orlando Athletes Get</h3>
+          <ul class="space-y-3">
+            {['Heat-adapted nutrition and hydration protocols', 'Competition-day fueling strategies', 'Body composition optimization', 'Full Calsanova AI platform access', 'Remote delivery — available statewide from Central FL'].map(item => (
+              <li class="flex items-start gap-3 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5">&check;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service details -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="From Assessment to Results"
+        subtitle="A clear, structured path to better performance through nutrition."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            step: '01',
+            title: 'Comprehensive Intake',
+            description: 'Training history, competition schedule, body composition goals, dietary preferences, bloodwork review, and lifestyle assessment. We need the full picture to build the right plan.',
+          },
+          {
+            step: '02',
+            title: 'Customized Nutrition Program',
+            description: 'A periodized nutrition plan that matches your training phases, accounts for Florida\'s heat, and fits your food preferences. Includes macro targets, meal templates, hydration protocols, and supplement guidance.',
+          },
+          {
+            step: '03',
+            title: 'Ongoing Coaching',
+            description: 'Calsanova AI tracks your daily nutrition while we handle the strategic adjustments. Bi-weekly check-ins keep your plan current with your training, competition, and body composition progress.',
+          },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{item.step}</div>
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Questions from Orlando Athletes"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Elevate Your Performance in the Sunshine State</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get the nutrition edge that separates good athletes from great ones. Science-based, AI-powered, and built for your goals.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/contact"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+        <a href="tel:+12013882444" class="text-white/70 hover:text-white font-medium transition-colors">
+          Or call (201) 388-2444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

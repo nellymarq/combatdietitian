@@ -33,3 +33,7 @@ A 2% body mass loss from dehydration reduces cognitive performance by up to 20% 
 The best nutrition plan is the one that gets executed. For shift workers, meal prepping 3-4 days of protein-forward meals in portable containers eliminates decision fatigue. Shelf-stable options like jerky, nut butters, tuna packets, and dried fruit ensure baseline nutrition when access to fresh food disappears.
 
 Tactical nutrition is not about perfection — it is about consistency under imperfect conditions. Build the foundation, rehearse the plan, and adapt to the operational reality.
+
+---
+
+**Need a tactical nutrition plan?** Combat Dietitian works with operators and first responders in [Miami](/locations/miami/tactical-nutrition), [Las Vegas](/locations/las-vegas/tactical-nutrition), [New York](/locations/new-york/tactical-nutrition), [Orlando](/locations/orlando/tactical-nutrition), and [Melbourne, FL](/locations/melbourne-fl/tactical-nutrition). [Book a consultation →](/contact)
