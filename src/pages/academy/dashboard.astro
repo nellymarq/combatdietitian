@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import { getUser, isEnrolled, createSupabaseServerClient } from '../../lib/supabase/server';
-import { FOUNDATION as COURSE } from '../../data/course';
+import { FOUNDATION as COURSE, COMBAT_TRACK, TACTICAL_TRACK } from '../../data/course';
 
 const user = await getUser(Astro.cookies);
 if (!user) return Astro.redirect('/academy/login');
@@ -143,6 +143,76 @@ const userName = user.user_metadata?.full_name || user.email?.split('@')[0] || '
           </div>
         </div>
       </div>
+
+      <!-- Specialization Tracks -->
+      {courseComplete && (
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold mb-6">Specialization Tracks</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-brand-800/40 border border-accent-500/20 rounded-xl p-6">
+              <span class="text-accent-500 text-xs font-bold uppercase tracking-widest">Combat Sports</span>
+              <h3 class="mt-2 text-xl font-bold">{COMBAT_TRACK.title}</h3>
+              <p class="text-white/50 text-sm mt-2">{COMBAT_TRACK.description}</p>
+              <div class="mt-4 space-y-2">
+                {COMBAT_TRACK.modules.map(m => {
+                  const done = completedSlugs.has(m.slug);
+                  return (
+                    <a
+                      href={`/academy/course/${m.slug}`}
+                      class="block bg-brand-700/30 border border-white/5 rounded-lg p-3 hover:border-accent-500/30 transition-colors"
+                    >
+                      <div class="flex items-center gap-3">
+                        <div class:list={[
+                          'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0',
+                          done ? 'bg-accent-500/20 text-accent-500' : 'bg-brand-700/50 text-white/40'
+                        ]}>
+                          {done ? '\u2713' : m.order}
+                        </div>
+                        <span class="text-sm font-medium">{m.title}</span>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between">
+                <span class="text-white/40 text-sm">Credential: <span class="text-accent-500 font-bold">{COMBAT_TRACK.credential}</span></span>
+                <span class="text-white font-bold">${COMBAT_TRACK.price}</span>
+              </div>
+            </div>
+
+            <div class="bg-brand-800/40 border border-gold-500/20 rounded-xl p-6">
+              <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Tactical Nutrition</span>
+              <h3 class="mt-2 text-xl font-bold">{TACTICAL_TRACK.title}</h3>
+              <p class="text-white/50 text-sm mt-2">{TACTICAL_TRACK.description}</p>
+              <div class="mt-4 space-y-2">
+                {TACTICAL_TRACK.modules.map(m => {
+                  const done = completedSlugs.has(m.slug);
+                  return (
+                    <a
+                      href={`/academy/course/${m.slug}`}
+                      class="block bg-brand-700/30 border border-white/5 rounded-lg p-3 hover:border-gold-500/30 transition-colors"
+                    >
+                      <div class="flex items-center gap-3">
+                        <div class:list={[
+                          'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0',
+                          done ? 'bg-gold-500/20 text-gold-400' : 'bg-brand-700/50 text-white/40'
+                        ]}>
+                          {done ? '\u2713' : m.order}
+                        </div>
+                        <span class="text-sm font-medium">{m.title}</span>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between">
+                <span class="text-white/40 text-sm">Credential: <span class="text-gold-400 font-bold">{TACTICAL_TRACK.credential}</span></span>
+                <span class="text-white font-bold">${TACTICAL_TRACK.price}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   </section>
   <Footer />

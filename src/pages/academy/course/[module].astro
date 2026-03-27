@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { getUser, isEnrolled, createSupabaseServerClient } from '../../../lib/supabase/server';
-import { FOUNDATION as COURSE } from '../../../data/course';
+import { FOUNDATION, COMBAT_TRACK, TACTICAL_TRACK, ALL_COURSES } from '../../../data/course';
 
 const user = await getUser(Astro.cookies);
 if (!user) return Astro.redirect('/academy/login');
@@ -11,6 +11,9 @@ const enrolled = await isEnrolled(Astro.cookies, user.id);
 if (!enrolled) return Astro.redirect('/academy');
 
 const { module: moduleSlug } = Astro.params;
+
+// Find which course this module belongs to
+const COURSE = ALL_COURSES.find(c => c.modules.some(m => m.slug === moduleSlug)) || FOUNDATION;
 const mod = COURSE.modules.find(m => m.slug === moduleSlug);
 if (!mod) return Astro.redirect('/academy/dashboard');
 

@@ -116,6 +116,12 @@ export const COMBAT_TRACK = {
       title: 'Weight Class Strategy & Body Composition Management',
       description: 'When to cut, when to move up, and how to make evidence-based weight class decisions that optimize performance.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Calculate power-to-weight ratios to evaluate optimal weight class selection for a given fighter',
+        'Identify sport-specific body composition targets using DEXA-derived reference ranges for combat athletes',
+        'Evaluate when cutting down versus moving up a weight class is the evidence-based decision',
+        'Design a chronic weight management plan that distinguishes between acute and long-term body composition strategies',
+      ],
     },
     {
       slug: 'fight-camp-nutrition',
@@ -123,6 +129,12 @@ export const COMBAT_TRACK = {
       title: 'Fight Camp Nutrition Periodization',
       description: 'Map 8-12 week fight camp phases to macro targets, meal timing, and food selection that supports training while managing weight.',
       estimatedMinutes: 50,
+      learningOutcomes: [
+        'Design phase-specific macronutrient targets across early camp, mid camp, peak week, and fight week',
+        'Calculate meal timing and composition around two-a-day training sessions during fight camp',
+        'Apply evidence-based supplement protocols matched to each fight camp phase',
+        'Identify strategies to manage hunger and adherence during progressive caloric restriction',
+      ],
     },
     {
       slug: 'water-electrolyte-manipulation',
@@ -130,6 +142,12 @@ export const COMBAT_TRACK = {
       title: 'Water & Electrolyte Manipulation for Weight Cuts',
       description: 'Water loading, sodium manipulation, glycogen depletion — the science and the safety limits that govern acute weight reduction.',
       estimatedMinutes: 55,
+      learningOutcomes: [
+        'Design a day-by-day water loading and sodium manipulation protocol for an acute weight cut',
+        'Explain the physiological mechanisms of aldosterone and vasopressin suppression during water loading',
+        'Calculate expected weight loss from glycogen depletion and low-residue diet strategies',
+        'Evaluate safety limits for sauna and sweat suit protocols based on total body water loss thresholds',
+      ],
     },
     {
       slug: 'rehydration-fight-day',
@@ -137,6 +155,12 @@ export const COMBAT_TRACK = {
       title: 'Rehydration & Fight-Day Fueling',
       description: 'Post-weigh-in recovery protocols, body-weight-scaled rehydration, and pre-fight meal timing where fights are won or lost.',
       estimatedMinutes: 50,
+      learningOutcomes: [
+        'Design a body-weight-scaled rehydration protocol using oral rehydration solution composition principles',
+        'Calculate glycogen replenishment targets (g/kg/hr) for the post-weigh-in recovery window',
+        'Apply evidence-based pre-fight meal timing and composition for optimal fight-night performance',
+        'Evaluate caffeine dosing and timing strategies specific to combat sport competition schedules',
+      ],
     },
     {
       slug: 'safety-monitoring-commissions',
@@ -144,6 +168,12 @@ export const COMBAT_TRACK = {
       title: 'Safety, Monitoring & Athletic Commissions',
       description: 'ISSN safety thresholds, when to abort a cut, hydration testing (ONE Championship), and working with commission medical teams.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Apply ISSN position stand thresholds to determine when a weight cut must be aborted',
+        'Interpret urine specific gravity results and explain their role in commission hydration testing protocols',
+        'Identify red flags for medical intervention during acute weight reduction in combat athletes',
+        'Design documentation protocols for weight cut monitoring that meet athletic commission requirements',
+      ],
     },
     {
       slug: 'tournament-multi-fight',
@@ -151,6 +181,12 @@ export const COMBAT_TRACK = {
       title: 'Tournament & Multi-Fight Strategies',
       description: 'Same-day weigh-ins, back-to-back events, and rapid recovery protocols for wrestling, BJJ, and multi-fight tournaments.',
       estimatedMinutes: 40,
+      learningOutcomes: [
+        'Differentiate fueling strategies for same-day weigh-ins versus 24-hour weigh-ins in tournament formats',
+        'Design rapid recovery nutrition protocols for athletes competing in multiple bouts within a single day',
+        'Calculate carbohydrate repletion rates and fluid targets between tournament bouts based on bout spacing',
+        'Apply sport-specific tournament nutrition plans for wrestling, BJJ, and multi-fight combat events',
+      ],
     },
   ],
   assessment: {
@@ -175,6 +211,12 @@ export const TACTICAL_TRACK = {
       title: 'Nutritional Demands of Sustained Operations',
       description: 'Energy expenditure in tactical environments, shift-work metabolism, and fueling under unpredictable schedules.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Calculate energy expenditure for tactical tasks using USARIEM load-carriage and metabolic cost data',
+        'Identify the metabolic consequences of shift work and circadian disruption on appetite regulation and substrate utilization',
+        'Evaluate caloric requirements across military occupational specialties and tactical roles',
+        'Apply RED-S screening frameworks to military and first-responder populations',
+      ],
     },
     {
       slug: 'field-constraints',
@@ -182,6 +224,12 @@ export const TACTICAL_TRACK = {
       title: 'Fueling Under Field Constraints',
       description: 'MRE optimization, DFAC meal building, and nutrition planning when food access is limited or controlled.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Design MRE-based meal plans that maximize macronutrient quality and minimize caloric deficit in field settings',
+        'Apply DFAC meal-building strategies to meet performance nutrition targets for tactical athletes',
+        'Identify portable nutrition solutions for patrol, surveillance, and extended field operations',
+        'Evaluate hydration logistics and calculate fluid requirements in austere environments',
+      ],
     },
     {
       slug: 'environmental-nutrition',
@@ -189,6 +237,12 @@ export const TACTICAL_TRACK = {
       title: 'Environmental Nutrition: Heat, Cold & Altitude',
       description: 'Acclimatization nutrition, sodium loading for heat, caloric increases for cold, iron and carb optimization for altitude.',
       estimatedMinutes: 50,
+      learningOutcomes: [
+        'Design sodium-loading and fluid-rate protocols for heat acclimatization based on environment and workload',
+        'Calculate caloric increases required for cold-weather operations using established multipliers',
+        'Explain the physiological basis for iron supplementation, carbohydrate loading, and appetite management at altitude',
+        'Apply transitional nutrition strategies when operators move between environmental extremes',
+      ],
     },
     {
       slug: 'body-comp-readiness',
@@ -196,6 +250,12 @@ export const TACTICAL_TRACK = {
       title: 'Body Composition for Occupational Readiness Standards',
       description: 'Service-specific body comp standards (waist-to-height ratio), managing operators through assessments, and sustainable approaches.',
       estimatedMinutes: 40,
+      learningOutcomes: [
+        'Identify service-specific body composition standards across Army, Air Force, Navy, and Marine Corps assessments',
+        'Design sustainable body composition management plans that maintain operational readiness',
+        'Evaluate field-expedient body composition assessment methods including waist-to-height ratio and circumference protocols',
+        'Apply evidence-based strategies to manage operators through assessment windows without compromising performance',
+      ],
     },
     {
       slug: 'cognitive-performance',
@@ -203,6 +263,12 @@ export const TACTICAL_TRACK = {
       title: 'Cognitive Performance Nutrition',
       description: 'Strategic caffeine use, glucose for decision-making under fatigue, sleep deprivation countermeasures, and stress-response micronutrients.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Design strategic caffeine protocols with evidence-based timing, dosing, and washout periods for sustained operations',
+        'Explain the role of glucose availability in decision-making accuracy under fatigue and sleep deprivation',
+        'Evaluate the evidence for omega-3 fatty acids in TBI protection and cognitive resilience',
+        'Apply stress-response micronutrient strategies including magnesium, zinc, and B-vitamin supplementation',
+      ],
     },
     {
       slug: 'unit-level-programming',
@@ -210,6 +276,12 @@ export const TACTICAL_TRACK = {
       title: 'Unit-Level Nutrition Programming',
       description: 'Designing nutrition SOPs for tactical units, working with command structures, and measuring readiness outcomes.',
       estimatedMinutes: 45,
+      learningOutcomes: [
+        'Design nutrition standard operating procedures appropriate for unit-level implementation',
+        'Apply military briefing formats to present nutrition programming to command leadership',
+        'Identify integration points with S4/logistics and DFAC management for scalable meal planning',
+        'Evaluate readiness outcomes using measurable metrics tied to unit performance and medical data',
+      ],
     },
   ],
   assessment: {
