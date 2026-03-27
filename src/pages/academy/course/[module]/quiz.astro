@@ -3,7 +3,7 @@ import Layout from '../../../../layouts/Layout.astro';
 import Nav from '../../../../components/Nav.astro';
 import Footer from '../../../../components/Footer.astro';
 import Quiz from '../../../../components/academy/Quiz';
-import { getUser, isEnrolled, createSupabaseServerClient } from '../../../../lib/supabase/server';
+import { getUser, isEnrolled, isEnrolledInCourse, createSupabaseServerClient } from '../../../../lib/supabase/server';
 import { FOUNDATION, ALL_COURSES } from '../../../../data/course';
 
 const user = await getUser(Astro.cookies);
@@ -15,6 +15,12 @@ const { module: moduleSlug } = Astro.params;
 const COURSE = ALL_COURSES.find(c => c.modules.some(m => m.slug === moduleSlug)) || FOUNDATION;
 const mod = COURSE.modules.find(m => m.slug === moduleSlug);
 if (!mod) return Astro.redirect('/academy/dashboard');
+
+// Gate specialization access
+if (COURSE.slug !== 'performance-nutrition-foundation') {
+  const hasAccess = await isEnrolledInCourse(Astro.cookies, user.id, COURSE.slug);
+  if (!hasAccess) return Astro.redirect('/academy/dashboard');
+}
 
 // Load quiz data dynamically
 let quizData: any = null;

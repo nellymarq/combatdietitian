@@ -78,3 +78,20 @@ export async function isEnrolled(cookies: AstroCookies, userId?: string) {
     return false;
   }
 }
+
+export async function isEnrolledInCourse(cookies: AstroCookies, userId: string, courseSlug: string) {
+  try {
+    const supabase = createSupabaseServerClient(cookies);
+    const { data } = await supabase
+      .from('enrollments')
+      .select('id')
+      .eq('user_id', userId)
+      .eq('course_slug', courseSlug)
+      .limit(1)
+      .single();
+
+    return !!data;
+  } catch {
+    return false;
+  }
+}
