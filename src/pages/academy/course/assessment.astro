@@ -1,0 +1,146 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Footer from '../../../components/Footer.astro';
+import Quiz from '../../../components/academy/Quiz';
+import AssessmentForm from '../../../components/academy/AssessmentForm';
+import { getUser, isEnrolled, createSupabaseServerClient } from '../../../lib/supabase/server';
+import { FOUNDATION } from '../../../data/course';
+import { assessmentQuiz } from '../../../data/assessment';
+
+const user = await getUser(Astro.cookies);
+if (!user) return Astro.redirect('/academy/login');
+const enrolled = await isEnrolled(Astro.cookies, user.id);
+if (!enrolled) return Astro.redirect('/academy');
+
+// Check all modules complete
+const supabase = createSupabaseServerClient(Astro.cookies);
+const { data: progress } = await supabase
+  .from('module_progress')
+  .select('module_slug, completed_at')
+  .eq('user_id', user.id);
+
+const completedSlugs = new Set((progress || []).filter(p => p.completed_at).map(p => p.module_slug));
+const allComplete = FOUNDATION.modules.every(m => completedSlugs.has(m.slug));
+if (!allComplete) return Astro.redirect('/academy/dashboard');
+
+// Check if structured assessment passed
+const { data: assessmentProgress } = await supabase
+  .from('module_progress')
+  .select('quiz_score')
+  .eq('user_id', user.id)
+  .eq('module_slug', 'final-assessment-quiz')
+  .single();
+
+const structuredPassed = (assessmentProgress?.quiz_score ?? 0) >= assessmentQuiz.passingScore;
+
+// Check case study submission
+const { data: submission } = await supabase
+  .from('assessment_submissions')
+  .select('*')
+  .eq('user_id', user.id)
+  .order('submitted_at', { ascending: false })
+  .limit(1)
+  .single();
+
+const assessmentPassed = submission?.passed === true;
+---
+
+<Layout title="Final Assessment | CD Academy">
+  <Nav />
+  <section class="pt-28 pb-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <a href="/academy/dashboard" class="text-white/40 hover:text-white/70 text-sm">&larr; Dashboard</a>
+      <div class="mt-4 mb-8">
+        <span class="text-gold-400 text-sm font-semibold uppercase tracking-widest">Final Assessment</span>
+        <h1 class="mt-2 text-3xl font-bold">Performance Nutrition Foundation Assessment</h1>
+        <p class="mt-3 text-white/60">Two parts: structured scenario questions (auto-graded, 80% to pass) followed by an open-ended case study (instructor-reviewed).</p>
+      </div>
+
+      {assessmentPassed ? (
+        <!-- Fully passed -->
+        <div class="bg-gold-500/10 border border-gold-500/30 rounded-xl p-8 text-center">
+          <div class="text-5xl mb-4">&#127942;</div>
+          <h2 class="text-2xl font-bold text-gold-400">Assessment Complete</h2>
+          <p class="mt-2 text-white/60">You've earned the MPS-PNF credential.</p>
+          {submission?.reviewer_notes && (
+            <div class="mt-4 bg-brand-800/40 rounded-lg p-4 text-left">
+              <p class="text-white/40 text-xs uppercase tracking-wider mb-1">Reviewer Notes</p>
+              <p class="text-white/70 text-sm">{submission.reviewer_notes}</p>
+            </div>
+          )}
+          <a href="/academy/dashboard" class="inline-block mt-6 bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+            View Certificate
+          </a>
+        </div>
+      ) : !structuredPassed ? (
+        <!-- Part 1: Structured Questions -->
+        <div>
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-6 mb-8">
+            <h2 class="font-bold text-lg">Part 1: Scenario-Based Questions</h2>
+            <p class="text-white/50 text-sm mt-2">10 questions testing your ability to apply Foundation concepts to real athlete scenarios. You need 80% to pass. You can retake as many times as needed.</p>
+            <div class="flex items-center gap-6 mt-4">
+              <div class="flex items-center gap-2">
+                <span class:list={['w-3 h-3 rounded-full', structuredPassed ? 'bg-green-400' : 'bg-white/20']}></span>
+                <span class="text-white/50 text-sm">Part 1: Scenario Questions</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-white/20"></span>
+                <span class="text-white/50 text-sm">Part 2: Case Study</span>
+              </div>
+            </div>
+          </div>
+          <Quiz
+            client:load
+            moduleSlug="final-assessment-quiz"
+            questions={assessmentQuiz.questions}
+            passingScore={assessmentQuiz.passingScore}
+            previousScore={assessmentProgress?.quiz_score ?? null}
+          />
+        </div>
+      ) : (
+        <!-- Part 2: Case Study -->
+        <div>
+          <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-6 mb-8">
+            <h2 class="font-bold text-lg text-green-400">Part 1 Complete &#10003;</h2>
+            <p class="text-white/50 text-sm mt-1">Scenario questions passed. Proceed to the case study below.</p>
+          </div>
+
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-6 mb-8">
+            <h2 class="font-bold text-lg">Part 2: Case Study</h2>
+            <p class="text-white/50 text-sm mt-2">Design a complete nutrition plan for the athlete profile below. Your submission will be reviewed by the course instructor. This is the final gate for your MPS-PNF credential.</p>
+            <div class="flex items-center gap-6 mt-4">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                <span class="text-white/50 text-sm">Part 1: Complete</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class:list={['w-3 h-3 rounded-full', submission?.submitted_at ? 'bg-gold-400' : 'bg-white/20']}></span>
+                <span class="text-white/50 text-sm">Part 2: Case Study</span>
+              </div>
+            </div>
+          </div>
+
+          {submission?.submitted_at && !submission?.reviewed_at ? (
+            <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 text-center">
+              <h2 class="text-2xl font-bold">Under Review</h2>
+              <p class="mt-2 text-white/60">Submitted {new Date(submission.submitted_at).toLocaleDateString()}. You'll be notified once reviewed.</p>
+            </div>
+          ) : submission?.reviewed_at && !submission?.passed ? (
+            <>
+              <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-6">
+                <p class="text-red-400 font-semibold">Your previous submission did not pass.</p>
+                {submission.reviewer_notes && <p class="text-white/60 text-sm mt-1">{submission.reviewer_notes}</p>}
+                <p class="text-white/50 text-sm mt-2">You may resubmit below.</p>
+              </div>
+              <AssessmentForm client:load />
+            </>
+          ) : (
+            <AssessmentForm client:load />
+          )}
+        </div>
+      )}
+    </div>
+  </section>
+  <Footer />
+</Layout>

@@ -1,0 +1,140 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Footer from '../../../components/Footer.astro';
+import { getUser, isEnrolled, createSupabaseServerClient } from '../../../lib/supabase/server';
+import { FOUNDATION as COURSE } from '../../../data/course';
+
+const user = await getUser(Astro.cookies);
+if (!user) return Astro.redirect('/academy/login');
+const enrolled = await isEnrolled(Astro.cookies, user.id);
+if (!enrolled) return Astro.redirect('/academy');
+
+const { module: moduleSlug } = Astro.params;
+const mod = COURSE.modules.find(m => m.slug === moduleSlug);
+if (!mod) return Astro.redirect('/academy/dashboard');
+
+// Get progress for sidebar
+const supabase = createSupabaseServerClient(Astro.cookies);
+const { data: progress } = await supabase
+  .from('module_progress')
+  .select('module_slug, completed_at')
+  .eq('user_id', user.id);
+
+const completedSlugs = new Set((progress || []).filter(p => p.completed_at).map(p => p.module_slug));
+const isComplete = completedSlugs.has(mod.slug);
+
+const prevModule = COURSE.modules.find(m => m.order === mod.order - 1);
+const nextModule = COURSE.modules.find(m => m.order === mod.order + 1);
+
+// Load module content
+let moduleContent: string | null = null;
+try {
+  const contentModules = import.meta.glob('/src/content/modules/*.html', { query: '?raw', import: 'default' });
+  const contentPath = `/src/content/modules/${moduleSlug}.html`;
+  if (contentModules[contentPath]) {
+    moduleContent = await contentModules[contentPath]() as string;
+  }
+} catch {
+  moduleContent = null;
+}
+---
+
+<Layout title={`${mod.title} | CD Academy`}>
+  <Nav />
+  <section class="pt-28 pb-20 px-4">
+    <div class="max-w-6xl mx-auto lg:flex lg:gap-8">
+      <!-- Sidebar -->
+      <aside class="hidden lg:block w-64 shrink-0">
+        <div class="sticky top-24 space-y-1">
+          <a href="/academy/dashboard" class="block text-white/40 hover:text-white/70 text-sm mb-4">&larr; Dashboard</a>
+          {COURSE.modules.map(m => (
+            <a
+              href={`/academy/course/${m.slug}`}
+              class:list={[
+                'block py-2 px-3 rounded-lg text-sm transition-colors',
+                m.slug === mod.slug
+                  ? 'bg-accent-500/10 text-accent-500 font-medium'
+                  : completedSlugs.has(m.slug)
+                    ? 'text-white/60 hover:text-white'
+                    : 'text-white/40 hover:text-white/60'
+              ]}
+            >
+              <span class="inline-block w-5">{completedSlugs.has(m.slug) ? '\u2713' : `${m.order}.`}</span>
+              {m.title}
+            </a>
+          ))}
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <main class="flex-1 min-w-0">
+        <div class="mb-6">
+          <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">Module {mod.order} of {COURSE.modules.length}</span>
+          <h1 class="mt-2 text-3xl sm:text-4xl font-bold">{mod.title}</h1>
+          <p class="mt-3 text-white/60 text-lg">{mod.description}</p>
+        </div>
+
+        <!-- Learning Outcomes -->
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-6 mb-8">
+          <h2 class="font-bold mb-3">Learning Outcomes</h2>
+          <ul class="space-y-2">
+            {mod.learningOutcomes.map(outcome => (
+              <li class="flex items-start gap-2 text-white/70 text-sm">
+                <span class="text-accent-500 mt-0.5 shrink-0">&check;</span>
+                {outcome}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Module Content Area -->
+        <div class="prose prose-invert prose-lg max-w-none mb-12">
+          {moduleContent ? <Fragment set:html={moduleContent} /> : (
+            <div class="bg-brand-800/30 border border-dashed border-white/10 rounded-xl p-8 text-center">
+              <p class="text-white/40 text-lg">Module content coming soon.</p>
+            </div>
+          )}
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex items-center justify-between pt-8 border-t border-white/10">
+          <div>
+            {prevModule && (
+              <a href={`/academy/course/${prevModule.slug}`} class="text-white/50 hover:text-white text-sm">
+                &larr; {prevModule.title}
+              </a>
+            )}
+          </div>
+          <div class="flex items-center gap-4">
+            {!isComplete && (
+              <a
+                href={`/academy/course/${mod.slug}/quiz`}
+                class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors"
+              >
+                Take Quiz
+              </a>
+            )}
+            {isComplete && nextModule && (
+              <a
+                href={`/academy/course/${nextModule.slug}`}
+                class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors"
+              >
+                Next Module &rarr;
+              </a>
+            )}
+            {isComplete && !nextModule && (
+              <a
+                href="/academy/dashboard"
+                class="bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-6 py-2.5 rounded-lg transition-colors"
+              >
+                Back to Dashboard
+              </a>
+            )}
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <Footer />
+</Layout>

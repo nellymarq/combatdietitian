@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { getUser, isEnrolled, createSupabaseServerClient } from '../../lib/supabase/server';
+import { FOUNDATION as COURSE } from '../../data/course';
+
+const user = await getUser(Astro.cookies);
+if (!user) return Astro.redirect('/academy/login');
+
+const enrolled = await isEnrolled(Astro.cookies, user.id);
+if (!enrolled) return Astro.redirect('/academy');
+
+// Get progress
+const supabase = createSupabaseServerClient(Astro.cookies);
+const { data: progress } = await supabase
+  .from('module_progress')
+  .select('module_slug, completed_at, quiz_score')
+  .eq('user_id', user.id);
+
+const { data: enrollment } = await supabase
+  .from('enrollments')
+  .select('enrolled_at, completed_at, certificate_code')
+  .eq('user_id', user.id)
+  .single();
+
+const { data: submission } = await supabase
+  .from('assessment_submissions')
+  .select('submitted_at, passed, reviewer_notes')
+  .eq('user_id', user.id)
+  .order('submitted_at', { ascending: false })
+  .limit(1)
+  .single();
+
+const completedSlugs = new Set((progress || []).filter(p => p.completed_at).map(p => p.module_slug));
+const totalModules = COURSE.modules.length;
+const completedCount = completedSlugs.size;
+const progressPct = Math.round((completedCount / totalModules) * 100);
+const allModulesComplete = completedCount === totalModules;
+const assessmentPassed = submission?.passed === true;
+const courseComplete = allModulesComplete && assessmentPassed;
+
+const userName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Student';
+---
+
+<Layout title="Dashboard | CD Academy">
+  <Nav />
+  <section class="pt-28 pb-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">CD Academy</span>
+          <h1 class="mt-1 text-3xl font-bold">Welcome, {userName}</h1>
+        </div>
+        <form action="/api/auth/logout" method="POST">
+          <button type="submit" class="text-white/40 hover:text-white/70 text-sm transition-colors">
+            Log out
+          </button>
+        </form>
+      </div>
+
+      <!-- Progress -->
+      <div class="bg-brand-800/40 border border-white/5 rounded-xl p-6 mb-8">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-bold text-lg">{COURSE.title}</h2>
+          <span class="text-white/50 text-sm">{completedCount} / {totalModules} modules</span>
+        </div>
+        <div class="w-full bg-brand-700/50 rounded-full h-3">
+          <div
+            class="bg-accent-500 h-3 rounded-full transition-all duration-500"
+            style={`width: ${progressPct}%`}
+          ></div>
+        </div>
+        {courseComplete && enrollment?.certificate_code && (
+          <div class="mt-4 p-4 bg-gold-500/10 border border-gold-500/30 rounded-lg">
+            <p class="text-gold-400 font-semibold">Course Complete — {COURSE.credential} Certified</p>
+            <p class="text-white/50 text-sm mt-1">Certificate code: {enrollment.certificate_code}</p>
+          </div>
+        )}
+      </div>
+
+      <!-- Modules -->
+      <div class="space-y-3">
+        {COURSE.modules.map((mod) => {
+          const completed = completedSlugs.has(mod.slug);
+          const quizData = (progress || []).find(p => p.module_slug === mod.slug);
+          return (
+            <a
+              href={`/academy/course/${mod.slug}`}
+              class="block bg-brand-800/40 border border-white/5 rounded-xl p-5 hover:border-accent-500/30 transition-colors"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                  <div class:list={[
+                    'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shrink-0',
+                    completed ? 'bg-accent-500/20 text-accent-500' : 'bg-brand-700/50 text-white/40'
+                  ]}>
+                    {completed ? '\u2713' : mod.order}
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">{mod.title}</h3>
+                    <p class="text-white/40 text-sm">{mod.estimatedMinutes} min</p>
+                  </div>
+                </div>
+                {quizData?.quiz_score != null && (
+                  <span class="text-white/40 text-sm">Quiz: {quizData.quiz_score}%</span>
+                )}
+              </div>
+            </a>
+          );
+        })}
+
+        <!-- Assessment -->
+        <div class:list={[
+          'bg-brand-800/40 border rounded-xl p-5',
+          allModulesComplete ? 'border-gold-500/30' : 'border-white/5 opacity-50'
+        ]}>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class:list={[
+                'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shrink-0',
+                assessmentPassed ? 'bg-gold-500/20 text-gold-400' : 'bg-brand-700/50 text-white/40'
+              ]}>
+                {assessmentPassed ? '\u2713' : '\u2605'}
+              </div>
+              <div>
+                <h3 class="font-semibold">{COURSE.assessment.title}</h3>
+                <p class="text-white/40 text-sm">
+                  {!allModulesComplete ? 'Complete all modules to unlock' :
+                   submission?.submitted_at && !submission?.passed ? 'Under review' :
+                   assessmentPassed ? 'Passed' : 'Ready to submit'}
+                </p>
+              </div>
+            </div>
+            {allModulesComplete && !assessmentPassed && (
+              <a
+                href="/academy/course/assessment"
+                class="text-gold-400 hover:text-gold-500 text-sm font-medium"
+              >
+                {submission?.submitted_at ? 'View Status' : 'Begin'} &rarr;
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</Layout>

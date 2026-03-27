@@ -1,0 +1,23 @@
+---
+export const prerender = true;
+
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import CredentialVerify from '../../components/academy/CredentialVerify';
+---
+
+<Layout title="Verify Credential | CD Academy">
+  <Nav />
+  <section class="pt-32 pb-20 px-4">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">CD Academy</span>
+        <h1 class="mt-3 text-3xl font-bold">Verify a Credential</h1>
+        <p class="mt-2 text-white/50">Enter a certificate code to verify an MPS-CSNS credential.</p>
+      </div>
+      <CredentialVerify client:load />
+    </div>
+  </section>
+  <Footer />
+</Layout>

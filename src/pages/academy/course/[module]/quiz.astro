@@ -1,0 +1,65 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Nav from '../../../../components/Nav.astro';
+import Footer from '../../../../components/Footer.astro';
+import Quiz from '../../../../components/academy/Quiz';
+import { getUser, isEnrolled, createSupabaseServerClient } from '../../../../lib/supabase/server';
+import { FOUNDATION as COURSE } from '../../../../data/course';
+
+const user = await getUser(Astro.cookies);
+if (!user) return Astro.redirect('/academy/login');
+const enrolled = await isEnrolled(Astro.cookies, user.id);
+if (!enrolled) return Astro.redirect('/academy');
+
+const { module: moduleSlug } = Astro.params;
+const mod = COURSE.modules.find(m => m.slug === moduleSlug);
+if (!mod) return Astro.redirect('/academy/dashboard');
+
+// Load quiz data dynamically
+let quizData: any = null;
+try {
+  const quizModule = await import(`../../../../data/quizzes/${moduleSlug}.ts`);
+  quizData = quizModule.quiz;
+} catch {
+  // Quiz not yet created for this module
+}
+
+// Get previous score
+const supabase = createSupabaseServerClient(Astro.cookies);
+const { data: prevProgress } = await supabase
+  .from('module_progress')
+  .select('quiz_score')
+  .eq('user_id', user.id)
+  .eq('module_slug', moduleSlug)
+  .single();
+---
+
+<Layout title={`Quiz: ${mod.title} | CD Academy`}>
+  <Nav />
+  <section class="pt-28 pb-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <a href={`/academy/course/${mod.slug}`} class="text-white/40 hover:text-white/70 text-sm">&larr; Back to module</a>
+      <div class="mt-4 mb-8">
+        <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">Module {mod.order} Quiz</span>
+        <h1 class="mt-2 text-3xl font-bold">{mod.title}</h1>
+        <p class="mt-2 text-white/50">You need 70% to pass. You can retake as many times as you need.</p>
+      </div>
+
+      {quizData ? (
+        <Quiz
+          client:load
+          moduleSlug={mod.slug}
+          questions={quizData.questions}
+          passingScore={quizData.passingScore}
+          previousScore={prevProgress?.quiz_score ?? null}
+        />
+      ) : (
+        <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 text-center">
+          <p class="text-white/40">Quiz coming soon for this module.</p>
+          <a href="/academy/dashboard" class="inline-block mt-4 text-accent-400 hover:text-accent-500">Back to Dashboard</a>
+        </div>
+      )}
+    </div>
+  </section>
+  <Footer />
+</Layout>

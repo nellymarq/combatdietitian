@@ -1,0 +1,350 @@
+---
+export const prerender = true;
+
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import { ACADEMY, FOUNDATION, COMBAT_TRACK, TACTICAL_TRACK } from '../../data/course';
+---
+
+<Layout title="CD Academy | Performance Nutrition Certification" description="Start free with 2 CPEUs. Earn your performance nutrition certification + 1 month of Calsanova Pro for $39.99. From a registered dietitian with professional UFC and USAF Pararescue experience.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="relative min-h-[85vh] flex items-center justify-center pt-16">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-800/50 to-brand-900"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <span class="text-gold-400 text-sm font-semibold uppercase tracking-widest">{ACADEMY.name}</span>
+      <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
+        Start Free.<br /><span class="text-accent-500">Get Certified.</span>
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
+        2 free modules. 2 free CPEUs. Then unlock the full certification + 1 month of Calsanova Pro for just $39.99. Built by an RD with professional UFC and USAF Pararescue experience.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/academy/register"
+          class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Start Free
+        </a>
+        <a
+          href="#curriculum"
+          class="border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          View Curriculum
+        </a>
+      </div>
+      <p class="mt-4 text-white/30 text-sm">No credit card required to start</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-16 px-4 bg-brand-800/30">
+    <div class="max-w-5xl mx-auto">
+      <SectionHeading label="How It Works" title="Free to Start. $39.99 to Certify." />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-green-400 text-2xl font-bold">1</span>
+          </div>
+          <h3 class="font-bold text-lg">Start Free</h3>
+          <p class="text-white/50 text-sm mt-2">Create an account and access Modules 1 &amp; 2 — completely free. Earn 2 CPEUs at no cost.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-accent-500 text-2xl font-bold">2</span>
+          </div>
+          <h3 class="font-bold text-lg">Unlock Full Certification — $39.99</h3>
+          <p class="text-white/50 text-sm mt-2">Access Modules 3-6, the final assessment, and your MPS-PNF credential. Plus 1 month of Calsanova Pro free.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gold-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-gold-400 text-2xl font-bold">3</span>
+          </div>
+          <h3 class="font-bold text-lg">Specialize</h3>
+          <p class="text-white/50 text-sm mt-2">Choose Combat Sports (MPS-CSNS) or Tactical Nutrition (MPS-TNS). Built from real protocols, not textbooks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-12 px-4">
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-bold text-green-400">FREE</div>
+        <div class="text-white/40 text-sm mt-1">Modules 1 &amp; 2</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-accent-500">2</div>
+        <div class="text-white/40 text-sm mt-1">Free CPEUs</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-accent-500">$39.99</div>
+        <div class="text-white/40 text-sm mt-1">Full Certification</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-gold-400">30 days</div>
+        <div class="text-white/40 text-sm mt-1">Calsanova Pro Included</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundation Curriculum -->
+  <section id="curriculum" class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="Curriculum"
+        title="Performance Nutrition Foundation"
+        subtitle="6 modules. Quizzes. Instructor-reviewed assessment. The core science every performance nutrition practitioner needs."
+      />
+      <div class="space-y-4">
+        {FOUNDATION.modules.map(mod => {
+          const isFree = mod.order < 3;
+          return (
+            <div class:list={[
+              'border rounded-xl p-6',
+              isFree ? 'bg-green-500/5 border-green-500/20' : 'bg-brand-800/40 border-white/5'
+            ]}>
+              <div class="flex items-start gap-4">
+                <div class:list={[
+                  'w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0',
+                  isFree ? 'bg-green-500/10 text-green-400' : 'bg-accent-500/10 text-accent-500'
+                ]}>
+                  {mod.order}
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-lg font-bold">{mod.title}</h3>
+                    {isFree && <span class="bg-green-500/20 text-green-400 text-xs font-bold px-2 py-0.5 rounded-full">FREE</span>}
+                  </div>
+                  <p class="text-white/50 text-sm mt-1">{mod.description}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+        <div class="bg-brand-800/40 border border-accent-500/20 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent-500/10 rounded-full flex items-center justify-center text-accent-500 font-bold shrink-0">&#9733;</div>
+            <div>
+              <h3 class="text-lg font-bold">{FOUNDATION.assessment.title}</h3>
+              <p class="text-white/50 text-sm mt-1">{FOUNDATION.assessment.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href="/academy/register"
+          class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Start Free — No Credit Card Required
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialization Tracks -->
+  <section class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <SectionHeading
+        label="Specialize"
+        title="Choose Your Track"
+        subtitle="After completing the Foundation, go deep in the area that matches your athlete population."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-brand-800/40 border border-accent-500/20 rounded-2xl p-8">
+          <span class="text-accent-500 text-xs font-bold uppercase tracking-widest">Specialization</span>
+          <h3 class="mt-2 text-2xl font-bold">{COMBAT_TRACK.title}</h3>
+          <p class="text-white/50 text-sm mt-2">{COMBAT_TRACK.description}</p>
+          <ul class="mt-6 space-y-2">
+            {COMBAT_TRACK.modules.map(m => (
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <span class="text-accent-500 mt-0.5 shrink-0">&check;</span>
+                {m.title}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-6 pt-4 border-t border-white/5">
+            <span class="text-white/40 text-sm">Credential: </span>
+            <span class="text-accent-500 font-bold">{COMBAT_TRACK.credential}</span>
+          </div>
+          <p class="mt-4 text-white/30 text-sm">Requires Foundation. Coming soon.</p>
+        </div>
+        <div class="bg-brand-800/40 border border-gold-500/20 rounded-2xl p-8">
+          <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Specialization</span>
+          <h3 class="mt-2 text-2xl font-bold">{TACTICAL_TRACK.title}</h3>
+          <p class="text-white/50 text-sm mt-2">{TACTICAL_TRACK.description}</p>
+          <ul class="mt-6 space-y-2">
+            {TACTICAL_TRACK.modules.map(m => (
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <span class="text-gold-400 mt-0.5 shrink-0">&check;</span>
+                {m.title}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-6 pt-4 border-t border-white/5">
+            <span class="text-white/40 text-sm">Credential: </span>
+            <span class="text-gold-400 font-bold">{TACTICAL_TRACK.credential}</span>
+          </div>
+          <p class="mt-4 text-white/30 text-sm">Requires Foundation. Coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calsanova Pro Included -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="Included"
+        title="1 Month of Calsanova Pro — Free"
+        subtitle="Every paid enrollment includes 30 days of full access to the Calsanova AI nutrition platform. Manage your athletes with the same tools taught in the course."
+      />
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {[
+          'AI-powered meal planning',
+          'Photo-based food logging',
+          'Athlete management dashboard',
+          'Wearable integrations (Garmin, WHOOP, Oura)',
+          'Live video consultations',
+          'Body composition tracking',
+        ].map(feature => (
+          <div class="flex items-center gap-3 text-white/70">
+            <span class="text-accent-500 text-lg">&check;</span>
+            {feature}
+          </div>
+        ))}
+      </div>
+      <p class="mt-8 text-white/40 text-sm text-center">
+        After 30 days, continue at $49.99/month. No commitment — cancel anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading label="Who It's For" title="Built for Nutrition Professionals" />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          { title: 'Registered Dietitians', desc: 'Specialize in performance nutrition and earn CDR-eligible CPEUs. Start with 2 free CPEUs just for completing the preview modules.' },
+          { title: 'S&C Coaches & Trainers', desc: 'Understand the nutrition science behind periodization, recovery, and competition prep so you can collaborate effectively with your athletes\' nutrition team.' },
+          { title: 'Sports Nutritionists', desc: 'Formalize your expertise with evidence-based credentials. Move beyond general sports nutrition into combat and tactical specializations.' },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading label="Your Instructor" title="Learn from the Arena, Not Just the Classroom" />
+      <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 lg:p-10">
+        <h3 class="text-2xl font-bold">Nelson Marques, RD, CSSD</h3>
+        <p class="text-accent-500 text-sm font-medium mt-1">Founder, Marques Performance Systems</p>
+        <p class="text-white/60 leading-relaxed mt-4">
+          Tactical and performance dietitian with experience working with USAF Pararescue operators and professional UFC fighters. Every protocol in this academy has been tested in the real world — in fight camps, at weigh-ins, on deployment, and on fight night.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          {['USAF Pararescue', 'Professional UFC', 'SEC Athletics', 'Law Enforcement'].map(tag => (
+            <span class="bg-brand-700/50 text-white/60 text-xs px-3 py-1 rounded-full">{tag}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Summary -->
+  <section class="py-20 px-4">
+    <div class="max-w-xl mx-auto">
+      <div class="bg-brand-800/40 border border-accent-500/40 rounded-2xl p-8 text-center">
+        <span class="text-green-400 text-xs font-bold uppercase tracking-widest">Start Free Today</span>
+        <h3 class="mt-4 text-2xl font-bold">Modules 1 &amp; 2 + 2 CPEUs</h3>
+        <div class="text-4xl font-black text-green-400 mt-2">$0</div>
+        <p class="text-white/40 text-sm mt-1">No credit card required</p>
+        <div class="my-6 border-t border-white/10 pt-6">
+          <h3 class="text-xl font-bold">Full Certification</h3>
+          <div class="text-4xl font-black mt-2">$39.99</div>
+          <p class="text-white/40 text-sm mt-1">Modules 3-6 + assessment + credential + Calsanova Pro (30 days)</p>
+        </div>
+        <ul class="mt-6 space-y-2 text-left">
+          {[
+            '6 evidence-based modules with quizzes',
+            'Instructor-reviewed case study assessment',
+            'MPS-PNF professional credential',
+            'Verifiable digital certificate',
+            'CDR CPEU eligibility (pending)',
+            '1 month Calsanova Professional access',
+            'Lifetime access to course updates',
+          ].map(item => (
+            <li class="flex items-start gap-2 text-white/70 text-sm">
+              <span class="text-accent-500 mt-0.5">&check;</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <a
+          href="/academy/register"
+          class="block mt-8 bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Start Free
+        </a>
+        <p class="text-white/30 text-xs mt-3">30-day money-back guarantee on paid enrollment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-3xl mx-auto">
+      <SectionHeading label="FAQ" title="Common Questions" />
+      <div class="space-y-4">
+        {[
+          { q: 'What do I get for free?', a: 'Modules 1 (Energy Systems & Sport Demands) and 2 (Macronutrient Periodization Principles) are completely free — including quizzes and 2 CDR-eligible CPEUs. No credit card required.' },
+          { q: 'What does the $39.99 include?', a: 'Access to Modules 3-6, the final case study assessment, the MPS-PNF professional credential with verifiable certificate, and 1 full month of Calsanova Professional ($49.99 value). That\'s under $10 per CPEU.' },
+          { q: 'What is Calsanova?', a: 'Calsanova is our AI-powered nutrition platform for practitioners. It includes meal planning, photo-based food logging, athlete management, wearable integrations, and video consultations. Your 30-day Pro access activates immediately after purchase.' },
+          { q: 'Do I need the Foundation before specialization tracks?', a: 'Yes. The Foundation covers the core science that Combat Sports and Tactical tracks build on. Complete the Foundation first, then specialize.' },
+          { q: 'Is this an accredited certification?', a: 'MPS credentials are professional certificates issued by Marques Performance Systems, LLC. CDR CPEU approval is pending, which would make it eligible for registered dietitian continuing education credit.' },
+          { q: 'Do I need to be a registered dietitian?', a: 'No. The courses are open to RDs, S&C coaches, athletic trainers, and anyone working with athletes. Clinical application of protocols should only be done by credentialed nutrition professionals.' },
+          { q: 'How long do I have to complete the course?', a: 'Lifetime access. Work at your own pace. Most students complete the Foundation in 4-8 weeks.' },
+          { q: 'What if I fail the assessment?', a: 'You can resubmit. The assessment is reviewed by the instructor with detailed feedback.' },
+          { q: 'Is there a refund policy?', a: '30-day money-back guarantee on the $39.99 paid enrollment, no questions asked.' },
+        ].map(item => (
+          <details class="bg-brand-800/40 border border-white/5 rounded-xl">
+            <summary class="p-5 font-semibold cursor-pointer hover:text-accent-500 transition-colors">
+              {item.q}
+            </summary>
+            <p class="px-5 pb-5 text-white/60 text-sm leading-relaxed">{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">2 Free Modules. 2 Free CPEUs.</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Start learning today. No credit card. No commitment.
+      </p>
+      <a
+        href="/academy/register"
+        class="inline-block mt-8 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+      >
+        Start Free
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

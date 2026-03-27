@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { getUser } from '../../lib/supabase/server';
+import { createClient } from '@supabase/supabase-js';
+import Stripe from 'stripe';
+
+const user = await getUser(Astro.cookies);
+if (!user) return Astro.redirect('/academy/login');
+
+const sessionId = Astro.url.searchParams.get('session_id');
+let enrolled = false;
+let error = '';
+
+if (sessionId) {
+  try {
+    const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+
+    if (session.payment_status === 'paid') {
+      // Create enrollment directly (backup to webhook)
+      const supabaseAdmin = createClient(
+        import.meta.env.PUBLIC_SUPABASE_URL,
+        import.meta.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+
+      const { data: existing } = await supabaseAdmin
+        .from('enrollments')
+        .select('id')
+        .eq('stripe_checkout_session_id', session.id)
+        .limit(1)
+        .single();
+
+      if (!existing) {
+        await supabaseAdmin.from('enrollments').insert({
+          user_id: user.id,
+          course_slug: 'combat-nutrition-fundamentals',
+          stripe_checkout_session_id: session.id,
+          stripe_payment_intent_id: typeof session.payment_intent === 'string' ? session.payment_intent : null,
+          price_paid_cents: session.amount_total,
+        });
+      }
+      enrolled = true;
+    }
+  } catch (err: any) {
+    error = 'We encountered an issue verifying your payment. Your enrollment may take a moment to activate.';
+    console.error('Success page error:', err);
+  }
+}
+---
+
+<Layout title="Enrollment Confirmed | CD Academy">
+  <Nav />
+  <section class="pt-32 pb-20 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      {enrolled ? (
+        <>
+          <div class="text-5xl mb-6">&#10003;</div>
+          <h1 class="text-4xl font-bold">You're In.</h1>
+          <p class="mt-4 text-white/60 text-lg">
+            Welcome to the MPS Combat Nutrition Fundamentals certification. Your enrollment is confirmed.
+          </p>
+          <a
+            href="/academy/dashboard"
+            class="inline-block mt-8 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+          >
+            Go to Your Dashboard
+          </a>
+        </>
+      ) : (
+        <>
+          <h1 class="text-4xl font-bold">Processing...</h1>
+          <p class="mt-4 text-white/60 text-lg">
+            {error || 'Your payment is being processed. This usually takes a few seconds.'}
+          </p>
+          <a
+            href="/academy/dashboard"
+            class="inline-block mt-8 border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3.5 rounded-lg text-lg transition-colors"
+          >
+            Check Dashboard
+          </a>
+        </>
+      )}
+    </div>
+  </section>
+  <Footer />
+</Layout>
