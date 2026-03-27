@@ -106,7 +106,7 @@ export const COMBAT_TRACK = {
   title: 'Combat Sports Specialization',
   credential: 'MPS-CSNS',
   credentialFull: 'MPS Combat Sports Nutrition Specialist',
-  price: 397,
+  price: 39.99,
   prerequisite: 'performance-nutrition-foundation',
   description: 'Weight cuts, fight camp nutrition, rehydration science, and everything you need to manage a fighter from camp to cage.',
   modules: [
@@ -201,7 +201,7 @@ export const TACTICAL_TRACK = {
   title: 'Tactical Nutrition Specialization',
   credential: 'MPS-TNS',
   credentialFull: 'MPS Tactical Nutrition Specialist',
-  price: 397,
+  price: 39.99,
   prerequisite: 'performance-nutrition-foundation',
   description: 'Operational nutrition for military, law enforcement, and fire — from field constraints to environmental extremes.',
   modules: [

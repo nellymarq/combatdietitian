@@ -4,11 +4,33 @@ import { getUser, isEnrolled } from '../../../lib/supabase/server';
 
 const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
 
-export const POST: APIRoute = async ({ cookies, redirect, url }) => {
+// Map course slugs to Stripe price IDs
+const COURSE_PRICES: Record<string, string> = {
+  'performance-nutrition-foundation': import.meta.env.STRIPE_PRICE_ID,
+  'combat-sports-specialization': import.meta.env.STRIPE_PRICE_COMBAT,
+  'tactical-nutrition-specialization': import.meta.env.STRIPE_PRICE_TACTICAL,
+};
+
+const COURSE_NAMES: Record<string, string> = {
+  'performance-nutrition-foundation': 'CD Academy: Foundation',
+  'combat-sports-specialization': 'CD Academy: Combat Sports Specialization',
+  'tactical-nutrition-specialization': 'CD Academy: Tactical Nutrition Specialization',
+};
+
+export const POST: APIRoute = async ({ cookies, redirect, url, request }) => {
   const user = await getUser(cookies);
 
-  // If logged in, check if already enrolled
-  if (user) {
+  const formData = await request.formData();
+  const courseSlug = formData.get('course')?.toString() || 'performance-nutrition-foundation';
+
+  // Validate course slug
+  const priceId = COURSE_PRICES[courseSlug];
+  if (!priceId) {
+    return new Response('Invalid course', { status: 400 });
+  }
+
+  // If logged in and buying foundation, check if already enrolled
+  if (user && courseSlug === 'performance-nutrition-foundation') {
     const enrolled = await isEnrolled(cookies, user.id);
     if (enrolled) {
       return redirect('/academy/dashboard');
@@ -21,7 +43,7 @@ export const POST: APIRoute = async ({ cookies, redirect, url }) => {
     mode: 'payment',
     line_items: [
       {
-        price: import.meta.env.STRIPE_PRICE_ID,
+        price: priceId,
         quantity: 1,
       },
     ],
@@ -30,7 +52,8 @@ export const POST: APIRoute = async ({ cookies, redirect, url }) => {
     ...(user?.email ? { customer_email: user.email } : {}),
     metadata: {
       user_id: user?.id || '',
-      course: 'combat-nutrition-fundamentals',
+      course: courseSlug,
+      provision_calsanova: 'true',
     },
   });
 
