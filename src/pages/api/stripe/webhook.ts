@@ -105,6 +105,9 @@ async function provisionCalsanovaAccount(
   const firstName = nameParts[0] || name;
   const lastName = nameParts.slice(1).join(' ') || firstName;
 
+  // Each course grants 30 days of Calsanova Pro access (stacks across courses)
+  const extendDays = 30;
+
   try {
     const response = await fetch(`${apiUrl}/api/v1/admin/academy/provision`, {
       method: 'POST',
@@ -116,6 +119,7 @@ async function provisionCalsanovaAccount(
         email,
         first_name: firstName,
         last_name: lastName,
+        extend_days: extendDays,
       }),
     });
 
@@ -127,7 +131,7 @@ async function provisionCalsanovaAccount(
 
     const result = await response.json();
     console.log('Calsanova provisioning result:', result);
-    return result.status === 'provisioned' || result.status === 'already_provisioned';
+    return result.status === 'provisioned' || result.status === 'extended';
   } catch (err) {
     console.error('Calsanova provisioning failed:', err);
     return false;
