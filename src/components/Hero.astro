@@ -4,13 +4,17 @@ interface Props {
   subtitle: string;
   cta?: { label: string; href: string };
   secondaryCta?: { label: string; href: string };
+  bgImage?: string;
 }
 
-const { title, subtitle, cta, secondaryCta } = Astro.props;
+const { title, subtitle, cta, secondaryCta, bgImage } = Astro.props;
 ---
 
 <section class="relative min-h-[85vh] flex items-center justify-center pt-16">
-  <div class="absolute inset-0 bg-gradient-to-b from-brand-800/50 to-brand-900"></div>
+  {bgImage && (
+    <img src={bgImage} alt="" class="absolute inset-0 w-full h-full object-cover" loading="eager" />
+  )}
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-900/70 via-brand-900/60 to-brand-900"></div>
   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
       <Fragment set:html={title} />
