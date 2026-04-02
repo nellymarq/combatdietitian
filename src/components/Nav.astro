@@ -5,6 +5,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/calsanova', label: 'Calsanova' },
+  { href: 'https://scythene.com', label: 'Scythene' },
   { href: '/academy', label: 'Academy' },
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
@@ -26,6 +27,7 @@ const links = [
         {links.map(link => (
           <a
             href={link.href}
+            {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             class:list={[
               'text-sm font-medium tracking-wide uppercase transition-colors',
               currentPath === link.href ? 'text-accent-500' : 'text-white/70 hover:text-white',
@@ -59,6 +61,7 @@ const links = [
       {links.map(link => (
         <a
           href={link.href}
+          {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           class:list={[
             'block py-2 text-sm font-medium tracking-wide uppercase',
             currentPath === link.href ? 'text-accent-500' : 'text-white/70',
