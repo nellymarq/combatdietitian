@@ -5,22 +5,23 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import SectionHeading from '../components/SectionHeading.astro';
+import Ecosystem from '../components/Ecosystem.astro';
 import Footer from '../components/Footer.astro';
 
 const products = [
-  { name: 'Pre-Workout', price: '$44.99', servings: '30 servings', type: 'Powder', category: 'Performance', available: true },
-  { name: 'Whey Protein — Vanilla', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true },
-  { name: 'Whey Protein — Chocolate', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true },
-  { name: 'Creatine Monohydrate', price: '$29.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: true },
-  { name: 'Electrolytes — Berry', price: '$29.99', servings: '30 servings', type: 'Powder', category: 'Hydration', available: true },
-  { name: 'Omega-3', price: '$34.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false },
-  { name: 'Multivitamin', price: '$34.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false },
-  { name: 'Magnesium Bisglycinate', price: '$24.99', servings: '60 capsules', type: 'Capsule', category: 'Recovery', available: false },
-  { name: 'Beta-Alanine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: false },
-  { name: 'Collagen Peptides + Vitamin C', price: '$39.99', servings: '30 servings', type: 'Powder', category: 'Recovery', available: false },
-  { name: 'Vitamin D3 + K2', price: '$19.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false },
-  { name: 'L-Glutamine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Recovery', available: false },
-  { name: 'B Vitamins', price: '$19.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false },
+  { name: 'Pre-Workout', price: '$44.99', servings: '30 servings', type: 'Powder', category: 'Performance', available: true, slug: 'pre-workout' },
+  { name: 'Whey Protein — Vanilla', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true, slug: 'whey-protein-vanilla' },
+  { name: 'Whey Protein — Chocolate', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true, slug: 'whey-protein-chocolate' },
+  { name: 'Creatine Monohydrate', price: '$29.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: true, slug: 'creatine-monohydrate' },
+  { name: 'Electrolytes — Berry', price: '$29.99', servings: '30 servings', type: 'Powder', category: 'Hydration', available: true, slug: 'electrolytes-berry' },
+  { name: 'Omega-3', price: '$34.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false, slug: 'omega-3' },
+  { name: 'Multivitamin', price: '$34.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false, slug: 'multivitamin' },
+  { name: 'Magnesium Bisglycinate', price: '$24.99', servings: '60 capsules', type: 'Capsule', category: 'Recovery', available: false, slug: 'magnesium-bisglycinate' },
+  { name: 'Beta-Alanine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: false, slug: 'beta-alanine' },
+  { name: 'Collagen Peptides + Vitamin C', price: '$39.99', servings: '30 servings', type: 'Powder', category: 'Recovery', available: false, slug: 'collagen-peptides-vitamin-c' },
+  { name: 'Vitamin D3 + K2', price: '$19.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false, slug: 'vitamin-d3-k2' },
+  { name: 'L-Glutamine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Recovery', available: false, slug: 'l-glutamine' },
+  { name: 'B Vitamins', price: '$19.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false, slug: 'b-vitamins' },
 ];
 
 const pillars = [
@@ -107,7 +108,7 @@ const pillars = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.filter(p => p.available).map(product => (
           <a
-            href="https://scythene.com"
+            href={`https://scythene.com/products/${product.slug}`}
             target="_blank"
             rel="noopener noreferrer"
             class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-gold-500/30 transition-colors group"
@@ -170,30 +171,7 @@ const pillars = [
     </div>
   </section>
 
-  <!-- Dietitian Connection -->
-  <section class="py-20 px-4 bg-brand-800/30">
-    <div class="max-w-4xl mx-auto text-center">
-      <SectionHeading
-        label="The MPS Ecosystem"
-        title="Nutrition Consulting + AI Platform + Supplements"
-        subtitle="Scythene is part of the Marques Performance Systems ecosystem — alongside Combat Dietitian consulting and the Calsanova AI platform."
-      />
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <a href="/services" class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-accent-500/30 transition-colors">
-          <h3 class="text-lg font-bold text-accent-500">Combat Dietitian</h3>
-          <p class="text-white/50 text-sm mt-2">Evidence-based nutrition consulting for fighters and operators.</p>
-        </a>
-        <a href="/calsanova" class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-gold-500/30 transition-colors">
-          <h3 class="text-lg font-bold text-gold-400">Calsanova</h3>
-          <p class="text-white/50 text-sm mt-2">AI-powered nutrition platform for tracking, planning, and analytics.</p>
-        </a>
-        <a href="https://scythene.com" target="_blank" rel="noopener noreferrer" class="bg-brand-800/40 border border-accent-500/20 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-white">Scythene</h3>
-          <p class="text-white/50 text-sm mt-2">Third-party tested supplements at clinical doses.</p>
-        </a>
-      </div>
-    </div>
-  </section>
+  <Ecosystem current="scythene" />
 
   <!-- CTA -->
   <section class="py-20 px-4">
