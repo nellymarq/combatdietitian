@@ -1,0 +1,230 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Footer from '../components/Footer.astro';
+
+const products = [
+  { name: 'Pre-Workout', price: '$44.99', servings: '30 servings', type: 'Powder', category: 'Performance', available: true },
+  { name: 'Whey Protein — Vanilla', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true },
+  { name: 'Whey Protein — Chocolate', price: '$54.99', servings: '30 servings', type: 'Powder', category: 'Protein', available: true },
+  { name: 'Creatine Monohydrate', price: '$29.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: true },
+  { name: 'Electrolytes — Berry', price: '$29.99', servings: '30 servings', type: 'Powder', category: 'Hydration', available: true },
+  { name: 'Omega-3', price: '$34.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false },
+  { name: 'Multivitamin', price: '$34.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false },
+  { name: 'Magnesium Bisglycinate', price: '$24.99', servings: '60 capsules', type: 'Capsule', category: 'Recovery', available: false },
+  { name: 'Beta-Alanine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Performance', available: false },
+  { name: 'Collagen Peptides + Vitamin C', price: '$39.99', servings: '30 servings', type: 'Powder', category: 'Recovery', available: false },
+  { name: 'Vitamin D3 + K2', price: '$19.99', servings: '60 softgels', type: 'Softgel', category: 'Foundation', available: false },
+  { name: 'L-Glutamine', price: '$24.99', servings: '60 servings', type: 'Powder', category: 'Recovery', available: false },
+  { name: 'B Vitamins', price: '$19.99', servings: '60 capsules', type: 'Capsule', category: 'Foundation', available: false },
+];
+
+const pillars = [
+  {
+    icon: '&#128300;',
+    title: 'Third-Party Tested',
+    description: 'Every batch tested for purity, potency, and banned substances. Safe for tested athletes.',
+  },
+  {
+    icon: '&#9878;',
+    title: 'Clinical Dosing',
+    description: 'Every ingredient dosed at levels supported by peer-reviewed research. No pixie dusting.',
+  },
+  {
+    icon: '&#128203;',
+    title: 'Open Formulas',
+    description: 'Full label transparency. You see every ingredient and exact dose. No proprietary blends.',
+  },
+];
+---
+
+<Layout title="Scythene | Supplements | Combat Dietitian" description="Third-party tested supplements built on clinical dosing. Formulated by a registered dietitian for athletes who demand transparency.">
+  <Nav />
+
+  <Hero
+    title='<span class="text-gold-400">Scythene</span><br />Supplements'
+    subtitle="Third-party tested supplements built on clinical dosing. Formulated by a registered dietitian for athletes who demand transparency. No proprietary blends. No fillers."
+    cta={{ label: 'Shop Now', href: 'https://scythene.com' }}
+    secondaryCta={{ label: 'View Products Below', href: '#products' }}
+  />
+
+  <!-- 25% Discount Banner -->
+  <section class="bg-accent-500/10 border-y border-accent-500/20">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-center">
+      <p class="text-lg font-bold">
+        <span class="text-accent-500">25% OFF</span> your entire Scythene order
+      </p>
+      <p class="text-white/60 text-sm mt-1">
+        Available to all CD Academy students (Combat Sports or Tactical Nutrition specialization) and active Calsanova members. Discount code provided at enrollment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <SectionHeading
+        label="Our Philosophy"
+        title="If It's Not Evidence-Based, We Don't Sell It"
+      />
+      <p class="text-white/60 text-lg leading-relaxed max-w-3xl mx-auto">
+        Athletes deserve supplements they can trust. No proprietary blends hiding underdosed ingredients. No marketing hype masquerading as science. Just evidence-based formulations at clinical doses, third-party tested for purity and potency. Every product in our line exists because the research supports it — not because it trends on social media.
+      </p>
+    </div>
+  </section>
+
+  <!-- Three Pillars -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Why Scythene"
+        title="Built Different"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {pillars.map(pillar => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 text-center hover:border-gold-500/30 transition-colors">
+            <div class="text-4xl mb-4" set:html={pillar.icon} />
+            <h3 class="text-xl font-bold mb-3">{pillar.title}</h3>
+            <p class="text-white/60 leading-relaxed">{pillar.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Product Line"
+        title="Available Now"
+        subtitle="Our launch lineup — evidence-based essentials for training, recovery, and performance."
+      />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.filter(p => p.available).map(product => (
+          <a
+            href="https://scythene.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-gold-500/30 transition-colors group"
+          >
+            <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">{product.category}</span>
+            <h3 class="mt-2 text-lg font-bold group-hover:text-gold-400 transition-colors">{product.name}</h3>
+            <div class="mt-3 flex items-baseline gap-2">
+              <span class="text-white text-xl font-bold">{product.price}</span>
+              <span class="text-white/40 text-sm">{product.servings}</span>
+            </div>
+            <span class="inline-block mt-3 text-xs bg-green-500/10 text-green-400 px-2 py-0.5 rounded-full">Available</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Expanding"
+        title="Coming Soon"
+        subtitle="The full lineup — same standards, more options."
+      />
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {products.filter(p => !p.available).map(product => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-5 opacity-70">
+            <span class="text-white/30 text-xs font-bold uppercase tracking-widest">{product.category}</span>
+            <h3 class="mt-2 text-sm font-bold text-white/70">{product.name}</h3>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-white/50 text-lg font-bold">{product.price}</span>
+            </div>
+            <span class="inline-block mt-2 text-xs bg-white/5 text-white/30 px-2 py-0.5 rounded-full">Coming Soon</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Built For"
+        title="Athletes Who Demand Transparency"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          { title: 'Combat Athletes', desc: 'Fighters who need to know exactly what\'s in their stack. WADA-compliant, third-party tested, no banned substance risk.' },
+          { title: 'Tactical Operators', desc: 'Military, law enforcement, and first responders who can\'t afford to gamble with untested products. Every batch verified.' },
+          { title: 'Performance Athletes', desc: 'Strength, endurance, and team sport athletes who want research-backed dosing without the supplement industry noise.' },
+        ].map(item => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-xl font-bold mb-3">{item.title}</h3>
+            <p class="text-white/60 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Dietitian Connection -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto text-center">
+      <SectionHeading
+        label="The MPS Ecosystem"
+        title="Nutrition Consulting + AI Platform + Supplements"
+        subtitle="Scythene is part of the Marques Performance Systems ecosystem — alongside Combat Dietitian consulting and the Calsanova AI platform."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <a href="/services" class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-accent-500/30 transition-colors">
+          <h3 class="text-lg font-bold text-accent-500">Combat Dietitian</h3>
+          <p class="text-white/50 text-sm mt-2">Evidence-based nutrition consulting for fighters and operators.</p>
+        </a>
+        <a href="/calsanova" class="bg-brand-800/40 border border-white/5 rounded-xl p-6 hover:border-gold-500/30 transition-colors">
+          <h3 class="text-lg font-bold text-gold-400">Calsanova</h3>
+          <p class="text-white/50 text-sm mt-2">AI-powered nutrition platform for tracking, planning, and analytics.</p>
+        </a>
+        <a href="https://scythene.com" target="_blank" rel="noopener noreferrer" class="bg-brand-800/40 border border-accent-500/20 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-white">Scythene</h3>
+          <p class="text-white/50 text-sm mt-2">Third-party tested supplements at clinical doses.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">
+        Built by a Dietitian. <span class="text-gold-400">Trusted by Athletes.</span>
+      </h2>
+      <p class="mt-4 text-white/60 text-lg">
+        No proprietary blends. No fillers. Just evidence-based supplements at clinical doses.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="https://scythene.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Shop Scythene
+        </a>
+        <a
+          href="/contact"
+          class="border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+      </div>
+      <p class="mt-4 text-accent-500 text-sm font-medium">
+        25% off for CD Academy students and Calsanova members
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
