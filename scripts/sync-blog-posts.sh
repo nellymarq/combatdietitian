@@ -3,7 +3,7 @@
 # Run before committing/deploying to pick up new posts.
 # Usage: bash scripts/sync-blog-posts.sh
 
-SHARED_DIR="/home/nelly/shared-content/blog"
+SHARED_DIR="/home/nelly/shared-content/blog/combatdietitian"
 LOCAL_DIR="src/content/blog"
 
 if [ ! -d "$SHARED_DIR" ]; then
@@ -12,5 +12,6 @@ if [ ! -d "$SHARED_DIR" ]; then
   exit 0
 fi
 
+rm -f "$LOCAL_DIR"/*.md
 cp "$SHARED_DIR"/*.md "$LOCAL_DIR/"
 echo "Synced $(ls "$LOCAL_DIR"/*.md | wc -l) posts from shared content"

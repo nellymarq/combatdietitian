@@ -4,5 +4,17 @@
       "path": "/api/health",
       "schedule": "0 8 */3 * *"
     }
+  ],
+  "redirects": [
+    { "source": "/blog/building-a-sports-nutrition-private-practice", "destination": "https://calsanova.com/blog/building-a-sports-nutrition-private-practice", "permanent": true },
+    { "source": "/blog/building-a-sports-nutrition-private-practice/", "destination": "https://calsanova.com/blog/building-a-sports-nutrition-private-practice", "permanent": true },
+    { "source": "/blog/dietitians-guide-to-macro-tracking-for-members", "destination": "https://calsanova.com/blog/dietitians-guide-to-macro-tracking-for-members", "permanent": true },
+    { "source": "/blog/dietitians-guide-to-macro-tracking-for-members/", "destination": "https://calsanova.com/blog/dietitians-guide-to-macro-tracking-for-members", "permanent": true },
+    { "source": "/blog/how-ai-is-transforming-sports-nutrition", "destination": "https://calsanova.com/blog/how-ai-is-transforming-sports-nutrition", "permanent": true },
+    { "source": "/blog/how-ai-is-transforming-sports-nutrition/", "destination": "https://calsanova.com/blog/how-ai-is-transforming-sports-nutrition", "permanent": true },
+    { "source": "/blog/the-business-case-for-ai-in-dietetics", "destination": "https://calsanova.com/blog/the-business-case-for-ai-in-dietetics", "permanent": true },
+    { "source": "/blog/the-business-case-for-ai-in-dietetics/", "destination": "https://calsanova.com/blog/the-business-case-for-ai-in-dietetics", "permanent": true },
+    { "source": "/blog/why-hipaa-compliance-matters-for-nutrition-professionals", "destination": "https://calsanova.com/blog/why-hipaa-compliance-matters-for-nutrition-professionals", "permanent": true },
+    { "source": "/blog/why-hipaa-compliance-matters-for-nutrition-professionals/", "destination": "https://calsanova.com/blog/why-hipaa-compliance-matters-for-nutrition-professionals", "permanent": true }
   ]
 }
