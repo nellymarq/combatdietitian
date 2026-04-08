@@ -85,4 +85,6 @@ A well-executed rehydration protocol is the difference between feeling like your
 
 ---
 
-**Need a personalized rehydration protocol?** Combat Dietitian builds complete weight cut and rehydration plans for fighters in [Miami](/locations/miami/weight-cut-nutritionist), [Las Vegas](/locations/las-vegas/weight-cut-nutritionist), [New York](/locations/new-york/weight-cut-nutritionist), [Orlando](/locations/orlando/weight-cut-nutritionist), and [nationwide](/contact). [Book a consultation →](/contact)
+**Need a personalized rehydration protocol?** [Combat Dietitian](https://combatdietitian.com) builds complete weight cut and rehydration plans for fighters nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Stock the rehydration kit:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) — full sodium, potassium, magnesium, and chloride profile with no added sugar. Designed for exactly this protocol. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

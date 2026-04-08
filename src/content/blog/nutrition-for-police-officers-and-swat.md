@@ -83,4 +83,6 @@ This is not about being perfect. It is about building a sustainable system that 
 
 ---
 
-**Need a nutrition plan built for law enforcement?** Combat Dietitian works with LEO and tactical operators in [Miami](/locations/miami/tactical-nutrition), [Las Vegas](/locations/las-vegas/tactical-nutrition), [New York](/locations/new-york/tactical-nutrition), [Orlando](/locations/orlando/tactical-nutrition), and [Melbourne, FL](/locations/melbourne-fl/tactical-nutrition). [Book a consultation →](/contact)
+**Need a nutrition plan built for law enforcement?** [Combat Dietitian](https://combatdietitian.com) works with LEO and tactical operators nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Field-ready supplements:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for duty-belt hydration, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for pre-shift focus and cognitive output, and [Scythene Multivitamin](https://scythene.com/products/multivitamin) to cover the micronutrient gaps shift schedules create. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

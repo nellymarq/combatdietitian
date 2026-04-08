@@ -73,3 +73,7 @@ Daily calcium targets for female members:
 - **Individualize:** Cycle-based nutrition adjustments are an emerging area of practice. While the evidence is still developing, awareness of phase-related changes can improve member experience and buy-in.
 
 For dietitians managing female member rosters, [Calsanova](/signup?role=dietitian) supports individualized macro targets by day type, body composition tracking, and clinical notes — the tools needed to identify and address RED-S early.
+
+---
+
+**Built to this standard:** [Scythene Multivitamin](https://scythene.com/products/multivitamin) with chelated iron and methylated B vitamins, plus [Scythene Vitamin D3 + K2](https://scythene.com/products/vitamin-d3-k2) for bone health and hormone support in female athletes. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

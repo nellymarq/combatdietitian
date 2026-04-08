@@ -55,3 +55,7 @@ The best weight cut is the one that requires the least acute manipulation. If an
 The dietitian's long-term role is helping the member maintain a walk-around weight that is within 5-7% of their competition weight class. This means managing off-season nutrition to prevent excessive weight gain and having honest conversations about whether the member is competing in the right weight class.
 
 [Calsanova's body composition tracking and macro management tools](/signup?role=dietitian) give dietitians the data needed to plan weight cuts precisely — from long-range fat loss phases to acute manipulation protocols.
+
+---
+
+**Support the protocol:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rehydration window, and [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to restore phosphocreatine stores after weigh-in. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

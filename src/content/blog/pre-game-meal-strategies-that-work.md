@@ -63,3 +63,7 @@ Athletes are creatures of habit. Many have pre-game meal rituals that may not be
 The approach that works: educate on the principles, provide optimal options, and allow flexibility within the guidelines.
 
 [Calsanova's meal planning system](/signup?role=dietitian) lets dietitians set day-type-specific nutrition plans — including dedicated pre-game and game-day templates — that members can access directly from their phone.
+
+---
+
+**Dial in the pre-game stack:** [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for clinically dosed caffeine and L-citrulline, plus [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) to maintain plasma volume before kickoff. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

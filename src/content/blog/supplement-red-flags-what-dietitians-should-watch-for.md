@@ -69,3 +69,7 @@ Some supplements contain doses that are either too low to be effective (pixie-du
 The supplement conversation is a core competency for sports dietitians. If you are not having it, someone else — a strength coach, a teammate, an influencer — is filling that void with unvetted information.
 
 For dietitians managing supplement protocols, [Calsanova's clinical notes and member management tools](/signup?role=dietitian) provide a structured way to document recommendations and track compliance.
+
+---
+
+**Transparent dosing. Zero proprietary blends.** [Scythene Supplements](https://scythene.com) — every ingredient disclosed at the clinical dose, third-party tested, built by the RD behind Combat Dietitian. The opposite of everything in this article. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

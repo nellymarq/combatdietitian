@@ -44,3 +44,7 @@ This is particularly relevant for members in a caloric surplus or those trying t
 The protein timing conversation has evolved well beyond the anabolic window. The evidence now points to a simpler truth: hit your daily target, spread it across the day, and do not skip the overnight feeding. That is where the real gains live.
 
 For dietitians managing protein protocols across a roster, [Calsanova's macro tracking and meal planning tools](/signup?role=dietitian) make it easy to set per-meal protein targets and monitor compliance in real time.
+
+---
+
+**Hit the target:** [Scythene Whey Protein Isolate](https://scythene.com/products/whey-protein-vanilla) — 25g cold-processed whey per serving, no artificial sweeteners, third-party tested. Useful when food alone won't cover your 1.6–2.2 g/kg daily target. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

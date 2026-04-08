@@ -91,4 +91,6 @@ Pre-fight nutrition is a protocol, not a preference. The fighters who look sharp
 
 ---
 
-**Need a fight-day nutrition protocol?** Combat Dietitian builds individualized competition fueling plans for fighters in [Miami](/locations/miami/weight-cut-nutritionist), [Las Vegas](/locations/las-vegas/weight-cut-nutritionist), [New York](/locations/new-york/weight-cut-nutritionist), and [nationwide](/contact). [Book a consultation →](/contact)
+**Need a fight-day nutrition protocol?** [Combat Dietitian](https://combatdietitian.com) builds individualized competition fueling plans for fighters nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Fuel fight night:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for rehydration, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for clinically dosed caffeine before warm-ups. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

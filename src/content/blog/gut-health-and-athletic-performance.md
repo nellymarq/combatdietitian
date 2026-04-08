@@ -60,3 +60,7 @@ GI issues in members are treatable and often preventable. The dietitian should:
 The gut is a trainable organ. Treat it like one.
 
 [Calsanova's meal planning tools](/signup?role=dietitian) support pre-competition meal templates that dietitians can customize for members with GI sensitivities — including day-type-specific plans for training, travel, and competition days.
+
+---
+
+**Built to this standard:** [Scythene L-Glutamine](https://scythene.com/products/l-glutamine) — pharmaceutical-grade, supports enterocyte fuel supply and gut barrier integrity during periods of high training load, caloric restriction, or weight cutting. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

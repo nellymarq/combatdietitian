@@ -56,4 +56,6 @@ Strength loss during a weight cut is not inevitable — it is a sign of a poorly
 
 ---
 
-**Need a weight cut protocol that preserves your strength?** Combat Dietitian builds individualized fight week nutrition plans for athletes in [Miami](/locations/miami/weight-cut-nutritionist), [Las Vegas](/locations/las-vegas/weight-cut-nutritionist), and [New York](/locations/new-york/weight-cut-nutritionist). [Book a consultation →](/contact)
+**Need a weight cut protocol that preserves your strength?** [Combat Dietitian](https://combatdietitian.com) builds individualized fight week nutrition plans for athletes nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Reload after the cut:** [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to restore phosphocreatine stores, plus [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rehydration window. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

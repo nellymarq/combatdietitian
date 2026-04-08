@@ -76,4 +76,4 @@ Your supplement stack should be boring. Your training and nutrition are where th
 
 ---
 
-**Looking for supplements built to this standard?** [Scythene Supplements](https://scythene.com) — third-party tested, clinical dosing, no proprietary blends. Built by the same RD behind Combat Dietitian. [Shop Scythene →](https://scythene.com) | [Learn more →](/scythene)
+**Looking for supplements built to this standard?** [Scythene Supplements](https://scythene.com) — third-party tested, clinical dosing, no proprietary blends. Built by the same RD behind Combat Dietitian. Code **MPS20** for 20% off your first order.

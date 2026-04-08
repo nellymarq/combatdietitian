@@ -75,3 +75,7 @@ An alternative approach: maintain low daily intake (100-200 mg) and use higher d
 - **Consider genetics** — if an member reports caffeine sensitivity, jitters, or sleep disruption at moderate doses, they may be a slow metabolizer
 
 [Calsanova's Kiwi AI research assistant](/signup) can provide personalized, evidence-based caffeine recommendations based on an member's sport, body weight, and training schedule — backed by PubMed literature.
+
+---
+
+**Dosed for performance:** [Scythene Pre-Workout](https://scythene.com/products/pre-workout) — clinically dosed caffeine, L-citrulline, and beta-alanine. No proprietary blends, full label transparency. Use code **MPS20** for 20% off your first order. [Shop Scythene →](https://scythene.com)

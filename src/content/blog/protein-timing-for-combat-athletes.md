@@ -76,4 +76,6 @@ Protein timing is not the most important variable — total daily intake is. But
 
 ---
 
-**Want a protein strategy built for your training schedule?** Combat Dietitian provides evidence-based nutrition for combat athletes in [Miami](/locations/miami/sports-dietitian), [Las Vegas](/locations/las-vegas/sports-dietitian), [New York](/locations/new-york/sports-dietitian), [Orlando](/locations/orlando/sports-dietitian), and [nationwide](/contact). [Book a consultation →](/contact)
+**Want a protein strategy built for your training schedule?** [Combat Dietitian](https://combatdietitian.com) provides evidence-based nutrition for combat athletes nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Fuel the protocol:** [Scythene Whey Protein Isolate](https://scythene.com/products/whey-protein-vanilla) — 25g cold-processed whey per serving, no artificial sweeteners. Pair with [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) for power output between rounds. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

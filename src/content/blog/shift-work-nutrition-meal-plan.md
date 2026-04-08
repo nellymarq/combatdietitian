@@ -65,4 +65,6 @@ Shift work nutrition requires a different framework, not just a different schedu
 
 ---
 
-**Need a nutrition plan built for your shift schedule?** Combat Dietitian works with tactical operators and first responders in [Miami](/locations/miami/tactical-nutrition), [Las Vegas](/locations/las-vegas/tactical-nutrition), [New York](/locations/new-york/tactical-nutrition), [Orlando](/locations/orlando/tactical-nutrition), and [Melbourne, FL](/locations/melbourne-fl/tactical-nutrition). [Book a consultation →](/contact)
+**Need a nutrition plan built for your shift schedule?** [Combat Dietitian](https://combatdietitian.com) works with tactical operators and first responders nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Built for the shift:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for hydration without sugar crash, [Scythene Magnesium Bisglycinate](https://scythene.com/products/magnesium-bisglycinate) for post-shift sleep quality, and [Scythene Multivitamin](https://scythene.com/products/multivitamin) to cover the micronutrient gaps rotating schedules create. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

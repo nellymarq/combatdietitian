@@ -36,4 +36,6 @@ Tactical nutrition is not about perfection — it is about consistency under imp
 
 ---
 
-**Need a tactical nutrition plan?** Combat Dietitian works with operators and first responders in [Miami](/locations/miami/tactical-nutrition), [Las Vegas](/locations/las-vegas/tactical-nutrition), [New York](/locations/new-york/tactical-nutrition), [Orlando](/locations/orlando/tactical-nutrition), and [Melbourne, FL](/locations/melbourne-fl/tactical-nutrition). [Book a consultation →](/contact)
+**Need a tactical nutrition plan?** [Combat Dietitian](https://combatdietitian.com) works with operators and first responders nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Field-ready supplements:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for operational hydration under load, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for pre-shift cognitive and physical output, and [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) for repeated high-output efforts. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

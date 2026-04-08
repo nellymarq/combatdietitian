@@ -64,3 +64,7 @@ Creatine is one of the few supplements where the risk-benefit analysis is overwh
 The key is education: explain the mechanism, set expectations about water-related weight gain, and emphasize that creatine is not a steroid, not banned, and not dangerous for healthy kidneys.
 
 For dietitians looking to track supplement protocols alongside nutrition plans, [Calsanova](/signup?role=dietitian) integrates supplement recommendations into the member management workflow.
+
+---
+
+**Built to this standard:** [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) — 5g per serving, micronized for solubility, unflavored, third-party tested. No loading phase, no proprietary blends. Use code **MPS20** for 20% off your first order. [Shop Scythene →](https://scythene.com)

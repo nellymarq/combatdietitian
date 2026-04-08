@@ -62,3 +62,7 @@ On competition day, a pre-event meal three to four hours before the start provid
 The combination of a proper loading protocol and a smart pre-event meal means the member starts with maximally fueled muscles and a topped-off liver.
 
 For dietitians building competition-week nutrition plans, [Calsanova's day-type system](/signup?role=dietitian) allows you to set different macro targets for training, game, rest, and travel days — making periodized carb loading easy to prescribe and track.
+
+---
+
+**Support the protocol:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) pair with your carb-loading fluids to maintain plasma volume and sodium balance through the loading window. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -58,3 +58,7 @@ The most common failure in hydration management is the lack of monitoring. Athle
 This is where technology helps. Wearable integrations that track environmental conditions, training load, and biometrics — combined with a platform that prompts members to log fluid intake — create the feedback loop needed for consistent hydration management.
 
 [Calsanova's wearable integrations](/signup) connect with Apple Health, Garmin, Oura, and other devices to help dietitians monitor hydration-relevant metrics alongside nutrition data.
+
+---
+
+**Fuel the protocol:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) — full sodium, potassium, magnesium, and chloride profile designed around actual athlete sweat composition. No added sugar, no artificial colors. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

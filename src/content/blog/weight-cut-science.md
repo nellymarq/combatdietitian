@@ -35,4 +35,6 @@ A well-executed weight cut is a science-driven protocol that starts weeks before
 
 ---
 
-**Need a weight cut protocol?** Combat Dietitian works with fighters in [Miami](/locations/miami/weight-cut-nutritionist), [Las Vegas](/locations/las-vegas/weight-cut-nutritionist), [New York](/locations/new-york/weight-cut-nutritionist), [Orlando](/locations/orlando/weight-cut-nutritionist), and [nationwide](/contact). [Book a consultation →](/contact)
+**Need a weight cut protocol?** [Combat Dietitian](https://combatdietitian.com) works with fighters nationwide. [Book a consultation →](https://combatdietitian.com/contact)
+
+**Fuel the cut and the rehydration:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rebound, [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to reload phosphocreatine stores post-weigh-in. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -60,4 +60,4 @@ Your nutrition provider should meet the same credentialing standard you would ex
 
 ---
 
-**Looking for a board-certified sports dietitian?** Combat Dietitian provides evidence-based nutrition for athletes in [Miami](/locations/miami/sports-dietitian), [Las Vegas](/locations/las-vegas/sports-dietitian), [New York](/locations/new-york/sports-dietitian), [Orlando](/locations/orlando/sports-dietitian), and [nationwide](/contact). [Book a consultation →](/contact)
+**Looking for a board-certified sports dietitian?** [Combat Dietitian](https://combatdietitian.com) provides evidence-based nutrition for athletes nationwide. [Book a consultation →](https://combatdietitian.com/contact)

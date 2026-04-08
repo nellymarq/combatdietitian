@@ -60,3 +60,7 @@ The biggest barrier to recovery nutrition is not knowledge — it is logistics. 
 This is where planning matters. Meal plans that include specific post-workout meals and snacks — prepared in advance and accessible immediately after training — make compliance realistic instead of aspirational.
 
 [Calsanova's AI meal planning](/signup) generates day-by-day meal plans that include designated post-workout meals matched to the member's training schedule and macro targets.
+
+---
+
+**Built to this standard:** [Scythene Whey Protein Isolate](https://scythene.com/products/whey-protein-vanilla) for rapid post-training MPS, and [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) to restore plasma volume after heavy sweat losses. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

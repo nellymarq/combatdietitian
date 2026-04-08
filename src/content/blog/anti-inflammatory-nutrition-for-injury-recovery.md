@@ -79,3 +79,7 @@ The dietitian's role extends beyond macros:
 - **Monitor for disordered eating patterns:** Injury is a high-risk period for the development of eating disorders in members
 
 [Calsanova's member management tools](/signup?role=dietitian) allow dietitians to adjust macro targets, track body composition changes, and maintain clinical notes through the injury and rehabilitation process — keeping nutrition aligned with the recovery timeline.
+
+---
+
+**Built to this standard:** [Scythene Omega-3](https://scythene.com/products/omega-3) — triglyceride-form EPA/DHA, molecularly distilled. And [Scythene Collagen Peptides + Vitamin C](https://scythene.com/products/collagen-peptides-vitamin-c) — dosed for pre-rehab tendon and ligament synthesis per the Australian Institute of Sport protocol. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -17,6 +17,10 @@ pnpm-debug.log*
 .env
 .env.production
 
+# GBP API credentials
+scripts/gbp-credentials.json
+scripts/gbp-token.json
+
 # macOS-specific files
 .DS_Store
 

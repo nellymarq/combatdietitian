@@ -49,3 +49,7 @@ Several studies have demonstrated improvements in sleep duration and quality whe
 Sleep and nutrition are not separate domains — they are interconnected systems. A dietitian who addresses both will see better outcomes than one who focuses on food alone.
 
 [Calsanova's wearable integrations](/signup) pull sleep data from Apple Health, Oura, Garmin, and other devices — giving dietitians visibility into sleep patterns alongside nutrition data for a complete performance picture.
+
+---
+
+**Built to this standard:** [Scythene Magnesium Bisglycinate](https://scythene.com/products/magnesium-bisglycinate) — 300mg elemental magnesium in the most absorbable chelate form, with glycine's natural relaxation benefits for sleep quality and recovery. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)
