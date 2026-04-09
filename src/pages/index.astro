@@ -12,6 +12,7 @@ const services = [
     icon: '&#9876;',
     title: 'Tactical Nutrition',
     description: 'Periodized nutrition plans for military, law enforcement, and first responders operating in high-stress, unpredictable environments.',
+    href: '/tactical-dietitian',
   },
   {
     icon: '&#9889;',
@@ -65,11 +66,19 @@ const stats = [
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map(service => (
-          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-accent-500/30 transition-colors">
-            <div class="text-3xl mb-4" set:html={service.icon} />
-            <h3 class="text-xl font-bold mb-3">{service.title}</h3>
-            <p class="text-white/60 leading-relaxed">{service.description}</p>
-          </div>
+          service.href ? (
+            <a href={service.href} class="block bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-accent-500/30 transition-colors">
+              <div class="text-3xl mb-4" set:html={service.icon} />
+              <h3 class="text-xl font-bold mb-3">{service.title}</h3>
+              <p class="text-white/60 leading-relaxed">{service.description}</p>
+            </a>
+          ) : (
+            <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-accent-500/30 transition-colors">
+              <div class="text-3xl mb-4" set:html={service.icon} />
+              <h3 class="text-xl font-bold mb-3">{service.title}</h3>
+              <p class="text-white/60 leading-relaxed">{service.description}</p>
+            </div>
+          )
         ))}
       </div>
 

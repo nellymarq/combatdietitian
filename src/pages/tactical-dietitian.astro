@@ -1,0 +1,290 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Footer from '../components/Footer.astro';
+
+const audiences = [
+  {
+    title: 'Military Operators',
+    description: 'Active duty, reserve, guard, and special operations personnel across all branches. Fueling for selection courses, deployments, sustained field operations, and return-to-duty recovery.',
+  },
+  {
+    title: 'Law Enforcement',
+    description: 'Patrol officers, SWAT operators, federal agents (FBI, USSS, DEA, ATF), and tactical units. Protocols built around rotating shifts, body armor metabolic cost, and long operational tempos.',
+  },
+  {
+    title: 'Fire & EMS',
+    description: 'Career and volunteer firefighters, paramedics, and rescue personnel. Nutrition for 24- and 48-hour shift rotations, physical intensity spikes, and recovery between calls.',
+  },
+  {
+    title: 'Federal & Contractor',
+    description: 'Federal agents, protective details, private military contractors, and tactical instructors. Plans that adapt to travel, deployments, and operational windows.',
+  },
+];
+
+const services = [
+  {
+    title: 'Body Armor Metabolic Cost',
+    description: 'Wearing kit for a 12-hour shift increases metabolic cost by 10-15%, and up to 25% during high-intensity tasks. Standard calorie calculators ignore this. Tactical dietitian protocols account for it — so you maintain body composition and performance over a career, not just a quarter.',
+  },
+  {
+    title: 'Shift Work & Irregular Schedules',
+    description: 'Rotating shifts destroy circadian rhythm, insulin sensitivity, and appetite regulation. We build multi-profile nutrition plans — day shift, night shift, recovery, and transition days — so your macros and caffeine strategy adapt to which day you are actually in, not a textbook ideal.',
+  },
+  {
+    title: 'Environmental Stress Fueling',
+    description: 'Desert heat, cold weather operations, altitude, humidity. Each environment changes fluid, sodium, and caloric demand. Hydration protocols are calibrated to ambient conditions and exertion level — not generic "drink more water" advice.',
+  },
+  {
+    title: 'Operational Tempo & Hypervigilance',
+    description: 'Sustained hypervigilance elevates cortisol, drives cravings for hyperpalatable foods, and disrupts metabolic health across a career. We use strategic meal timing, macronutrient composition, and stress-aware fueling to protect long-term performance without willpower battles.',
+  },
+  {
+    title: 'PT Tests & Selection Courses',
+    description: 'Fueling strategies for PFT/PT tests, SFAS, BUD/S, PJ Indoc, SWAT selection, and any high-stakes evaluation where body composition, endurance, and cognitive performance all have to peak on the same day.',
+  },
+  {
+    title: 'Deployment Prep & Reintegration',
+    description: 'Pre-deployment: body composition optimization, iron status, gut resilience, travel-compatible meal templates. Post-deployment: muscle rebuild, inflammation management, circadian re-entrainment. Both are high-leverage windows where generic nutrition advice fails.',
+  },
+];
+
+const process = [
+  {
+    step: '01',
+    title: 'Duty Profile Assessment',
+    description: 'We map your operational tempo — shift patterns, physical demands, training schedule, deployment windows, nutrition history, and performance goals. This drives every protocol decision.',
+  },
+  {
+    step: '02',
+    title: 'Protocol Build',
+    description: 'A periodized nutrition plan that accounts for your schedule, environment, and operational load. Macros, meal timing, hydration targets, and supplement guidance — all engineered for your duty reality.',
+  },
+  {
+    step: '03',
+    title: 'Ongoing Optimization',
+    description: 'Calsanova AI handles daily tracking while we handle strategic adjustments. Regular video check-ins keep the plan current as assignments, seasons, and training loads change.',
+  },
+];
+
+const cities = [
+  { city: 'Miami', href: '/locations/miami/tactical-nutrition' },
+  { city: 'Las Vegas', href: '/locations/las-vegas/tactical-nutrition' },
+  { city: 'New York', href: '/locations/new-york/tactical-nutrition' },
+  { city: 'Orlando', href: '/locations/orlando/tactical-nutrition' },
+  { city: 'Melbourne, FL', href: '/locations/melbourne-fl/tactical-nutrition' },
+];
+
+const faqs = [
+  {
+    question: 'What is a tactical dietitian?',
+    answer: 'A tactical dietitian is a registered dietitian (RD) who specializes in nutrition for military operators, law enforcement, firefighters, and first responders. Unlike general sports dietitians, tactical dietitians design protocols around shift work, body armor loads, environmental stress, and the unique physical and cognitive demands of duty environments. A board-certified tactical dietitian typically holds both an RD credential and the CSSD (Board Certified Specialist in Sports Dietetics) designation, and understands performance nutrition from both athletic and operational contexts.',
+  },
+  {
+    question: 'How is tactical nutrition different from general sports nutrition?',
+    answer: 'Sports nutrition targets competition — periodized training blocks, fight weeks, season peaks. Tactical nutrition targets operational readiness — a patrol officer finishing a 12-hour shift at 0300, an operator working through a 96-hour field exercise, a firefighter coming off a 48-hour rotation. The variables are different: shift rotation instead of training phases, body armor metabolic cost instead of weight classes, sustained hypervigilance instead of peak arousal windows. The foundational science overlaps. The programming does not.',
+  },
+  {
+    question: 'Who do you work with — military only, or LEO and first responders too?',
+    answer: 'All of the above. Combat Dietitian works with active-duty military across all branches, Reserve and National Guard members, police and sheriff\'s deputies, SWAT and tactical units, federal agents, firefighters, EMS personnel, and federal contractors. Nelson Marques, RD, CSSD, built his tactical practice supporting USAF Pararescue operators and now serves the broader tactical community.',
+  },
+  {
+    question: 'Do I need to meet in person, or do you work remotely?',
+    answer: 'All tactical dietitian services are delivered remotely through video consultations and the Calsanova AI platform. Remote delivery works better for tactical clients because your nutrition coaching does not depend on duty station, training location, or deployment status. Whether you are at home, deployed, or on a training rotation, you get the same protocol, monitoring, and real-time adjustments.',
+  },
+  {
+    question: 'What should I look for in a tactical dietitian\'s credentials?',
+    answer: 'Three things. First, the RD credential — the minimum professional license required to provide nutrition services in the US healthcare system. Second, the CSSD (Board Certified Specialist in Sports Dietetics) — a clinical specialty certification requiring 2,000+ hours of sports nutrition practice and a separate board exam. Third, direct operational experience working with actual tactical units or special operations personnel. Anyone without all three is working outside their expertise for tactical clients.',
+  },
+  {
+    question: 'Can you help with body armor loading and operational metabolic cost?',
+    answer: 'Yes. Wearing body armor for a shift or operation increases metabolic cost by 10-15% on average, and up to 25% during high-intensity tasks like foot pursuits or building entries. Standard calorie calculators do not account for this — tactical dietitian protocols do. We build caloric frameworks that match your actual daily energy expenditure including armor load, movement patterns, and operational intensity.',
+  },
+  {
+    question: 'How do you handle nutrition for shift work and irregular schedules?',
+    answer: 'Shift work is the single biggest nutrition challenge for tactical clients. Rotating schedules disrupt circadian hormones, insulin sensitivity, and appetite regulation. We do not pretend your schedule is normal — we build around it. Meal timing protocols map to your actual shift pattern, pre-shift and post-shift templates protect performance and recovery, and caffeine strategy is sequenced around your sleep window so it does not steal from the next shift\'s recovery.',
+  },
+];
+---
+
+<Layout
+  title="Tactical Dietitian | Military & First Responder Nutrition"
+  description="Tactical dietitian for military, LEO, and first responders. RD, CSSD with USAF Pararescue background. Evidence-based nutrition, delivered remotely nationwide."
+>
+  <Nav />
+
+  <Hero
+    title='Tactical Dietitian for <span class="text-accent-500">Military &amp; First Responders</span>'
+    subtitle="Evidence-based nutrition consulting for military operators, law enforcement, firefighters, and first responders. Board-certified RD, CSSD with USAF Pararescue background. Delivered remotely nationwide."
+    cta={{ label: 'Book a Consultation', href: '/contact' }}
+  />
+
+  <!-- What is a tactical dietitian -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="Definition"
+        title="What Is a Tactical Dietitian?"
+      />
+      <div class="space-y-5 text-white/70 leading-relaxed text-lg">
+        <p>
+          A tactical dietitian is a registered dietitian (RD) who specializes in nutrition for military operators, law enforcement, firefighters, and first responders. The work centers on maintaining cognitive and physical performance under real-world operational conditions — not gym-environment ideals.
+        </p>
+        <p>
+          Unlike a general sports dietitian, a tactical dietitian understands that the athletes they serve cannot choose their training load, cannot schedule their recovery, and often cannot control when or what they eat. The programming reflects that reality: shift-adapted fueling, body armor metabolic compensation, hydration protocols calibrated to operational environments, and strategic nutrition for sustained hypervigilance. It is performance nutrition built for people whose job is unpredictable by design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we serve -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Who It's For"
+        title="Built for the Tactical Community"
+        subtitle="Military operators, law enforcement, fire, EMS, and federal agents — anyone whose job demands high performance under operational stress."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {audiences.map(a => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-xl font-bold mb-3">{a.title}</h3>
+            <p class="text-white/60 leading-relaxed">{a.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Core services -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Core Service Areas"
+        title="What a Tactical Dietitian Actually Does"
+        subtitle="Six programming domains that define tactical nutrition work — and where generic sports nutrition comes up short."
+      />
+      <div class="space-y-6">
+        {services.map(s => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-xl font-bold mb-3 text-accent-400">{s.title}</h3>
+            <p class="text-white/70 leading-relaxed">{s.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="Credentials That Matter"
+        title="Why Qualifications Are Not Optional"
+      />
+      <div class="space-y-5 text-white/70 leading-relaxed">
+        <p>
+          Tactical nutrition is not a space where general wellness advice is good enough. The physical and cognitive stakes are too high, and the programming variables are too specific. A tactical dietitian should hold three things: a Registered Dietitian (RD) credential, a Board Certified Specialist in Sports Dietetics (CSSD) designation, and direct operational experience with the populations they serve.
+        </p>
+        <p>
+          Nelson Marques, RD, CSSD, built his tactical nutrition practice supporting USAF Pararescue operators — one of the most physically demanding career fields in the US military. That experience now extends to federal agents, law enforcement tactical units, and first responder teams across the country. <a href="/about" class="text-accent-400 hover:text-accent-300 underline">Read more about the background behind Combat Dietitian</a>.
+        </p>
+        <p>
+          For dietitians and nutrition professionals interested in learning tactical nutrition themselves, the <a href="/academy" class="text-accent-400 hover:text-accent-300 underline">MPS-TNS Tactical Nutrition Specialization</a> in the Combat Dietitian Academy provides a six-module deep dive into operational fueling protocols.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="The Process"
+        title="How Tactical Dietitian Engagements Work"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {process.map(p => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <div class="text-accent-500 text-sm font-bold mb-2">{p.step}</div>
+            <h3 class="text-xl font-bold mb-3">{p.title}</h3>
+            <p class="text-white/60 leading-relaxed">{p.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities served -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-6xl mx-auto">
+      <SectionHeading
+        label="Cities Served"
+        title="Tactical Nutrition Across the Country"
+        subtitle="Remote delivery means we work nationwide. These cities have dedicated tactical community pages with local context."
+      />
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        {cities.map(loc => (
+          <a href={loc.href} class="bg-brand-800/40 border border-white/5 rounded-xl p-6 text-center hover:border-accent-500/30 transition-colors">
+            <span class="text-white font-semibold text-sm">{loc.city}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <SectionHeading
+        label="FAQ"
+        title="Tactical Dietitian Questions"
+      />
+      <div class="space-y-6">
+        {faqs.map(faq => (
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-white/60 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4 bg-brand-800/30">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Fuel the Mission. Own the Performance.</h2>
+      <p class="mt-4 text-white/60 text-lg">
+        Get tactical nutrition consulting from a dietitian who has fueled USAF Pararescue operators in high-stakes environments — built for your duty reality, delivered remotely.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/contact"
+          class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+        >
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  })} />
+
+  <Footer />
+</Layout>
