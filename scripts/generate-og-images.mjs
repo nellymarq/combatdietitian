@@ -37,10 +37,24 @@ function loadBlogPosts() {
   return posts;
 }
 
-// Hardcoded special pages (pillars, hubs, etc. not in blog dir)
-// Add new entries here as new pillar pages are created.
+// Hardcoded special pages (pillars, hubs, location pages, etc. not in blog dir)
 const specialPages = [
   { slug: 'tactical-dietitian', title: 'Tactical Dietitian for Military & First Responders' },
+  { slug: 'las-vegas-sports-dietitian', title: 'Las Vegas Sports Dietitian | RD, CSSD & UFC Experience' },
+  { slug: 'las-vegas-tactical-nutrition', title: 'Tactical Nutrition Las Vegas | Combat Dietitian' },
+  { slug: 'las-vegas-weight-cut-nutritionist', title: 'Las Vegas Weight Cut Nutritionist | MMA, Boxing & Wrestling' },
+  { slug: 'melbourne-fl-sports-dietitian', title: 'Sports Dietitian Melbourne FL | Combat Dietitian' },
+  { slug: 'melbourne-fl-tactical-nutrition', title: 'Tactical Nutrition Melbourne FL | Combat Dietitian' },
+  { slug: 'melbourne-fl-weight-cut-nutritionist', title: 'Weight Cut Nutritionist Melbourne FL | Combat Dietitian' },
+  { slug: 'miami-sports-dietitian', title: 'Best Sports Dietitian in Miami for MMA & Pro Athletes' },
+  { slug: 'miami-tactical-nutrition', title: 'Tactical Nutrition in Miami | Combat Dietitian' },
+  { slug: 'miami-weight-cut-nutritionist', title: 'Weight Cut Nutritionist in Miami | Combat Dietitian' },
+  { slug: 'new-york-sports-dietitian', title: 'Sports Dietitian in New York | Combat Dietitian' },
+  { slug: 'new-york-tactical-nutrition', title: 'Tactical Nutrition in New York | Combat Dietitian' },
+  { slug: 'new-york-weight-cut-nutritionist', title: 'Weight Cut Nutritionist New York | Combat Dietitian' },
+  { slug: 'orlando-sports-dietitian', title: 'Orlando Sports Dietitian for Heat & Humidity | RD, CSSD' },
+  { slug: 'orlando-tactical-nutrition', title: 'Tactical Nutrition in Orlando | Combat Dietitian' },
+  { slug: 'orlando-weight-cut-nutritionist', title: 'Weight Cut Nutritionist Orlando | Combat Dietitian' },
 ];
 
 const allPages = [...loadBlogPosts(), ...specialPages];
