@@ -276,6 +276,15 @@ const faqs = [
 
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://combatdietitian.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Tactical Dietitian", "item": "https://combatdietitian.com/tactical-dietitian/" }
+    ]
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faqs.map(faq => ({
       "@type": "Question",
