@@ -36,6 +36,8 @@ Tactical nutrition is not about perfection — it is about consistency under imp
 
 ---
 
+For law enforcement-specific protocols including body armor metabolic cost and shift-work meal plans, see [Nutrition for Police Officers and SWAT](/blog/nutrition-for-police-officers-and-swat).
+
 **Need a tactical nutrition plan?** [Combat Dietitian](https://combatdietitian.com) works with operators and first responders nationwide. [Book a consultation →](https://combatdietitian.com/contact)
 
 **Field-ready supplements:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for operational hydration under load, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for pre-shift cognitive and physical output, and [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) for repeated high-output efforts. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

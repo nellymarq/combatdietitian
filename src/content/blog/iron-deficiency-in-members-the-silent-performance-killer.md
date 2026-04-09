@@ -18,7 +18,7 @@ Athletes deplete iron through mechanisms that sedentary populations do not exper
 - **Exercise-induced hepcidin elevation:** Hepcidin is the master regulator of iron absorption. Intense exercise triggers an inflammatory response that raises hepcidin for 3-6 hours post-workout, temporarily blocking iron absorption from the gut (Peeling et al., 2017). This is why timing of iron supplementation matters.
 - **Sweat losses:** Iron is lost in sweat at approximately 0.3-0.4 mg/L. An member producing 1-2 liters of sweat per hour during summer training can lose a meaningful amount over a season.
 - **GI blood loss:** High-intensity exercise diverts blood flow from the gut, sometimes causing subclinical GI bleeding — especially during long runs and races.
-- **Menstrual losses:** Female members lose an additional 0.4-0.5 mg/day of iron on average through menstruation, with heavy menstrual bleeding (menorrhagia) pushing some members into negative iron balance every month.
+- **Menstrual losses:** Female members lose an additional 0.4-0.5 mg/day of iron on average through menstruation (see also [Nutrition for the Female Member](/blog/nutrition-for-the-female-member) for the broader picture), with heavy menstrual bleeding (menorrhagia) pushing some members into negative iron balance every month.
 
 Add these together and an endurance member can require 30-70% more daily iron than the general population recommendation of 8 mg (males) or 18 mg (females).
 

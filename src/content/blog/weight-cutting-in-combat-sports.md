@@ -52,7 +52,7 @@ A responsible dietitian must be willing to stop a cut when it becomes dangerous.
 
 The best weight cut is the one that requires the least acute manipulation. If an member is walking around 15% above their weight class year-round, every cut will be miserable and risky.
 
-The dietitian's long-term role is helping the member maintain a walk-around weight that is within 5-7% of their competition weight class. This means managing off-season nutrition to prevent excessive weight gain and having honest conversations about whether the member is competing in the right weight class.
+For the underlying physiology, see [The Science of Weight Cutting](/blog/weight-cut-science). The dietitian's long-term role is helping the member maintain a walk-around weight that is within 5-7% of their competition weight class. This means managing off-season nutrition to prevent excessive weight gain and having honest conversations about whether the member is competing in the right weight class.
 
 [Calsanova's body composition tracking and macro management tools](/signup?role=dietitian) give dietitians the data needed to plan weight cuts precisely — from long-range fat loss phases to acute manipulation protocols.
 

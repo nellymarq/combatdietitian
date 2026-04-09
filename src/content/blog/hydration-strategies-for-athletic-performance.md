@@ -55,7 +55,7 @@ The goal during exercise is to prevent body mass loss greater than two percent w
 
 The most common failure in hydration management is the lack of monitoring. Athletes do not track fluid intake during practice. Sweat rates are never measured. Body weight changes before and after training go unrecorded.
 
-This is where technology helps. Wearable integrations that track environmental conditions, training load, and biometrics — combined with a platform that prompts members to log fluid intake — create the feedback loop needed for consistent hydration management.
+For combat athletes specifically, our [post-weigh-in rehydration protocol](/blog/how-to-rehydrate-after-weigh-in) details the evidence-based approach to acute rehydration after a weight cut. This is where technology helps. Wearable integrations that track environmental conditions, training load, and biometrics — combined with a platform that prompts members to log fluid intake — create the feedback loop needed for consistent hydration management.
 
 [Calsanova's wearable integrations](/signup) connect with Apple Health, Garmin, Oura, and other devices to help dietitians monitor hydration-relevant metrics alongside nutrition data.
 

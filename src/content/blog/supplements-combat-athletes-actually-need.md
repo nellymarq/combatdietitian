@@ -16,7 +16,7 @@ This is the single most researched supplement in sports science. Over 500 peer-r
 
 For combat athletes specifically, creatine supports repeated explosive efforts — the takedown attempts, scrambles, and power shots that win fights. A 2019 meta-analysis in the *Journal of the International Society of Sports Nutrition* found that creatine supplementation improved high-intensity intermittent exercise performance by 7.5% on average.
 
-**Dose:** 3-5g daily. No loading phase necessary. Take it every day, including rest days. Timing doesn't matter — consistency does.
+**Dose:** 3-5g daily. No loading phase necessary. Take it every day, including rest days. Timing doesn't matter — consistency does. For the full research breakdown, see our [complete guide to creatine](/blog/creatine-the-most-researched-supplement-in-sports).
 
 **The weight cut caveat:** Creatine increases intramuscular water retention by 1-3 pounds. Many fighters stop creatine 4-6 weeks before a fight to shed that water weight. If you're not cutting weight, there's no reason to cycle off.
 
@@ -66,7 +66,7 @@ For fighters specifically, the emerging research on omega-3s and traumatic brain
 
 **BCAAs** are unnecessary if you're hitting your protein targets from food and whey. You're paying for three amino acids you're already getting.
 
-**Testosterone boosters, fat burners, and anything with a proprietary blend** — skip all of it. If the science supported them, they wouldn't need the marketing.
+**Testosterone boosters, fat burners, and anything with a proprietary blend** — skip all of it. If the science supported them, they wouldn't need the marketing. For more on spotting bad supplements, see [Supplement Red Flags](/blog/supplement-red-flags-what-dietitians-should-watch-for).
 
 ## The Standard
 

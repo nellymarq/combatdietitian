@@ -12,7 +12,7 @@ Weight cutting is one of the most misunderstood and mismanaged aspects of combat
 
 A 2021 systematic review in the *British Journal of Sports Medicine* found that up to 90% of combat sport athletes engage in rapid weight loss before competition. The most common methods include water loading and restriction, sodium manipulation, low-residue diets, and sweat-inducing protocols like hot baths or sauna use.
 
-When done correctly, an athlete can cut 6-8% of body weight in the final 5-7 days before weigh-in with minimal performance decrements — provided rehydration and refueling are executed properly. The key word is "correctly."
+When done correctly, an athlete can cut 6-8% of body weight in the final 5-7 days before weigh-in with minimal performance decrements — provided rehydration and refueling are executed properly — see our [step-by-step rehydration protocol](/blog/how-to-rehydrate-after-weigh-in) for the full guide. The key word is "correctly."
 
 ## The Three-Phase Approach
 

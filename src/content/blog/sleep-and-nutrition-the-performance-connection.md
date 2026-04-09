@@ -46,7 +46,7 @@ Several studies have demonstrated improvements in sleep duration and quality whe
 - **Hydration timing:** Front-load fluid intake earlier in the day. Excess fluid intake in the evening leads to nocturia (nighttime urination), fragmenting sleep.
 - **Magnesium:** 200-400 mg of magnesium glycinate or citrate before bed may support sleep quality, particularly in members who are deficient.
 
-Sleep and nutrition are not separate domains — they are interconnected systems. A dietitian who addresses both will see better outcomes than one who focuses on food alone.
+For the post-training nutrition side of recovery, see [Recovery Nutrition: What to Eat After Training](/blog/recovery-nutrition-what-to-eat-after-training). Sleep and nutrition are not separate domains — they are interconnected systems. A dietitian who addresses both will see better outcomes than one who focuses on food alone.
 
 [Calsanova's wearable integrations](/signup) pull sleep data from Apple Health, Oura, Garmin, and other devices — giving dietitians visibility into sleep patterns alongside nutrition data for a complete performance picture.
 

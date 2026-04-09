@@ -70,7 +70,7 @@ This is not carb cycling for fat loss — it is demand-based fueling. You eat mo
 
 [Calsanova's nutrition periodization tool](/nutrition-periodization) maps your macros to your training phases automatically. Set your training block (hypertrophy, strength, power, deload), and the tool calculates phase-appropriate macros for both training and rest days. The [training calendar](/training-calendar) syncs with your nutrition targets so your diet follows your program — not the other way around.
 
-If you are periodizing your training but not your nutrition, you are leaving performance and body composition gains on the table. Match the fuel to the work, and watch the results accelerate.
+For a deeper dive into matching macros to specific training blocks, see [Periodized Nutrition: Matching Fuel to Training](/blog/periodized-nutrition-matching-fuel-to-training). If you are periodizing your training but not your nutrition, you are leaving performance and body composition gains on the table. Match the fuel to the work, and watch the results accelerate.
 
 ---
 
