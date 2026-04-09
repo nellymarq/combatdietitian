@@ -70,5 +70,26 @@ const ogImage = `https://combatdietitian.com/og/${slug}.png`;
     </div>
   </article>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "datePublished": post.data.date.toISOString().slice(0, 10),
+    "image": ogImage,
+    "author": {
+      "@type": "Person",
+      "name": post.data.author,
+      "url": "https://combatdietitian.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Combat Dietitian",
+      "url": "https://combatdietitian.com",
+      "logo": "https://combatdietitian.com/og-image.png"
+    },
+    "mainEntityOfPage": `https://combatdietitian.com/blog/${slug}`
+  })} />
+
   <Footer />
 </Layout>
