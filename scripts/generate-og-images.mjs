@@ -1,20 +1,49 @@
 import sharp from 'sharp';
-import { writeFileSync, mkdirSync } from 'fs';
+import { mkdirSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 
-const OUTPUT_DIR = join(import.meta.dirname, '..', 'public', 'og');
+const SCRIPT_DIR = import.meta.dirname;
+const BLOG_DIR = join(SCRIPT_DIR, '..', 'src', 'content', 'blog');
+const OUTPUT_DIR = join(SCRIPT_DIR, '..', 'public', 'og');
 mkdirSync(OUTPUT_DIR, { recursive: true });
 
-const posts = [
-  { slug: 'why-fighters-lose-strength-during-weight-cuts', title: 'Why Fighters Lose Strength During Weight Cuts (And How to Fix It)' },
-  { slug: 'shift-work-nutrition-meal-plan', title: 'Shift Work Nutrition: Why Your 9-to-5 Meal Plan Is Failing You' },
-  { slug: 'how-to-choose-a-sports-dietitian', title: 'How to Choose a Sports Dietitian (And Why Credentials Matter)' },
-  { slug: 'pre-fight-meal-what-to-eat-before-competition', title: 'Pre-Fight Meal: What to Eat 24 Hours Before Competition' },
-  { slug: 'protein-timing-for-combat-athletes', title: 'Protein Timing for Combat Athletes: What the Research Actually Shows' },
-  { slug: 'nutrition-for-police-officers-and-swat', title: 'Nutrition for Police Officers and SWAT: Fueling Under Pressure' },
-  { slug: 'weight-cut-science', title: 'The Science of Weight Cutting for Combat Athletes' },
-  { slug: 'tactical-nutrition-basics', title: 'Tactical Nutrition Basics: Fueling the Operational Athlete' },
+// Minimal frontmatter parser (zero deps)
+function parseFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---\n/);
+  if (!match) return null;
+  const frontmatter = {};
+  const lines = match[1].split('\n');
+  for (const line of lines) {
+    const kv = line.match(/^(\w+):\s*(.+)$/);
+    if (!kv) continue;
+    frontmatter[kv[1]] = kv[2].replace(/^["']|["']$/g, '').trim();
+  }
+  return frontmatter;
+}
+
+// Load all blog posts dynamically from content directory
+function loadBlogPosts() {
+  const files = readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
+  const posts = [];
+  for (const file of files) {
+    const raw = readFileSync(join(BLOG_DIR, file), 'utf-8');
+    const fm = parseFrontmatter(raw);
+    if (!fm || !fm.title) {
+      console.warn(`Skipping ${file}: missing frontmatter title`);
+      continue;
+    }
+    posts.push({ slug: file.replace(/\.md$/, ''), title: fm.title });
+  }
+  return posts;
+}
+
+// Hardcoded special pages (pillars, hubs, etc. not in blog dir)
+// Add new entries here as new pillar pages are created.
+const specialPages = [
+  { slug: 'tactical-dietitian', title: 'Tactical Dietitian for Military & First Responders' },
 ];
+
+const allPages = [...loadBlogPosts(), ...specialPages];
 
 function wrapText(text, maxCharsPerLine) {
   const words = text.split(' ');
@@ -55,7 +84,7 @@ function generateSvg(title) {
   const fontSize = lines.some(l => l.length > 24) ? 52 : 58;
   const lineHeight = fontSize * 1.25;
   const totalTextHeight = lines.length * lineHeight;
-  const startY = (630 - totalTextHeight) / 2 - 20; // shift up slightly to make room for branding
+  const startY = (630 - totalTextHeight) / 2 - 20;
 
   const titleLines = lines.map((line, i) => {
     const y = startY + (i + 1) * lineHeight;
@@ -102,18 +131,19 @@ function generateSvg(title) {
 }
 
 async function main() {
-  for (const post of posts) {
-    const svg = generateSvg(post.title);
-    const outputPath = join(OUTPUT_DIR, `${post.slug}.png`);
+  console.log(`Generating ${allPages.length} OG images (${allPages.length - specialPages.length} blog posts + ${specialPages.length} special pages)...`);
+  for (const page of allPages) {
+    const svg = generateSvg(page.title);
+    const outputPath = join(OUTPUT_DIR, `${page.slug}.png`);
 
     await sharp(Buffer.from(svg))
       .resize(1200, 630)
       .png({ quality: 90 })
       .toFile(outputPath);
 
-    console.log(`Generated: ${post.slug}.png`);
+    console.log(`Generated: ${page.slug}.png`);
   }
-  console.log(`\nDone! Generated ${posts.length} OG images in public/og/`);
+  console.log(`\nDone! ${allPages.length} OG images written to public/og/`);
 }
 
 main().catch(console.error);
