@@ -30,6 +30,8 @@ The evidence on curcumin, resveratrol, vitamin D (when deficient), choline, and 
 
 ## What to Do After a Suspected Concussion
 
+This section is the overview. For the full day-by-day phased protocol — including evidence-graded dosing across the acute, subacute, and return-to-training windows for DHA, creatine, choline, magnesium, and curcumin, plus a fridge-card checklist — see our deeper guide on [concussion recovery nutrition](/blog/concussion-recovery-nutrition).
+
 If a fighter takes a head shot in training or competition and is showing concussion symptoms — confusion, balance issues, headache, photophobia, slowed reaction — the first move is medical, not nutritional. They go to a clinician who can do a proper assessment. No corner, no coach, no training partner is qualified to clear a fighter from a suspected concussion.
 
 Once medical clearance is in progress, the nutrition window opens. The first 7–10 days post-impact is when nutrition leverage is highest:

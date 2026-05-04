@@ -12,6 +12,8 @@ Your brain after a concussion is not "bruised." It is a tissue going through a 7
 
 This is the protocol I use with fighters returning from a documented concussion. None of it replaces medical evaluation, return-to-play testing, or whatever your neurologist tells you to do. It is the nutrition layer that sits underneath all of that.
 
+This post assumes the daily baseline is already in place. If your fighter is not running 2g/day EPA+DHA, 5g creatine, and 300–400mg magnesium *before* an injury happens, start with the broader piece on [brain health nutrition for combat athletes](/blog/brain-health-nutrition-for-combat-athletes) — the protective nutrients have to be in the system before the impact, not added after.
+
 ## What Actually Happens to the Brain in the First 30 Days
 
 The "neurometabolic cascade" of concussion is well characterized in the literature. Within minutes of impact:
@@ -85,7 +87,7 @@ Once the fighter is symptom-free at rest and beginning graduated return-to-train
 
 **Protein stays high.** Recovery from any tissue injury requires protein. Hold at 1.6–2.2 g/kg/day throughout the recovery period.
 
-**Sleep is nutrition.** Glymphatic clearance — the brain's overnight waste-removal system — does most of its work during slow-wave sleep. A fighter who skimps on sleep during concussion recovery is leaving the most powerful neurological recovery tool on the table. Eight to nine hours, dark room, no alcohol, no late caffeine. Magnesium glycinate or threonate at night helps.
+**Sleep is nutrition.** Glymphatic clearance — the brain's overnight waste-removal system — does most of its work during slow-wave sleep. A fighter who skimps on sleep during concussion recovery is leaving the most powerful neurological recovery tool on the table. Eight to nine hours, dark room, no alcohol, no late caffeine. Magnesium glycinate or threonate at night helps. (For the everyday baseline that should be running between injuries, see [brain health nutrition for combat athletes](/blog/brain-health-nutrition-for-combat-athletes).)
 
 **Caffeine — moderate, not zero.** Some fighters cut caffeine entirely after a concussion and feel worse for it because they were depending on the alertness offset. Reasonable middle ground: 100–200 mg in the morning if tolerated, no afternoon dose, no pre-workout megadose during the recovery period. Reassess at day 30.
 
