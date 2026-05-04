@@ -34,10 +34,11 @@ npm run og           # Generate OG images for posts
 ```
 
 ## Blog Publishing
-Canonical workflow lives in `~/.claude/projects/-home-nelly/memory/feedback_blog_publish_workflow.md`. The 8-step chain (inventory → topic → write → cross-link → build → stage → commit/push → verify) applies in full. Cross-linking related posts is mandatory.
+Workflow rules live in `~/.claude/projects/-home-nelly/memory/feedback_blog_publish_workflow.md` (auto-loaded every session). **This section documents Combat Dietitian-specific paths, frontmatter format, and topic-cluster data only — do NOT add workflow rules here.** Anything conceptual goes in the global memory file.
 
-Combat Dietitian-specific paths/commands:
-- **Source of truth:** `src/content/blog/<slug>.md` — extension is `.md`, NOT `.mdx`. Frontmatter:
+**Combat Dietitian-specific:**
+- **Posts file:** `src/content/blog/<slug>.md` — extension is `.md`, NOT `.mdx` (Astro Content Collections, not Next.js MDX).
+- **Frontmatter shape (YAML):**
   ```yaml
   ---
   title: "Post Title"
@@ -47,16 +48,13 @@ Combat Dietitian-specific paths/commands:
   tags: ["Tag1","Tag2"]
   ---
   ```
-- **Verify compile:** `npx astro build` — confirms the post renders to `dist/client/blog/<slug>/index.html`.
-- **Internal links:** Standard markdown `[link text](/blog/<slug>)`. Existing posts use this style consistently — see `iron-deficiency-in-members-the-silent-performance-killer.md` for example.
-- **Topic clusters to cross-link** (group related posts):
-  - **Weight cuts:** `weight-cut-science`, `weight-cutting-in-combat-sports`, `why-fighters-lose-strength-during-weight-cuts`, `how-to-rehydrate-after-weigh-in`
-  - **Protein/macros:** `protein-timing-does-it-actually-matter`, `protein-timing-for-combat-athletes`, `nutrition-periodization-for-training-phases`, `periodized-nutrition-matching-fuel-to-training`
-  - **Brain/concussion:** `brain-health-nutrition-for-combat-athletes`, `concussion-recovery-nutrition`
-  - **Supplements:** `supplements-combat-athletes-actually-need`, `creatine-the-most-researched-supplement-in-sports`, `caffeine-for-members-a-complete-guide`, `supplement-red-flags-what-dietitians-should-watch-for`
-  - **Female athlete:** `nutrition-for-the-female-member`, `iron-deficiency-in-members-the-silent-performance-killer`
-- **Stage explicitly:** `git add src/content/blog/<slug>.md` — never `git add .`.
-- **Deploy timing:** Vercel auto-deploys on push to master, ~1 min push-to-prod. Verify via `curl -sI https://combatdietitian.com/blog/<slug>` returns 200, AND `curl -s ... | grep <reciprocal-slug>` to confirm cross-links landed.
+
+**Topic clusters** (cross-link discovery — group new posts with their natural neighbors. Update this list when shipping a new post.):
+- **Weight cuts:** `weight-cut-science`, `weight-cutting-in-combat-sports`, `why-fighters-lose-strength-during-weight-cuts`, `how-to-rehydrate-after-weigh-in`
+- **Protein/macros:** `protein-timing-does-it-actually-matter`, `protein-timing-for-combat-athletes`, `nutrition-periodization-for-training-phases`, `periodized-nutrition-matching-fuel-to-training`
+- **Brain/concussion:** `brain-health-nutrition-for-combat-athletes`, `concussion-recovery-nutrition`
+- **Supplements:** `supplements-combat-athletes-actually-need`, `creatine-the-most-researched-supplement-in-sports`, `caffeine-for-members-a-complete-guide`, `supplement-red-flags-what-dietitians-should-watch-for`
+- **Female athlete:** `nutrition-for-the-female-member`, `iron-deficiency-in-members-the-silent-performance-killer`
 
 ## Voice & Style
 - **Author:** Nelson Marques, MS, RD, LD (tactical/performance dietitian, UFC experience)
