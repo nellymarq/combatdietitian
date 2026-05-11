@@ -83,6 +83,8 @@ Rehydration is not optional. It is not intuitive. And it is not something you fi
 
 A well-executed rehydration protocol is the difference between feeling like yourself in the cage and wondering why your legs feel heavy in round one.
 
+For the broader pattern of how this window gets mismanaged — sequencing, food choices, sleep, and the camp-level mistakes that compound the rehydration errors — see [the 5 post-weigh-in mistakes that lose fights](/blog/post-weigh-in-mistakes-24-hours-that-lose-fights).
+
 ---
 
 **Need a personalized rehydration protocol?** [Combat Dietitian](https://combatdietitian.com) builds complete weight cut and rehydration plans for fighters nationwide. [Book a consultation →](https://combatdietitian.com/contact)
