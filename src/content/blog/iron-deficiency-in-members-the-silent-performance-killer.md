@@ -80,6 +80,8 @@ Iron repletion is not a one-time fix. People who have been iron deficient are at
 - Reassess during periods of increased demand: pre-season, altitude training, travel to hot climates
 - Track ferritin trends over time — a downward trajectory is a red flag even if the absolute number is still "normal"
 
+For combat athletes and tactical operators specifically, ferritin is best ordered as part of a broader [mid-camp bloodwork panel](/blog/mid-camp-bloodwork-for-fighters) that captures iron status alongside vitamin D, hormonal markers, and kidney function in a single draw — fighter-appropriate targets are tighter than the lab reference ranges, and the panel is most useful when the iron numbers are read against the other markers.
+
 [Calsanova's blood work tracking](/blood-work) lets you log ferritin, hemoglobin, transferrin saturation, and CRP over time. You can set threshold alerts so you catch declining trends before they become clinical problems. Pair it with the [micronutrient tracker](/micronutrients) to monitor dietary iron intake alongside lab values.
 
 ## The Bottom Line

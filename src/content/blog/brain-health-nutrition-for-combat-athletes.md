@@ -69,7 +69,7 @@ Daily baseline I recommend for any combat athlete training four or more days per
 - 2 g/day EPA + DHA (fish oil or fatty fish 3–4x/week)
 - 5 g/day creatine monohydrate
 - 300–400 mg/day magnesium glycinate, with the evening meal
-- Vitamin D dosed to a 25-OH vitamin D level of 40–60 ng/mL — get tested, do not guess
+- Vitamin D dosed to a 25-OH vitamin D level of 40–60 ng/mL — get tested, do not guess (the [mid-camp bloodwork panel](/blog/mid-camp-bloodwork-for-fighters) for combat athletes covers 25(OH)D alongside ferritin, hormones, CK, and kidney function in one draw)
 - Five or more servings per day of varied produce
 - Seven-plus hours of sleep, with the environment optimized (dark, cool, no screens 60 minutes pre-sleep)
 - Alcohol kept low — under four drinks per week as a working ceiling; less is better

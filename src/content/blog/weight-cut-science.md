@@ -27,7 +27,7 @@ This is arguably the most critical phase. Oral rehydration solutions with sodium
 
 ## When Weight Cuts Go Wrong
 
-The dangers are real. Severe dehydration reduces cerebral spinal fluid volume, making the brain more vulnerable to traumatic injury. Cardiac output drops, reaction time slows, and cognitive function deteriorates. Multiple combat sport fatalities have been directly linked to extreme weight cutting practices.
+The dangers are real. Severe dehydration reduces cerebral spinal fluid volume, making the brain more vulnerable to traumatic injury. Cardiac output drops, reaction time slows, and cognitive function deteriorates. Multiple combat sport fatalities have been directly linked to extreme weight cutting practices. The danger signs are usually visible 4–6 weeks before fight week on a [mid-camp bloodwork panel](/blog/mid-camp-bloodwork-for-fighters) — low ferritin, depressed free T3, creeping BUN/creatinine — which gives the camp time to adjust the cut depth before the cut starts. A camp that walks into weigh-in week without that data is gambling.
 
 ## The Bottom Line
 

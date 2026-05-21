@@ -55,6 +55,7 @@ Workflow rules live in `~/.claude/projects/-home-nelly/memory/feedback_blog_publ
 - **Brain/concussion:** `brain-health-nutrition-for-combat-athletes`, `concussion-recovery-nutrition`
 - **Supplements:** `supplements-combat-athletes-actually-need`, `creatine-the-most-researched-supplement-in-sports`, `caffeine-for-members-a-complete-guide`, `supplement-red-flags-what-dietitians-should-watch-for`
 - **Female athlete:** `nutrition-for-the-female-member`, `iron-deficiency-in-members-the-silent-performance-killer`
+- **Labs/bloodwork:** `mid-camp-bloodwork-for-fighters`, `iron-deficiency-in-members-the-silent-performance-killer`
 
 ## Voice & Style
 - **Author:** Nelson Marques, MS, RD, LD (tactical/performance dietitian, UFC experience)
