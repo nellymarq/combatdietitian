@@ -30,6 +30,8 @@ For fighters, the cognitive benefits matter as much as the physical ones. Caffei
 
 **The tolerance trap:** Daily high-dose caffeine use blunts its ergogenic effect. Consider cycling — reduce intake to under 100 mg/day for 7-10 days before a fight to resensitize, then dose strategically on fight night.
 
+**Fight-day timing:** The specific protocol for dosing across fight day, the citrulline pivot for late-card slots, and the post-fight wind-down lives in [caffeine half-life math for fight day](/blog/caffeine-half-life-fight-day). A 200 mg dose at 4 PM is still leaving 50 mg in the bloodstream at 4 AM — that half-life arithmetic is the difference between sleeping post-fight and lying awake.
+
 ## 3. Electrolytes
 
 This isn't glamorous, but it might be the most important item on the list — especially for fighters who train in hot environments or are managing hydration around a weight cut.

@@ -57,7 +57,7 @@ This is not just fatigue. The hormonal cascade that mediates rehydration and ref
 The protocol fix:
 
 - **Eat the post-weigh-in meal earlier**: aim for the main rehydration meal to finish by 9–10pm, not 11pm or midnight, so the fighter can be in bed by 11pm with the GI work mostly done.
-- **Avoid stimulants** post-3pm on weigh-in day. Many fighters use caffeine through the cut. Past 3pm on a Friday weigh-in with a 9pm cage walk Saturday, caffeine is robbing the sleep window the body needs for everything else.
+- **Avoid stimulants** post-3pm on weigh-in day. Many fighters use caffeine through the cut. Past 3pm on a Friday weigh-in with a 9pm cage walk Saturday, caffeine is robbing the sleep window the body needs for everything else. The same half-life math applies on fight night itself — see [caffeine half-life math for fight day](/blog/caffeine-half-life-fight-day) for the wind-down protocol that protects post-fight sleep on a body still carrying 150 mg of circulating caffeine at midnight.
 - **No screens, no fight footage, no scrolling** for the last 60 minutes before sleep. Most camps know this and most fighters violate it the night before a fight.
 - **If sleep is broken**, a 30–60-minute nap on Saturday morning is worth more than two hours of additional rehydration work. The recovery hormones run during sleep, not during sips.
 

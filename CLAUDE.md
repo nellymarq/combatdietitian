@@ -53,7 +53,7 @@ Workflow rules live in `~/.claude/projects/-home-nelly/memory/feedback_blog_publ
 - **Weight cuts:** `weight-cut-science`, `weight-cutting-in-combat-sports`, `why-fighters-lose-strength-during-weight-cuts`, `how-to-rehydrate-after-weigh-in`, `post-weigh-in-mistakes-24-hours-that-lose-fights`
 - **Protein/macros:** `protein-timing-does-it-actually-matter`, `protein-timing-for-combat-athletes`, `nutrition-periodization-for-training-phases`, `periodized-nutrition-matching-fuel-to-training`
 - **Brain/concussion:** `brain-health-nutrition-for-combat-athletes`, `concussion-recovery-nutrition`
-- **Supplements:** `supplements-combat-athletes-actually-need`, `creatine-the-most-researched-supplement-in-sports`, `caffeine-for-members-a-complete-guide`, `supplement-red-flags-what-dietitians-should-watch-for`
+- **Supplements:** `supplements-combat-athletes-actually-need`, `creatine-the-most-researched-supplement-in-sports`, `caffeine-for-members-a-complete-guide`, `caffeine-half-life-fight-day`, `supplement-red-flags-what-dietitians-should-watch-for`
 - **Female athlete:** `nutrition-for-the-female-member`, `iron-deficiency-in-members-the-silent-performance-killer`
 - **Labs/bloodwork:** `mid-camp-bloodwork-for-fighters`, `iron-deficiency-in-members-the-silent-performance-killer`
 

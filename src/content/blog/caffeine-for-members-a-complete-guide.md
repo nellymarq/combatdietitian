@@ -67,6 +67,10 @@ An alternative approach: maintain low daily intake (100-200 mg) and use higher d
 - **Energy drinks:** 80-300 mg per can. Often contain other stimulants (taurine, guarana) that complicate the picture.
 - **Caffeinated gels:** 25-50 mg per gel. Useful for during-exercise caffeine intake in endurance events.
 
+## Fight Day Is a Different Problem
+
+The dosing and timing rules above are calibrated for training. Fight day adds a constraint training doesn't have: a fixed walkout time that may slip 30-90 minutes on broadcast delay, followed by a sleep window that the body cannot afford to lose. The [caffeine half-life math for fight day](/blog/caffeine-half-life-fight-day) covers the four-dose sequence (morning, optional afternoon, pre-warmup, hold), the citrulline pivot for sensitive fighters or late slots, and the post-fight wind-down that lets sleep happen on a body still carrying circulating caffeine.
+
 ## Practical Advice for Dietitians
 
 - **Audit total daily caffeine** from all sources (coffee, tea, pre-workout, soda, chocolate)

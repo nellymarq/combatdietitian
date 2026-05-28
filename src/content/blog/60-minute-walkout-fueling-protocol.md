@@ -42,7 +42,7 @@ Form matters:
 
 Habitual caffeine intake matters. A fighter who drinks 4 cups of coffee a day will get less acute benefit from 3 mg/kg than a fighter who tapered caffeine to zero for the prior 5–7 days. If the camp built a caffeine taper into the final week, the fighter is more responsive. If they did not, dose toward the upper end of the range.
 
-Dose at T-60 to T-50, not later. A dose at T-30 peaks at T+15 to T+0 — meaning the fighter is climbing the caffeine curve during Round 1 instead of holding the plateau. The fighter feels the dose hit and thinks it is working. It is, but later than you wanted.
+Dose at T-60 to T-50, not later. A dose at T-30 peaks at T+15 to T+0 — meaning the fighter is climbing the caffeine curve during Round 1 instead of holding the plateau. The fighter feels the dose hit and thinks it is working. It is, but later than you wanted. This pre-warmup dose is the third leg of the [fight-day caffeine protocol](/blog/caffeine-half-life-fight-day) — the morning maintenance dose, the optional afternoon dose, and the post-fight wind-down all matter for the same reason the walkout-window dose does.
 
 ### T-45 to T-30: Last Carbohydrate Dose
 
