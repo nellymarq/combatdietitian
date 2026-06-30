@@ -148,8 +148,9 @@ const userName = user.user_metadata?.full_name || user.email?.split('@')[0] || '
         </div>
       </div>
 
-      <!-- Specialization Tracks -->
-      {courseComplete && (
+      <!-- Specialization Tracks — available to any registered student; completing the Foundation
+           is NOT a prerequisite (the page already guards on `enrolled`). -->
+      {enrolled && (
         <div class="mt-12">
           <h2 class="text-2xl font-bold mb-6">Specialization Tracks</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
