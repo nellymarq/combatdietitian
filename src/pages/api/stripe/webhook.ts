@@ -84,6 +84,34 @@ export const POST: APIRoute = async ({ request }) => {
     }
   }
 
+  // C-3: a refunded/charged-back course must not leave the buyer with the 30-day Calsanova Pro grant
+  // (the advertised money-back guarantee). Revoke via the Calsanova academy/revoke endpoint, which is
+  // idempotent (already_canceled = no-op) so duplicate/late deliveries are safe.
+  // NOTE: requires the Stripe webhook on this account to subscribe to `charge.refunded`.
+  if (event.type === 'charge.refunded') {
+    const charge = event.data.object as Stripe.Charge;
+    const piId = typeof charge.payment_intent === 'string' ? charge.payment_intent : null;
+    if (piId) {
+      const { data: enr } = await supabaseAdmin
+        .from('enrollments')
+        .select('id, user_id')
+        .eq('stripe_payment_intent_id', piId)
+        .limit(1)
+        .single();
+      if (enr?.user_id) {
+        const { data: u } = await supabaseAdmin.auth.admin.getUserById(enr.user_id);
+        const email = u?.user?.email;
+        if (email) {
+          await revokeCalsanovaAccount(email);
+        } else {
+          console.error(`[charge.refunded] no email for enrollment user ${enr.user_id} (charge ${charge.id})`);
+        }
+      } else {
+        console.warn(`[charge.refunded] no enrollment for payment_intent ${piId} (charge ${charge.id})`);
+      }
+    }
+  }
+
   return new Response('OK', { status: 200 });
 };
 
@@ -120,12 +148,15 @@ async function provisionCalsanovaAccount(
         first_name: firstName,
         last_name: lastName,
         extend_days: extendDays,
+        // C-4: stable per-purchase key so a duplicate webhook delivery doesn't stack a 2nd 30-day grant.
+        idempotency_key: session.id,
       }),
     });
 
     if (!response.ok) {
       const text = await response.text();
-      console.error(`Calsanova API returned ${response.status}: ${text}`);
+      // C-5: include the checkout session id for correlation.
+      console.error(`Calsanova API returned ${response.status} (session ${session.id}): ${text}`);
       return false;
     }
 
@@ -133,7 +164,47 @@ async function provisionCalsanovaAccount(
     console.log('Calsanova provisioning result:', result);
     return result.status === 'provisioned' || result.status === 'extended';
   } catch (err) {
-    console.error('Calsanova provisioning failed:', err);
+    console.error(`Calsanova provisioning failed (session ${session.id}):`, err);
+    return false;
+  }
+}
+
+
+/**
+ * C-3 — revoke an Academy-granted Calsanova trial when a course is refunded/charged back.
+ * Mirrors provisionCalsanovaAccount; the Calsanova endpoint only cancels academy-sourced subs and is
+ * idempotent (already_canceled = no-op).
+ */
+async function revokeCalsanovaAccount(email: string): Promise<boolean> {
+  const apiUrl = import.meta.env.CALSANOVA_API_URL;
+  const secret = import.meta.env.CALSANOVA_PROVISION_SECRET;
+
+  if (!apiUrl || !secret) {
+    console.warn('Calsanova revoke not configured — skipping');
+    return false;
+  }
+
+  try {
+    const response = await fetch(`${apiUrl}/api/v1/admin/academy/revoke`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${secret}`,
+      },
+      body: JSON.stringify({ email, reason: 'course_refund' }),
+    });
+
+    if (!response.ok) {
+      const text = await response.text();
+      console.error(`Calsanova revoke returned ${response.status}: ${text}`);
+      return false;
+    }
+
+    const result = await response.json();
+    console.log('Calsanova revoke result:', result);
+    return result.status === 'revoked' || result.status === 'already_canceled';
+  } catch (err) {
+    console.error('Calsanova revoke failed:', err);
     return false;
   }
 }
