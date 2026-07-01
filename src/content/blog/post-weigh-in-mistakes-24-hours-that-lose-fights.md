@@ -4,6 +4,7 @@ description: "You made weight. The cage opens 24 hours later. Most fighters spen
 date: 2026-05-11
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Weight Cutting","Rehydration","Fight Day","Recovery"]
+products: ["electrolytes-berry","whey-protein-vanilla"]
 ---
 
 You stepped off the scale at 5pm Friday. The cage opens at 9pm Saturday. The 28 hours in between are the most critical of fight week and the worst-managed.

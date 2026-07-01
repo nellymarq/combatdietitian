@@ -46,8 +46,21 @@ Workflow rules live in `~/.claude/projects/-home-nelly/memory/feedback_blog_publ
   date: YYYY-MM-DD
   author: "Nelson Marques, MS, RD, LD"
   tags: ["Tag1","Tag2"]
+  products: ["scythene-slug", ...]   # OPTIONAL — see Reader Funnel below; drives the auto product card
   ---
   ```
+
+### Reader Funnel — Scythene affiliate links (MANDATORY on any supplement-relevant post)
+
+Every post that discusses a supplement Scythene sells must funnel readers to the Scythene store (our own brand = full margin, on-brand — never a third-party display-ad network). The FTC disclosure and the end-of-post product card **render automatically** from the `products:` frontmatter via `src/pages/blog/[slug].astro` — you only add the frontmatter + inline links.
+
+- **Frontmatter:** `products: ["slug", ...]` — max 3, AVAILABLE products first, most-relevant first. Slugs MUST come from `src/data/scythene-catalog.ts` (single source of truth). This drives both the `ProductCTA` card and the `AffiliateDisclosure`.
+- **Inline links:** wrap the FIRST natural mention of each mapped supplement in `[existing words](URL)`, max 3/post, using EXACTLY:
+  `https://scythene.com/products/<slug>?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=<post-slug>`
+- **Topic → slug** (map lives in `src/lib/affiliate.ts` `TOPIC_TO_SLUG`): creatine→`creatine-monohydrate` · caffeine/pre-workout/citrulline→`pre-workout` · protein/whey→`whey-protein-vanilla` · electrolytes/hydration/rehydration→`electrolytes-berry` · beta-alanine→`beta-alanine` · omega-3/fish oil→`omega-3` · magnesium→`magnesium-bisglycinate` · vitamin d→`vitamin-d3-k2` · multivitamin→`multivitamin` · collagen→`collagen-peptides-vitamin-c` · glutamine→`l-glutamine`.
+- **Never link** supplements Scythene doesn't sell (beetroot/dietary nitrate, sodium bicarbonate, tart cherry) — leave as plain text. (Amazon Associates fallback is scaffolded but inert in `affiliate.ts` until a tag is set.)
+- **Judgment:** don't link a caution/warning/reduce-this mention (e.g. a caffeine-taper post must NOT push pre-workout — inline OR in `products`). Don't hand-write "Shop Scythene"/promo-block CTAs — the `ProductCTA` card IS the end-of-post CTA. Don't expose the gated `MPS20` code in post bodies.
+- **Verify (mechanical gate):** `npm run check:funnel` — hard-fails on non-catalog slugs, bare (un-UTM'd) links, and leftover promo blocks; warns on supplement posts missing `products:`. Also runs automatically via `prebuild` on every `npm run build` (local + Vercel), so a broken funnel blocks the deploy.
 
 **Topic clusters** (cross-link discovery — group new posts with their natural neighbors. Update this list when shipping a new post.):
 - **Weight cuts:** `weight-cut-science`, `weight-cutting-in-combat-sports`, `why-fighters-lose-strength-during-weight-cuts`, `how-to-rehydrate-after-weigh-in`, `post-weigh-in-mistakes-24-hours-that-lose-fights`

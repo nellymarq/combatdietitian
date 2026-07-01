@@ -7,9 +7,11 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/check-funnel.mjs --errors-only",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check:funnel": "node scripts/check-funnel.mjs",
     "generate:og": "node scripts/generate-og-images.mjs"
   },
   "devDependencies": {
