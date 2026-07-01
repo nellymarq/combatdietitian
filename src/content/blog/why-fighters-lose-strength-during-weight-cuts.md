@@ -4,6 +4,7 @@ description: "The science behind weight cut muscle loss and strength drops — p
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["weight cutting", "combat sports", "strength", "performance"]
+products: ["electrolytes-berry","whey-protein-vanilla","magnesium-bisglycinate"]
 ---
 
 You made weight. You step on the scale looking lean. Then you step into the cage feeling like you have never touched a barbell in your life. Your hands feel slow, your grappling strength is gone, and the explosive power you had in training camp evaporated somewhere between the sauna and the scale.
@@ -42,11 +43,11 @@ During the final week, carbohydrate intake should be reduced gradually — not e
 
 ### Manage Electrolytes Through the Cut
 
-Sodium manipulation is a powerful tool for water weight, but it must be paired with potassium and magnesium management. Supplementing magnesium glycinate (400-600 mg) and maintaining potassium intake through the early phases of the cut helps preserve neuromuscular function even as total body water decreases.
+Sodium manipulation is a powerful tool for water weight, but it must be paired with potassium and magnesium management. Supplementing [magnesium glycinate](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=why-fighters-lose-strength-during-weight-cuts) (400-600 mg) and maintaining potassium intake through the early phases of the cut helps preserve neuromuscular function even as total body water decreases.
 
 ### Execute the Refuel
 
-Post weigh-in, the priority is glycogen and fluid restoration — not a celebratory feast. The research is clear: 7-10 grams of carbohydrate per kilogram of body weight, consumed in frequent small meals with sodium-containing fluids, restores glycogen stores and plasma volume within 16-24 hours. Protein should be included at each feeding (0.3-0.4 g/kg) to begin reversing the catabolic state.
+Post weigh-in, the priority is glycogen and fluid restoration — not a celebratory feast. The research is clear: 7-10 grams of carbohydrate per kilogram of body weight, consumed in frequent small meals with [sodium-containing fluids](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=why-fighters-lose-strength-during-weight-cuts), restores glycogen stores and plasma volume within 16-24 hours. [Protein](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=why-fighters-lose-strength-during-weight-cuts) should be included at each feeding (0.3-0.4 g/kg) to begin reversing the catabolic state.
 
 A fighter who rehydrates with an oral rehydration solution and eats structured, carbohydrate-dense meals will outperform the fighter who orders a large pizza and hopes for the best.
 
@@ -57,5 +58,3 @@ Strength loss during a weight cut is not inevitable — it is a sign of a poorly
 ---
 
 **Need a weight cut protocol that preserves your strength?** [Combat Dietitian](https://combatdietitian.com) builds individualized fight week nutrition plans for athletes nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Reload after the cut:** [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to restore phosphocreatine stores, plus [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rehydration window. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

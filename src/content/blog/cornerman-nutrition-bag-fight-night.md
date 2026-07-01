@@ -4,6 +4,7 @@ description: "A cornerman runs the day-of nutrition execution. Here is the coole
 date: 2026-05-07
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Competition","Cornermen","MMA","Practical Nutrition"]
+products: ["electrolytes-berry","pre-workout","whey-protein-vanilla"]
 ---
 
 A cornerman with no nutrition plan is one missed sip of water away from losing a round.
@@ -28,9 +29,9 @@ The job in this window: top off liver glycogen, top off hydration, give the gut 
 
 What goes in:
 
-- **Carb-rich, low-fat, low-fiber meal** — 0.8–1.2 g/kg carbs. White rice with honey and a piece of grilled chicken, a turkey sandwich on white bread with jam, an oatmeal cup with banana and a scoop of whey. Whatever the athlete tested in camp.
+- **Carb-rich, low-fat, low-fiber meal** — 0.8–1.2 g/kg carbs. White rice with honey and a piece of grilled chicken, a turkey sandwich on white bread with jam, an oatmeal cup with banana and a scoop of [whey](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=cornerman-nutrition-bag-fight-night). Whatever the athlete tested in camp.
 - **Fluids paced** — 4–6 mL per kg body mass across the hour. A 70 kg athlete: ~300–400 mL, sipped not chugged.
-- **Sodium with the fluids** — 300–500 mg. A pinch of salt in a bottle, or an electrolyte tab.
+- **Sodium with the fluids** — 300–500 mg. A pinch of salt in a bottle, or an [electrolyte tab](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=cornerman-nutrition-bag-fight-night).
 
 What stays out:
 
@@ -45,7 +46,7 @@ Pack list for this window: a Tupperware of the pre-fight meal, two 500 mL bottle
 The active warm-up. The athlete should not be eating meals here — gastric volume is now a liability, not a resource.
 
 - **Sips, not gulps.** 100–150 mL of electrolyte drink every 10–15 minutes. The goal is to enter the cage with euhydrated tissue and an empty stomach.
-- **Caffeine, if the athlete uses it.** 3–5 mg/kg about 45 minutes before the walk. The athlete is already on a fight-week caffeine protocol from the dietitian; the corner's job is to deliver the dose at the right time, not to decide it. Caffeine pill, gum, or pre-portioned drink — whatever was tested in camp.
+- **[Caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=cornerman-nutrition-bag-fight-night), if the athlete uses it.** 3–5 mg/kg about 45 minutes before the walk. The athlete is already on a fight-week caffeine protocol from the dietitian; the corner's job is to deliver the dose at the right time, not to decide it. Caffeine pill, gum, or pre-portioned drink — whatever was tested in camp.
 - **A small carb top-up.** 15–25 g of fast carbs about 30 minutes before the walk. A gel, a few dates, half a banana, a small juice box. This sits above the level that interferes with warm-up intensity and below the level that lands in the gut at the bell.
 
 Pack list: a flask or small bottle of pre-mixed electrolyte drink, the caffeine source (athlete-specific, in original packaging), 2–3 single-serve carb sources (gel, dates, juice box).

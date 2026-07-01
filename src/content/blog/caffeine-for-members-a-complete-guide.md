@@ -4,9 +4,10 @@ description: "Caffeine is the world's most widely used performance enhancer. Thi
 date: 2026-02-13
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Caffeine","Supplements","Performance","Endurance"]
+products: ["pre-workout","creatine-monohydrate"]
 ---
 
-Caffeine is the most widely consumed psychoactive substance on Earth and, alongside creatine, one of the most evidence-backed ergogenic aids in sports nutrition. The International Olympic Committee, the ISSN, and the ACSM all recognize caffeine as a legitimate performance enhancer.
+[Caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-for-members-a-complete-guide) is the most widely consumed psychoactive substance on Earth and, alongside [creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-for-members-a-complete-guide), one of the most evidence-backed ergogenic aids in sports nutrition. The International Olympic Committee, the ISSN, and the ACSM all recognize caffeine as a legitimate performance enhancer.
 
 Yet many members use caffeine haphazardly — consuming inconsistent doses at inconsistent times, building tolerance that diminishes the effect, and disrupting sleep in the process.
 
@@ -79,7 +80,3 @@ The dosing and timing rules above are calibrated for training. Fight day adds a 
 - **Consider genetics** — if an member reports caffeine sensitivity, jitters, or sleep disruption at moderate doses, they may be a slow metabolizer
 
 [Calsanova's Kiwi AI research assistant](/signup) can provide personalized, evidence-based caffeine recommendations based on an member's sport, body weight, and training schedule — backed by PubMed literature.
-
----
-
-**Dosed for performance:** [Scythene Pre-Workout](https://scythene.com/products/pre-workout) — clinically dosed caffeine, L-citrulline, and beta-alanine. No proprietary blends, full label transparency. Use code **MPS20** for 20% off your first order. [Shop Scythene →](https://scythene.com)

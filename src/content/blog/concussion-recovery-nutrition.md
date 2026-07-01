@@ -4,6 +4,7 @@ description: "The 90 days after a concussion are a metabolic recovery window mos
 date: 2026-05-04
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Concussion","TBI","Recovery","Brain Health","Supplements"]
+products: ["creatine-monohydrate","omega-3","magnesium-bisglycinate"]
 ---
 
 A knockout is a closed-head traumatic brain injury. The fighter walks out of the cage, the ringside doctor clears them to leave the venue, and the team treats the next 90 days as rest. They should be treating it as the most metabolically demanding recovery window of the entire training year.
@@ -12,7 +13,7 @@ Your brain after a concussion is not "bruised." It is a tissue going through a 7
 
 This is the protocol I use with fighters returning from a documented concussion. None of it replaces medical evaluation, return-to-play testing, or whatever your neurologist tells you to do. It is the nutrition layer that sits underneath all of that.
 
-This post assumes the daily baseline is already in place. If your fighter is not running 2g/day EPA+DHA, 5g creatine, and 300–400mg magnesium *before* an injury happens, start with the broader piece on [brain health nutrition for combat athletes](/blog/brain-health-nutrition-for-combat-athletes) — the protective nutrients have to be in the system before the impact, not added after.
+This post assumes the daily baseline is already in place. If your fighter is not running 2g/day [EPA+DHA](https://scythene.com/products/omega-3?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=concussion-recovery-nutrition), 5g [creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=concussion-recovery-nutrition), and 300–400mg [magnesium](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=concussion-recovery-nutrition) *before* an injury happens, start with the broader piece on [brain health nutrition for combat athletes](/blog/brain-health-nutrition-for-combat-athletes) — the protective nutrients have to be in the system before the impact, not added after.
 
 ## What Actually Happens to the Brain in the First 30 Days
 

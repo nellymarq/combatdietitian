@@ -4,6 +4,7 @@ description: "Combat athletes take more cumulative head impact than almost anyon
 date: 2026-04-28
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Brain Health","Concussion","Recovery","Practical Nutrition"]
+products: ["creatine-monohydrate","omega-3","magnesium-bisglycinate"]
 ---
 
 Combat athletes take more head impacts than almost anyone in sport. Boxers, MMA fighters, kickboxers, wrestlers, and BJJ competitors all absorb cumulative subconcussive contact across years of training that no helmet, no rule change, and no mouthguard fully eliminates. Add the occasional concussion event — diagnosed or not — and you have a population that needs to take brain health seriously.
@@ -20,11 +21,11 @@ The brain-injury and brain-health nutrition literature has gotten more rigorous 
 
 Three nutrients with the strongest evidence base for combat athletes:
 
-**Omega-3 fatty acids (EPA and DHA).** Animal models and a growing human dataset show that DHA in particular supports neuronal membrane integrity, attenuates the neuroinflammatory cascade after impact, and may reduce axonal damage. Doses studied in human TBI work cluster around 2–4 g/day combined EPA + DHA. For ongoing brain protection in athletes, 2 g/day EPA + DHA from fish oil (or comparable from fatty fish 3–4x/week) is the working target. This is one of the few supplements I treat as standard issue for combat athletes.
+**[Omega-3 fatty acids](https://scythene.com/products/omega-3?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=brain-health-nutrition-for-combat-athletes) (EPA and DHA).** Animal models and a growing human dataset show that DHA in particular supports neuronal membrane integrity, attenuates the neuroinflammatory cascade after impact, and may reduce axonal damage. Doses studied in human TBI work cluster around 2–4 g/day combined EPA + DHA. For ongoing brain protection in athletes, 2 g/day EPA + DHA from fish oil (or comparable from fatty fish 3–4x/week) is the working target. This is one of the few supplements I treat as standard issue for combat athletes.
 
-**Creatine monohydrate.** Beyond the muscular performance case, creatine has a separate brain-energetics case. Brain creatine pools are smaller than muscle creatine pools and respond to supplementation more slowly (weeks, not days), but the literature supports both cognitive performance under stress and a potential neuroprotective role in TBI. The standard dose — 5 g/day — that fighters are already taking for performance hits both targets. Do not skip creatine in fight camp; it is working on more than your bench press.
+**[Creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=brain-health-nutrition-for-combat-athletes).** Beyond the muscular performance case, creatine has a separate brain-energetics case. Brain creatine pools are smaller than muscle creatine pools and respond to supplementation more slowly (weeks, not days), but the literature supports both cognitive performance under stress and a potential neuroprotective role in TBI. The standard dose — 5 g/day — that fighters are already taking for performance hits both targets. Do not skip creatine in fight camp; it is working on more than your bench press.
 
-**Magnesium.** Brain magnesium drops after head impact, and supplementation may attenuate downstream excitotoxicity. Most combat athletes are under-replete on magnesium at baseline (sweating, restriction, weight-cutting). 300–400 mg/day of a well-absorbed form (glycinate, malate, or L-threonate — not oxide) is reasonable insurance.
+**[Magnesium](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=brain-health-nutrition-for-combat-athletes).** Brain magnesium drops after head impact, and supplementation may attenuate downstream excitotoxicity. Most combat athletes are under-replete on magnesium at baseline (sweating, restriction, weight-cutting). 300–400 mg/day of a well-absorbed form (glycinate, malate, or L-threonate — not oxide) is reasonable insurance.
 
 The evidence on curcumin, resveratrol, vitamin D (when deficient), choline, and B vitamins is more mixed. They may help. None of them belong in the core protocol the way the three above do.
 

@@ -4,6 +4,7 @@ description: "Most fighters take 300 mg of caffeine on fight night and feel abou
 date: 2026-06-02
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Caffeine","Pre-Fight","Supplements","Fight Prep"]
+products: ["beta-alanine"]
 ---
 
 Most fighters take 300 mg of caffeine 90 minutes before walkout and feel about the same as they did taking 200 mg on a Tuesday in camp. The pre-fight pop is sharp, the heart rate gets up, the focus narrows — but the dose-vs-effect curve has flattened across a 10-week camp of 300-400 mg/day baseline intake. The walkout dose is buying maybe 60-70% of the ergogenic effect the literature documents in caffeine-naive subjects.
@@ -76,7 +77,7 @@ The hard sessions don't disappear during the taper window. Days -10 through -4 s
 
 **Citrulline malate, 6-8 g pre-session.** Replaces some of the perceived-exertion benefit through nitric-oxide-mediated improvements in muscle perfusion. Doesn't touch the adenosine pathway, so it doesn't reset the tolerance clock.
 
-**Beta-alanine, maintained at 3-6 g/day across the taper.** Beta-alanine is a loading supplement — pulling it out during the taper would waste the camp-long buildup of muscle carnosine. Keep it in.
+**[Beta-alanine](https://scythene.com/products/beta-alanine?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-tolerance-reset-for-fight-camp), maintained at 3-6 g/day across the taper.** Beta-alanine is a loading supplement — pulling it out during the taper would waste the camp-long buildup of muscle carnosine. Keep it in.
 
 **Carbohydrate-mouth-rinse pre-session.** 30-60 seconds of swishing a 6-8% maltodextrin solution before a hard session activates oral receptors that signal central drive without adding calories. Useful during the cut weeks when caloric headroom is limited.
 

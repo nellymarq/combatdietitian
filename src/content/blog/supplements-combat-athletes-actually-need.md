@@ -4,6 +4,7 @@ description: "Cut through the noise. These are the only supplements with strong 
 date: 2026-04-05
 author: "Nelson Marques, RD, CSSD"
 tags: ["supplements", "combat sports", "creatine", "performance", "evidence-based"]
+products: ["creatine-monohydrate", "pre-workout", "electrolytes-berry"]
 ---
 
 The supplement industry spends billions convincing athletes they need 15 products to perform. Most of it is noise. When you strip away the marketing and look at what peer-reviewed research actually supports for combat athletes, the list gets short fast.
@@ -14,7 +15,7 @@ Here are the five that earn their place — and the evidence behind each one.
 
 This is the single most researched supplement in sports science. Over 500 peer-reviewed studies. The International Society of Sports Nutrition (ISSN) considers it safe and effective for increasing high-intensity exercise capacity and lean body mass (Kreider et al., 2017).
 
-For combat athletes specifically, creatine supports repeated explosive efforts — the takedown attempts, scrambles, and power shots that win fights. A 2019 meta-analysis in the *Journal of the International Society of Sports Nutrition* found that creatine supplementation improved high-intensity intermittent exercise performance by 7.5% on average.
+For combat athletes specifically, [creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=supplements-combat-athletes-actually-need) supports repeated explosive efforts — the takedown attempts, scrambles, and power shots that win fights. A 2019 meta-analysis in the *Journal of the International Society of Sports Nutrition* found that creatine supplementation improved high-intensity intermittent exercise performance by 7.5% on average.
 
 **Dose:** 3-5g daily. No loading phase necessary. Take it every day, including rest days. Timing doesn't matter — consistency does. For the full research breakdown, see our [complete guide to creatine](/blog/creatine-the-most-researched-supplement-in-sports).
 
@@ -22,7 +23,7 @@ For combat athletes specifically, creatine supports repeated explosive efforts �
 
 ## 2. Caffeine
 
-Caffeine is the most widely used ergogenic aid in sport for a reason. It works. A meta-analysis in the *British Journal of Sports Medicine* (Southward et al., 2018) found caffeine improved endurance performance by 2-4% and strength/power output by 2-7%.
+[Caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=supplements-combat-athletes-actually-need) is the most widely used ergogenic aid in sport for a reason. It works. A meta-analysis in the *British Journal of Sports Medicine* (Southward et al., 2018) found caffeine improved endurance performance by 2-4% and strength/power output by 2-7%.
 
 For fighters, the cognitive benefits matter as much as the physical ones. Caffeine improves reaction time, vigilance, and decision-making under fatigue — exactly what you need in the championship rounds.
 
@@ -38,7 +39,7 @@ This isn't glamorous, but it might be the most important item on the list — es
 
 Sodium, potassium, magnesium, and chloride regulate fluid balance, nerve conduction, and muscle contraction. A 2% body mass loss from dehydration reduces physical performance by 10-15% and cognitive function by up to 20% (Cheuvront & Kenefick, 2014).
 
-Most fighters are chronically under-hydrated during camp without knowing it. An electrolyte formula during and after training maintains plasma volume and prevents the performance decay that accumulates over weeks of hard training.
+Most fighters are chronically under-hydrated during camp without knowing it. An [electrolyte formula](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=supplements-combat-athletes-actually-need) during and after training maintains plasma volume and prevents the performance decay that accumulates over weeks of hard training.
 
 **Dose:** 500-750 mL of electrolyte solution per hour of training in the heat. Look for a formula with at least 500 mg sodium per serving. Avoid products that are mostly sugar with trace minerals — check the label.
 
@@ -75,7 +76,3 @@ For fighters specifically, the emerging research on omega-3s and traumatic brain
 Five supplements. All with strong evidence. All with clear dosing protocols. Everything else is optional at best and a waste of money at worst.
 
 Your supplement stack should be boring. Your training and nutrition are where the results come from. Supplements fill gaps — they don't create advantages that don't exist.
-
----
-
-**Looking for supplements built to this standard?** [Scythene Supplements](https://scythene.com) — third-party tested, clinical dosing, no proprietary blends. Built by the same RD behind Combat Dietitian. Code **MPS20** for 20% off your first order.

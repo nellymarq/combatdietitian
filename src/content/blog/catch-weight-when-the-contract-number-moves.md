@@ -4,6 +4,7 @@ description: "The opponent missed weight. The promoter offered a catch-weight. T
 date: 2026-05-19
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Weight Cutting","Fight Camp","Contracts","Practical Nutrition"]
+products: ["electrolytes-berry"]
 ---
 
 Nine days out. Opponent has been struggling to make 155 all camp. Their manager calls your manager. The promoter wants a catch-weight at 160. Your fighter is currently at 168, on track for 155 next Friday with the standard 12-pound cut your camp has run six times.
@@ -38,7 +39,7 @@ The standard 12-pound cut your fighter trained for is now a 6-8 pound cut. Two-t
 
 3. **The carb load before the cut window matters less.** A 12-pound cut typically front-loads carbs early in fight week to maximize the glycogen burn during the dry-down phase. A 6-8 pound cut does not need this. Maintain training-week carbs and skip the front-load.
 
-4. **The post-weigh-in rehydration math is smaller, but the principles are identical.** You are still replacing fluid and sodium losses, just less of them. The default 150% replacement target by weight stays. So if the fighter dropped 6 lb in the dry-down (about 2.7 L), the 24-hour replacement target is 4.0 L plus electrolytes — not the 7-8 L they may have run on a 12-pound cut. Drinking more does not make them stronger; it makes them slosh.
+4. **The post-weigh-in rehydration math is smaller, but the principles are identical.** You are still replacing fluid and sodium losses, just less of them. The default 150% replacement target by weight stays. So if the fighter dropped 6 lb in the dry-down (about 2.7 L), the 24-hour replacement target is 4.0 L plus [electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=catch-weight-when-the-contract-number-moves) — not the 7-8 L they may have run on a 12-pound cut. Drinking more does not make them stronger; it makes them slosh.
 
 **The mistake that kills this pattern:** thinking that "easier cut" means "extra eating." Fighters who get the catch-weight news on Sunday and treat Monday-Wednesday as a treat-yourself window show up Saturday morning a pound or two over the new catch-weight with no dry-down options left. They either over-cut at the last minute or pay the fine.
 

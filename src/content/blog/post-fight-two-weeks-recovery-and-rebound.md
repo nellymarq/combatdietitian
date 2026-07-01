@@ -4,6 +4,7 @@ description: "Most fighters lose more progress in the two weeks after a fight th
 date: 2026-05-26
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Recovery", "Combat Sports", "Weight Management", "Post-Fight", "Fueling"]
+products: ["electrolytes-berry","omega-3","magnesium-bisglycinate"]
 ---
 
 The two weeks after a fight are the most dietetically expensive period of the year for most combat athletes, and almost nobody plans them. Fight week gets a protocol. Camp gets a periodized plan. The eight-week training block gets a macro target. The two weeks after the cage door closes get whatever the fighter feels like at 2 a.m. after the post-fight party, then whatever the next day looks like with a hangover and a sore everything.
@@ -31,12 +32,12 @@ Every day below is calibrated by these four. A heavyweight with no damage flying
 **Calories:** open, but structured. 1,200-2,000 kcal in the post-fight feed window, weighted heavily toward carbohydrate and lean protein.
 **Carbs:** 2-3 g/kg in this window. Rice, potatoes, bread, pasta. Avoid the fried-everything default of the post-fight dinner spot.
 **Protein:** 0.4-0.6 g/kg per feed, lean cuts. Grilled chicken, sushi rice and fish, eggs.
-**Fluids:** continue the rehydration started at weigh-in. 750-1,000 mL in the first hour post-fight, then 250-500 mL/hour for the next three hours. Electrolytes in every other bottle.
+**Fluids:** continue the rehydration started at weigh-in. 750-1,000 mL in the first hour post-fight, then 250-500 mL/hour for the next three hours. [Electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=post-fight-two-weeks-recovery-and-rebound) in every other bottle.
 **Avoid:** alcohol in the first 4 hours, fried food in the first 2 hours, anything that requires hard chewing if the jaw took damage.
 
 The fighter walked into the cage with maybe 60-70% of normal glycogen and is dropping further during the fight itself. The first 4 hours are a glycogen window, not a celebration window. The party that happens at hour 6 is a different conversation; the first 4 hours need to look like the back half of a refeed.
 
-If the fight ended in damage at the moderate-to-high end, add an anti-inflammatory anchor to the first meal: a fatty fish or a 2-3 g fish-oil capsule dose, a serving of berries, dark leafy greens. Not because one meal fixes the inflammation arc, but because the first meal sets the substrate the next 12 hours will be drawing on.
+If the fight ended in damage at the moderate-to-high end, add an anti-inflammatory anchor to the first meal: a fatty fish or a 2-3 g [fish-oil capsule](https://scythene.com/products/omega-3?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=post-fight-two-weeks-recovery-and-rebound) dose, a serving of berries, dark leafy greens. Not because one meal fixes the inflammation arc, but because the first meal sets the substrate the next 12 hours will be drawing on.
 
 ## Sunday — the recovery anchor
 
@@ -68,7 +69,7 @@ The corrective frame: the scale climb from Saturday night to Wednesday morning i
 
 Movement-wise, the rule of thumb is "active recovery, not training." Any session that gets the heart rate above 130 bpm or loads any tissue that took damage in the fight is too much. The two-week window is for the body to clear inflammation, not to test whether the fighter "still has it."
 
-For fighters with moderate-to-high damage, Monday through Wednesday is also when sleep architecture is most disrupted. Magnesium glycinate 200-400 mg at bedtime, tart cherry juice or a tart cherry concentrate, room temperature 65-68 F, no screens 60 minutes pre-bed. The sleep work matters more than the food work in this window.
+For fighters with moderate-to-high damage, Monday through Wednesday is also when sleep architecture is most disrupted. [Magnesium glycinate](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=post-fight-two-weeks-recovery-and-rebound) 200-400 mg at bedtime, tart cherry juice or a tart cherry concentrate, room temperature 65-68 F, no screens 60 minutes pre-bed. The sleep work matters more than the food work in this window.
 
 ## Thursday and Friday — the audit day
 

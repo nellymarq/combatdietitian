@@ -1,0 +1,27 @@
+---
+/**
+ * FTC-compliant affiliate / material-connection disclosure.
+ *
+ * Scythene is a sibling MPS LLC brand and some product links may earn a commission,
+ * so the material connection is disclosed clearly and near the content, per FTC
+ * endorsement guidelines. Also protects the author's RD standing (transparency).
+ *
+ * `compact` renders a single muted line (use at the top of an article);
+ * default renders a bordered note (use as a standalone block).
+ */
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+
+const text =
+  'Combat Dietitian and Scythene Supplements are both part of Marques Performance Systems. Some product links may earn us a commission — we only link supplements that meet our own clinical-dosing and third-party-testing standards.';
+---
+
+{compact ? (
+  <p class="text-xs text-white/40 italic leading-relaxed">{text}</p>
+) : (
+  <aside class="border-l-2 border-gold-500/40 pl-4 py-1 my-6">
+    <p class="text-xs text-white/45 italic leading-relaxed">{text}</p>
+  </aside>
+)}

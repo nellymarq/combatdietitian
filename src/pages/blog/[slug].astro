@@ -4,6 +4,8 @@ export const prerender = true;
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import ProductCTA from '../../components/ProductCTA.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -18,6 +20,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const slug = post.id;
 const ogImage = `https://combatdietitian.com/og/${slug}.png`;
+const products = post.data.products ?? [];
 ---
 
 <Layout title={`${post.data.title} | Combat Dietitian`} description={post.data.description} ogImage={ogImage}>
@@ -50,6 +53,12 @@ const ogImage = `https://combatdietitian.com/og/${slug}.png`;
         <span>{post.data.author}</span>
       </div>
 
+      {products.length > 0 && (
+        <div class="mt-6">
+          <AffiliateDisclosure compact />
+        </div>
+      )}
+
       <div class="mt-10 prose prose-invert prose-lg max-w-none
         prose-headings:font-bold prose-headings:tracking-tight
         prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
@@ -60,6 +69,8 @@ const ogImage = `https://combatdietitian.com/og/${slug}.png`;
         prose-em:text-white/60">
         <Content />
       </div>
+
+      <ProductCTA slugs={products} postSlug={slug} />
 
       <div class="mt-16 pt-8 border-t border-white/10">
         <a href="/blog" class="inline-flex items-center gap-2 text-accent-500 hover:text-accent-400 font-medium transition-colors">

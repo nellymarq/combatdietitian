@@ -4,9 +4,10 @@ description: "With over 500 peer-reviewed studies, creatine monohydrate has more
 date: 2026-03-06
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Supplements","Creatine","Performance","Evidence-Based"]
+products: ["creatine-monohydrate"]
 ---
 
-Creatine monohydrate is the single most studied ergogenic supplement in the history of sports nutrition. Over 500 peer-reviewed papers have examined its effects on performance, body composition, and health. The International Society of Sports Nutrition (ISSN), the American College of Sports Medicine (ACSM), and the IOC have all recognized its efficacy and safety.
+[Creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=creatine-the-most-researched-supplement-in-sports) is the single most studied ergogenic supplement in the history of sports nutrition. Over 500 peer-reviewed papers have examined its effects on performance, body composition, and health. The International Society of Sports Nutrition (ISSN), the American College of Sports Medicine (ACSM), and the IOC have all recognized its efficacy and safety.
 
 Despite this, misinformation persists. Athletes worry about kidney damage, water retention, and hair loss. Some avoid it entirely because they associate supplements with risk. As a dietitian, clarifying the evidence is part of the job.
 
@@ -64,7 +65,3 @@ Creatine is one of the few supplements where the risk-benefit analysis is overwh
 The key is education: explain the mechanism, set expectations about water-related weight gain, and emphasize that creatine is not a steroid, not banned, and not dangerous for healthy kidneys.
 
 For dietitians looking to track supplement protocols alongside nutrition plans, [Calsanova](/signup?role=dietitian) integrates supplement recommendations into the member management workflow.
-
----
-
-**Built to this standard:** [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) — 5g per serving, micronized for solubility, unflavored, third-party tested. No loading phase, no proprietary blends. Use code **MPS20** for 20% off your first order. [Shop Scythene →](https://scythene.com)

@@ -4,6 +4,7 @@ description: "The hour between hand wraps and walkout is where most fight-day fu
 date: 2026-05-12
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Competition","Fight Day","Pre-Fight Nutrition","Caffeine"]
+products: ["electrolytes-berry"]
 ---
 
 The pre-fight meal is in. The day-of carbs are in. The rehydration math from the post-weigh-in window worked. The fighter is dressed, wraps are on, and there are 60 minutes until the walkout.
@@ -22,7 +23,7 @@ Three jobs, in order:
 
 **2. Keep blood glucose steady without spiking insulin.** A glycogen-loaded fighter does not need a big carb bolus pre-walkout. They need a small, steady drip that prevents the catecholamine-driven glucose dip that hits at the cage door. The mistake here is over-dosing, not under-dosing.
 
-**3. Top off sodium and fluids without leaving the fighter sloshing or peeing.** The fighter is sweating in warm-ups. They are losing water and sodium during shadow boxing, padwork, and the cage walk. Both need replacement at a rate that does not over-hydrate them by the time they step in.
+**3. Top off [sodium](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=60-minute-walkout-fueling-protocol) and fluids without leaving the fighter sloshing or peeing.** The fighter is sweating in warm-ups. They are losing water and sodium during shadow boxing, padwork, and the cage walk. Both need replacement at a rate that does not over-hydrate them by the time they step in.
 
 Three jobs, 60 minutes, three to four ingestion points. No more.
 

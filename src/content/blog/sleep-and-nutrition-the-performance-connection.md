@@ -4,6 +4,7 @@ description: "Sleep deprivation increases hunger hormones, impairs glucose metab
 date: 2026-03-01
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Sleep","Recovery","Hormones","Performance"]
+products: ["magnesium-bisglycinate"]
 ---
 
 Sleep is the most powerful recovery tool an member has — and it is free. Yet it is consistently the most neglected variable in performance optimization. The average collegiate member sleeps 6.5 hours per night, well below the 8-10 hours recommended by the National Sleep Foundation for young adults engaged in heavy training.
@@ -44,12 +45,8 @@ Several studies have demonstrated improvements in sleep duration and quality whe
 - **Pre-sleep snack:** 30-40g casein protein provides overnight amino acid availability. Pair with a small carbohydrate source if tolerated.
 - **Caffeine audit:** Review total daily caffeine intake and timing. Many members are unaware of caffeine content in pre-workouts, sodas, and teas.
 - **Hydration timing:** Front-load fluid intake earlier in the day. Excess fluid intake in the evening leads to nocturia (nighttime urination), fragmenting sleep.
-- **Magnesium:** 200-400 mg of magnesium glycinate or citrate before bed may support sleep quality, particularly in members who are deficient.
+- **[Magnesium](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=sleep-and-nutrition-the-performance-connection):** 200-400 mg of magnesium glycinate or citrate before bed may support sleep quality, particularly in members who are deficient.
 
 For the post-training nutrition side of recovery, see [Recovery Nutrition: What to Eat After Training](/blog/recovery-nutrition-what-to-eat-after-training). Sleep and nutrition are not separate domains — they are interconnected systems. A dietitian who addresses both will see better outcomes than one who focuses on food alone.
 
 [Calsanova's wearable integrations](/signup) pull sleep data from Apple Health, Oura, Garmin, and other devices — giving dietitians visibility into sleep patterns alongside nutrition data for a complete performance picture.
-
----
-
-**Built to this standard:** [Scythene Magnesium Bisglycinate](https://scythene.com/products/magnesium-bisglycinate) — 300mg elemental magnesium in the most absorbable chelate form, with glycine's natural relaxation benefits for sleep quality and recovery. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

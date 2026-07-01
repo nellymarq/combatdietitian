@@ -9,6 +9,8 @@ const blog = defineCollection({
     date: z.coerce.date(),
     author: z.string(),
     tags: z.array(z.string()),
+    /** Scythene catalog slugs to surface in the end-of-post ProductCTA. Optional. */
+    products: z.array(z.string()).optional(),
   }),
 });
 

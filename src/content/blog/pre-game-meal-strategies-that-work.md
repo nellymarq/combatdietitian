@@ -4,6 +4,7 @@ description: "The pre-competition meal can make or break game-day performance. H
 date: 2026-02-27
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Competition","Pre-Game","Carbohydrates","Performance"]
+products: ["pre-workout","electrolytes-berry"]
 ---
 
 The pre-game meal is the most scrutinized meal in an member's week — and the one most likely to be improvised. Athletes eat too much, too little, too close to competition, or the wrong foods entirely. The result is GI distress, sluggishness, or insufficient fuel when it matters most.
@@ -63,7 +64,3 @@ Athletes are creatures of habit. Many have pre-game meal rituals that may not be
 The approach that works: educate on the principles, provide optimal options, and allow flexibility within the guidelines.
 
 [Calsanova's meal planning system](/signup?role=dietitian) lets dietitians set day-type-specific nutrition plans — including dedicated pre-game and game-day templates — that members can access directly from their phone.
-
----
-
-**Dial in the pre-game stack:** [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for clinically dosed caffeine and L-citrulline, plus [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) to maintain plasma volume before kickoff. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -4,6 +4,7 @@ description: "The first hard outdoor session of a summer fight camp is the one t
 date: 2026-06-04
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Heat Acclimation","Hydration","Fight Camp","Performance","Combat Sports"]
+products: ["creatine-monohydrate","electrolytes-berry","beta-alanine"]
 ---
 
 The first hard outdoor session of a summer fight camp is the one that breaks the fighter who didn't acclimate. Core body temperature climbs past 39°C inside 30 minutes, the heart rate runs 20-30 beats above what the workload would normally produce, the technical work degrades inside the first round, and the session ends early — sometimes in a medical tent, more often just in frustration. The fighter who walks in on day one of June expecting to train at the same intensity they trained at in March is paying a tax they didn't budget for, and the tax compounds across the first two weeks.
@@ -42,7 +43,7 @@ By the end of day 14, the body has produced the major heat-adaptation responses.
 
 Heat acclimation is a fluid and sodium problem before it is a training problem. The athlete who shows up to the first hot session under-hydrated is going to fail the session and miss the adaptation stimulus. The targets below assume a 75-85 kg fighter; scale linearly to actual body mass.
 
-**Daily baseline fluid intake during the acclimation block: 4.5-6 L/day.** This is up from the typical 3-4 L/day of a cooler training block. The bulk of the increase happens in the 4-hour window before the heat session and the 2-hour window after. Plain water as the base, with electrolyte additions on schedule.
+**Daily baseline fluid intake during the acclimation block: 4.5-6 L/day.** This is up from the typical 3-4 L/day of a cooler training block. The bulk of the increase happens in the 4-hour window before the heat session and the 2-hour window after. Plain water as the base, with [electrolyte additions](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=heat-acclimation-summer-fight-camp) on schedule.
 
 **Sodium intake target: 4,000-6,000 mg/day during acclimation.** This is much higher than the standard sports-nutrition recommendation because the acclimating athlete is losing sodium at 800-1,200 mg/L of sweat in the early-block sessions before sweat sodium concentration drops. Three liters of sweat across a 90-minute session at 1,000 mg/L is 3 g of sodium lost in a single training block. Replace it actively during the session and reload between sessions.
 
@@ -60,9 +61,9 @@ The hydration and sodium pattern above is also reusable for the late-camp cut. S
 
 **Sodium citrate or sodium chloride capsules.** 1-2 g doses taken with fluid 30 minutes pre-session and at the 30 and 60 minute marks of long sessions. Bypasses the GI tolerance issue of trying to dissolve the same amount of sodium in a single bottle and lets the athlete hit 4-6 g of in-session sodium without the gut distress that comes from a hypertonic solution.
 
-**Beta-alanine, 3-5 g/day.** Standard fight-camp dosing, but the acclimation block is a good time to keep loading because the heart-rate ceiling and the lactate buffering both matter more when the heat compounds the conditioning demand. If the athlete has been off beta-alanine, the acclimation block is a useful loading window because the body will be adapting in multiple directions at once and the small additional adaptation from beta-alanine takes minimal extra effort.
+**[Beta-alanine](https://scythene.com/products/beta-alanine?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=heat-acclimation-summer-fight-camp), 3-5 g/day.** Standard fight-camp dosing, but the acclimation block is a good time to keep loading because the heart-rate ceiling and the lactate buffering both matter more when the heat compounds the conditioning demand. If the athlete has been off beta-alanine, the acclimation block is a useful loading window because the body will be adapting in multiple directions at once and the small additional adaptation from beta-alanine takes minimal extra effort.
 
-**Creatine, 3-5 g/day.** Cell hydration support, useful both for the muscle-water expansion that supports plasma volume on the acclimation side and for the power expression that the heat is otherwise blunting. Steady daily dose, no loading window needed if the athlete has been on creatine through the off-season.
+**[Creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=heat-acclimation-summer-fight-camp), 3-5 g/day.** Cell hydration support, useful both for the muscle-water expansion that supports plasma volume on the acclimation side and for the power expression that the heat is otherwise blunting. Steady daily dose, no loading window needed if the athlete has been on creatine through the off-season.
 
 **Caffeine, MAINTAINED at camp baseline (not increased).** Counterintuitive but real: caffeine is a mild diuretic and a vasoconstrictor at high doses, both of which work against the acclimation adaptation. The acclimation block is not the time to push caffeine harder. Maintain the camp baseline and time doses 4+ hours before the heat session to clear the peak diuretic effect.
 

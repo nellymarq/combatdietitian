@@ -4,6 +4,7 @@ description: "A wrestler who fades in the third period, a BJJ competitor whose g
 date: 2026-06-25
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Supplements","Buffering","Combat Sports","Fight Camp","Late Rounds"]
+products: ["pre-workout","beta-alanine"]
 ---
 
 A college wrestler is up 4-1 in the second period and dead-armed by the second minute of the third. A BJJ brown belt opens the bracket with a clean win, takes a hard second match, and by his fourth match cannot close his grip on the lapel. A pro lightweight controls rounds one and two and gets stopped in the third because his hands drop and his shot disappears. The physiological story behind all three of these is the same: late-round muscle acidosis. Their training had the conditioning. Their corner had the plan. The metabolic infrastructure inside the muscle ran out of road on the same checkpoint — H+ accumulating faster than the cell can buffer it, pH falling from a resting 7.0 to the 6.4-6.6 range under high-glycolytic load, and the contractile and force-production machinery starting to fail at the exact moment of the match they cannot afford to fade.
@@ -81,7 +82,7 @@ The performance signal is small or absent in:
 
 - **Pure aerobic events.** Long-distance running, road cycling, triathlon — bicarb does not help because the late-event fatigue mechanism is not muscle acidosis.
 - **Single-effort low-glycolytic events.** Olympic lifting, powerlifting, shot put — the work duration is too short for muscle acidosis to be the limiting variable.
-- **Athletes with a history of severe GI distress on prior protocols.** The cost-benefit shifts; consider beta-alanine for the late-round acidosis case instead.
+- **Athletes with a history of severe GI distress on prior protocols.** The cost-benefit shifts; consider [beta-alanine](https://scythene.com/products/beta-alanine?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=sodium-bicarbonate-buffering-for-combat-athletes) for the late-round acidosis case instead.
 - **Athletes on certain medications that interact with bicarb absorption or sodium status.** Lithium, certain antibiotics (ciprofloxacin, tetracyclines), high-dose corticosteroids, ACE inhibitors with a high-sodium load — coordinate with the athlete's primary care.
 - **Athletes restricting sodium for hypertension management.** A 25 g dose of sodium bicarbonate delivers roughly 6-7 g of sodium. That is more sodium than many hypertensive athletes consume in a full day. Coordinate with the athlete's medical team before any bicarb use in this population.
 
@@ -93,7 +94,7 @@ The performance signal is small or absent in:
 
 **Stack with beta-alanine.** Beta-alanine raises intramuscular carnosine and provides a second buffer pool inside the cell. The bicarb-plus-beta-alanine combination has an additive performance signal in the late-round acidosis case. Beta-alanine is a 4-8 week loading protocol; the bicarb is the acute fight-day add. See [supplements combat athletes actually need](/blog/supplements-combat-athletes-actually-need) for the broader stack logic.
 
-**Stack with caffeine.** Caffeine and bicarb both have independent fight-day signals and the combination is well-tolerated when timed correctly. Caffeine 30-45 min pre-match, bicarb 90-120 min pre-match (or split-dose protocol). See [caffeine for combat athletes](/blog/caffeine-for-members-a-complete-guide) for the caffeine protocol.
+**Stack with caffeine.** [Caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=sodium-bicarbonate-buffering-for-combat-athletes) and bicarb both have independent fight-day signals and the combination is well-tolerated when timed correctly. Caffeine 30-45 min pre-match, bicarb 90-120 min pre-match (or split-dose protocol). See [caffeine for combat athletes](/blog/caffeine-for-members-a-complete-guide) for the caffeine protocol.
 
 ## Rehearsing the protocol in camp
 

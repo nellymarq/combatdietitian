@@ -4,6 +4,7 @@ description: "A wrestling tournament can put a competitor on the mat seven times
 date: 2026-04-30
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Competition","Wrestling","BJJ","Practical Nutrition"]
+products: ["electrolytes-berry","whey-protein-vanilla"]
 ---
 
 A wrestling tournament can put a competitor on the mat four to seven times in a single day. A BJJ tournament can mean two to four matches in your division and another two to four in absolute. Submission grappling brackets and combat sambo events look the same. The problem this creates — fueling between matches, when there might be 20 minutes or 4 hours between bouts, when the next match's intensity is not negotiable — is not the same problem as pre-fight nutrition for an MMA fighter who has one fight on Saturday night.
@@ -47,7 +48,7 @@ The single most useful framework for between-match nutrition is the time-to-next
 
 You are not refueling. You are stabilizing. Anything substantial in the gut is a liability — it will sit there during the next match and slow you down.
 
-- 4–8 oz of an electrolyte drink (sodium 200–400 mg, carbs 15–25 g)
+- 4–8 oz of an [electrolyte drink](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=tournament-day-refueling-between-bouts) (sodium 200–400 mg, carbs 15–25 g)
 - A small amount of fast carbs only if blood sugar feels low: 1/2 banana, a few dates, half a sports gel
 - No protein, no fat, no fiber, nothing solid you have not tested
 
@@ -58,7 +59,7 @@ The job is to top off blood glucose, replace some sodium, and not interfere with
 This is the most common tournament window and the most useful one for actual refueling. You can put 30–60 g of carbs in and get them out of the stomach in time.
 
 - 30–50 g of carbs from a low-fiber, low-fat source: white rice with honey, a sports drink plus a banana, a rice cake with jam, an applesauce pouch with a piece of white bread
-- 10–20 g of fast-absorbing protein if it sits well: a small whey shake (15–20 g), a few bites of plain chicken
+- 10–20 g of fast-absorbing protein if it sits well: a small [whey shake](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=tournament-day-refueling-between-bouts) (15–20 g), a few bites of plain chicken
 - 400–700 mg of sodium across the window
 - 12–20 oz of fluid, sipped — not chugged
 

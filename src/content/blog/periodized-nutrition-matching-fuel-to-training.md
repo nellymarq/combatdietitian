@@ -4,6 +4,7 @@ description: "Just as training follows a periodized plan, nutrition should too. 
 date: 2026-02-07
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Periodization","Carbohydrates","Training","Performance"]
+products: ["creatine-monohydrate","whey-protein-vanilla"]
 ---
 
 The concept of training periodization — systematically varying volume, intensity, and frequency across mesocycles — has been a cornerstone of athletic preparation for over 50 years. Yet many members eat the same way regardless of whether they are in a high-volume base phase, an intensity block, a taper, or the off-season.
@@ -88,7 +89,3 @@ Periodized nutrition requires three things:
 Manual periodization across a roster of members is time-intensive. This is where technology earns its keep — a platform that lets the dietitian set day-type targets and push dynamic meal plans that automatically adjust to the training schedule.
 
 [Calsanova's day-type system](/signup?role=dietitian) was built for exactly this. Set different macro targets for training, game, rest, and travel days, and let AI generate meal plans that adapt to the member's schedule. Try it free for 30 days.
-
----
-
-**Built to this standard:** [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) and [Scythene Whey Protein Isolate](https://scythene.com/products/whey-protein-vanilla) — clinically dosed, third-party tested, built for athletes periodizing their nutrition alongside their training. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -4,6 +4,7 @@ description: "Feeding 50-100 members with individualized needs on a university b
 date: 2026-02-19
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Collegiate","Meal Prep","Team Nutrition","Dietitian"]
+products: ["whey-protein-vanilla","creatine-monohydrate","electrolytes-berry"]
 ---
 
 Collegiate sports dietitians operate in a unique environment: large rosters, diverse nutritional needs, limited budgets, NCAA regulations on what can be provided, and members whose cooking skills range from competent to "I microwaved ramen in a coffee mug."
@@ -24,7 +25,7 @@ Essential fueling station items:
 
 - **Pre-training:** Bananas, granola bars, PB&J sandwiches, dried fruit, sports drinks
 - **Post-training:** Chocolate milk, Greek yogurt cups, protein bars, trail mix, fruit
-- **Hydration:** Water, electrolyte drinks, cups
+- **Hydration:** Water, [electrolyte drinks](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=meal-prep-at-scale-feeding-a-college-team), cups
 
 The fueling station solves the single biggest problem in collegiate nutrition: members who skip meals because they do not have time between class and practice.
 
@@ -56,7 +57,7 @@ University nutrition budgets are finite. Strategies to maximize impact:
 - **Seasonal produce:** Adjust recipes based on what is affordable and available
 - **Minimize waste:** Batch cooking with a plan reduces overproduction. Track what gets eaten and what gets thrown away.
 - **Partner with dining services:** Many universities will customize training-table options if the dietitian provides specifications
-- **Supplement strategically:** Whey protein and creatine monohydrate are the only supplements with a strong enough evidence base to justify a line item in the budget
+- **Supplement strategically:** [Whey protein](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=meal-prep-at-scale-feeding-a-college-team) and [creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=meal-prep-at-scale-feeding-a-college-team) are the only supplements with a strong enough evidence base to justify a line item in the budget
 
 ## The Cultural Component
 

@@ -4,6 +4,7 @@ description: "A college wrestler whose third-period shots stop landing, a BJJ br
 date: 2026-06-30
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Supplements","Combat Sports","Fight Camp","Performance","Late Rounds"]
+products: ["creatine-monohydrate","pre-workout","beta-alanine"]
 ---
 
 A college wrestler is six minutes into a hard practice scramble and his shots stop landing — not because his technique fell apart, but because the third and fourth attempt feel twice as expensive as the first two. A BJJ brown belt opens his bracket clean, takes a hard second match, and by his fourth match his hips are not moving fast enough to get under the pass. A pro lightweight controls the first round of a five-round fight with a high-output striking pace and finds his output cut by 30% in the round-two clinch sequence. The physiological hook in all three of these is the same: repeat-sprint and high-intensity intermittent work depend on the rate at which working muscle can use oxygen, and the cost of producing each watt of force can be lowered by a single inexpensive intervention that most fight camps still do not run — dietary nitrate from beetroot juice.
@@ -80,7 +81,7 @@ Identify responder status in camp, not on fight day. The rehearsal protocol:
 4. **Re-run the test.** Compare mean output across the repeats.
 5. **A responder shows a 2-5% improvement in mean output** that exceeds the natural day-to-day variability of the test. A non-responder shows no change or a wash within the noise floor.
 
-For non-responders, the resource allocation moves elsewhere — beta-alanine for buffering, creatine for high-force output, the standard caffeine and bicarbonate protocols where indicated. Do not run the nitrate protocol on fight day if you have not established the response in camp.
+For non-responders, the resource allocation moves elsewhere — [beta-alanine](https://scythene.com/products/beta-alanine?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=beetroot-juice-dietary-nitrate-for-combat-athletes) for buffering, [creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=beetroot-juice-dietary-nitrate-for-combat-athletes) for high-force output, the standard [caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=beetroot-juice-dietary-nitrate-for-combat-athletes) and bicarbonate protocols where indicated. Do not run the nitrate protocol on fight day if you have not established the response in camp.
 
 ## Where the nitrate signal pays
 

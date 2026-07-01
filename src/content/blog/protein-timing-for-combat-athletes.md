@@ -4,6 +4,7 @@ description: "What the research says about protein timing for MMA fighters and c
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["protein", "combat sports", "muscle protein synthesis", "performance"]
+products: ["whey-protein-vanilla"]
 ---
 
 The protein timing conversation in combat sports is dominated by two equally wrong camps. One insists you must consume protein within 30 minutes of training or your muscles will evaporate. The other claims timing is irrelevant and only total daily intake matters. The research supports neither position.
@@ -14,7 +15,7 @@ Here is what the evidence actually shows — and how to apply it if you train, s
 
 Muscle protein synthesis (MPS) is the process by which your body builds and repairs skeletal muscle tissue. Resistance training and protein ingestion are the two primary stimuli that elevate MPS above baseline. For combat athletes who are simultaneously trying to maintain or build lean mass while managing body weight, optimizing MPS is not optional — it is the mechanism that keeps you strong, resilient, and able to recover between sessions.
 
-A landmark 2012 study by Areta et al. in the *Journal of Physiology* examined how protein distribution across a day affected MPS rates. Subjects consumed 80 grams of whey protein in three different patterns: 8 doses of 10g every 1.5 hours, 4 doses of 20g every 3 hours, or 2 doses of 40g every 6 hours. The 4 x 20g pattern produced the greatest MPS response over the 12-hour measurement period.
+A landmark 2012 study by Areta et al. in the *Journal of Physiology* examined how protein distribution across a day affected MPS rates. Subjects consumed 80 grams of [whey protein](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=protein-timing-for-combat-athletes) in three different patterns: 8 doses of 10g every 1.5 hours, 4 doses of 20g every 3 hours, or 2 doses of 40g every 6 hours. The 4 x 20g pattern produced the greatest MPS response over the 12-hour measurement period.
 
 The takeaway: distribution matters. Both total daily protein and how you spread it across the day influence the anabolic response.
 
@@ -77,5 +78,3 @@ Protein timing is not the most important variable — total daily intake is. But
 ---
 
 **Want a protein strategy built for your training schedule?** [Combat Dietitian](https://combatdietitian.com) provides evidence-based nutrition for combat athletes nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Fuel the protocol:** [Scythene Whey Protein Isolate](https://scythene.com/products/whey-protein-vanilla) — 25g cold-processed whey per serving, no artificial sweeteners. Pair with [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) for power output between rounds. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

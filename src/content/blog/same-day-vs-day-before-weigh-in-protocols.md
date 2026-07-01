@@ -4,6 +4,7 @@ description: "A wrestler weighing in at 7 AM and competing at 11 AM has a 4-hour
 date: 2026-06-23
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Weight Cut","Fight Week","Combat Sports","Wrestling","BJJ"]
+products: ["electrolytes-berry"]
 ---
 
 A college wrestler weighs in at 7 AM on a Saturday for a dual meet. His first match is at 11 AM. He is cutting from 162 to 157, which is a manageable cut by the standards of the sport, but it is a same-morning weigh-in and his window from scale to whistle is four hours. Across the country at the same time, a UFC lightweight steps on the scale at 11 AM Friday for a Saturday-night fight. His main card bout is at 10 PM Saturday, putting his weigh-in-to-cage window at 35 hours. He is also cutting from 162 to 155 — a deeper cut. If you put both of these fighters on the same cut-and-refuel protocol, one of them will perform and one of them will not, and the result will turn on which rule-set you applied where.
@@ -36,7 +37,7 @@ The depth of the cut you can perform and the speed of the refuel you can rely on
 
 **Same-day weigh-in.** The night-before plan is a low-residue dinner that empties the gut by morning, normal fluid intake (no aggressive restriction), and the modest sodium reduction that has been in place since 48 hours out. The morning of weigh-in is a final restroom emptying, minimal fluid, and an early arrival to settle. Final cut on the morning is usually a small sauna sit (0.5-1.5% body weight) and a 5-10 minute jump rope to express residual fluid. **The cut you do on the morning of a same-day weigh-in cannot be refilled before competition.** Any sweat-driven loss in the last 4 hours before competition is functionally a deficit you will fight with.
 
-**Day-before weigh-in.** The night before is the deep-cut night for fighters who need the deeper protocols — restricted fluid intake, salt restriction, and the planned sauna or hot-bath sit timed to land the fighter at contract weight by morning. The morning of weigh-in is fasting and restricted fluid, with the final cut completed in the 3-4 hours before scale time. The fighter steps off the scale and immediately begins the refuel — small sips of an electrolyte-rich rehydration solution within the first 15 minutes, the first solid food within 30-60 minutes, and the structured rehydration-meal-rehydration-meal cadence over the next 24 hours.
+**Day-before weigh-in.** The night before is the deep-cut night for fighters who need the deeper protocols — restricted fluid intake, salt restriction, and the planned sauna or hot-bath sit timed to land the fighter at contract weight by morning. The morning of weigh-in is fasting and restricted fluid, with the final cut completed in the 3-4 hours before scale time. The fighter steps off the scale and immediately begins the refuel — small sips of an [electrolyte-rich rehydration solution](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=same-day-vs-day-before-weigh-in-protocols) within the first 15 minutes, the first solid food within 30-60 minutes, and the structured rehydration-meal-rehydration-meal cadence over the next 24 hours.
 
 ## What changes in the last 4 hours
 

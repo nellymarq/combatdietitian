@@ -4,6 +4,7 @@ description: "Iron deficiency is the most common nutrient deficiency in members 
 date: 2026-03-14
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Iron","Micronutrients","Sports Nutrition","Female Athletes","Performance"]
+products: ["multivitamin","b-vitamins"]
 ---
 
 An member's VO2max is excellent. Their training load is progressing. Their macros are dialed in. And yet they cannot finish a tempo run without feeling like they are breathing through a straw. Their coach says they are overtrained. Their athletic trainer says they need more sleep. Nobody has checked their ferritin.
@@ -87,7 +88,3 @@ For combat athletes and tactical operators specifically, ferritin is best ordere
 ## The Bottom Line
 
 Iron deficiency is common, underdiagnosed, and performance-limiting. It mimics overtraining, poor sleep, and low motivation — making it easy to miss unless you are actively screening for it. As a sports dietitian, put iron on your radar for every member, and do not wait for anemia to act. Check ferritin, optimize dietary intake, supplement strategically, and monitor trends. The member who suddenly "gets their legs back" after three months of iron repletion will make you look like a genius. You were just paying attention to the right numbers.
-
----
-
-**Built to this standard:** [Scythene Multivitamin](https://scythene.com/products/multivitamin) with chelated minerals and methylated B vitamins, plus [Scythene B Vitamins](https://scythene.com/products/b-vitamins) for the methylated folate and B12 that support red blood cell production alongside iron repletion. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

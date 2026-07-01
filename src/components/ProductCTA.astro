@@ -1,0 +1,64 @@
+---
+/**
+ * End-of-post product callout — surfaces the Scythene products relevant to an
+ * article and routes purchase-intent to our own store (UTM-tagged for attribution).
+ *
+ * Driven by the post's `products:` frontmatter (array of catalog slugs). Renders
+ * nothing if no valid slugs are supplied, so it is safe to always include.
+ */
+import { getScytheneProduct } from '../data/scythene-catalog';
+import { scytheneProductUrl } from '../lib/affiliate';
+
+interface Props {
+  /** Catalog slugs, from post frontmatter `products`. */
+  slugs?: string[];
+  /** Source post slug, used as utm_content for per-post attribution. */
+  postSlug: string;
+}
+
+const { slugs = [], postSlug } = Astro.props;
+
+const products = slugs
+  .map((slug) => getScytheneProduct(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+---
+
+{products.length > 0 && (
+  <aside class="not-prose mt-12 rounded-2xl border border-gold-500/20 bg-brand-800/40 p-6 sm:p-8">
+    <div class="flex items-center gap-2">
+      <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">From Scythene</span>
+      <span class="text-white/30 text-xs">— our own third-party-tested line</span>
+    </div>
+    <h2 class="mt-2 text-xl font-bold text-white">Supplements mentioned in this article</h2>
+
+    <ul class="mt-5 flex flex-col gap-4">
+      {products.map((product) => (
+        <li class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border border-white/5 bg-brand-900/40 p-4">
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <h3 class="text-base font-bold text-white">{product.name}</h3>
+              {product.available ? (
+                <span class="shrink-0 text-[10px] font-bold uppercase tracking-wider bg-green-500/10 text-green-400 px-2 py-0.5 rounded-full">In stock</span>
+              ) : (
+                <span class="shrink-0 text-[10px] font-bold uppercase tracking-wider bg-white/5 text-white/40 px-2 py-0.5 rounded-full">Coming soon</span>
+              )}
+            </div>
+            <p class="mt-1 text-sm text-white/55 leading-relaxed">{product.blurb}</p>
+          </div>
+          <a
+            href={scytheneProductUrl(product.slug, postSlug, 'blog-cta')}
+            target="_blank"
+            rel="noopener sponsored"
+            class="shrink-0 self-start sm:self-center text-center bg-gold-500 hover:bg-gold-400 text-brand-900 font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors"
+          >
+            {product.available ? `Shop ${product.price}` : 'See the line →'}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-5 text-xs text-white/40 italic leading-relaxed">
+      Combat Dietitian and Scythene are both part of Marques Performance Systems. We only link supplements that meet our own clinical-dosing and third-party-testing standards.
+    </p>
+  </aside>
+)}

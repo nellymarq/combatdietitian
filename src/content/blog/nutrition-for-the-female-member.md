@@ -4,6 +4,7 @@ description: "Female members have distinct nutritional needs shaped by hormonal 
 date: 2026-03-02
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Female Athletes","RED-S","Hormones","Sports Nutrition"]
+products: ["vitamin-d3-k2","magnesium-bisglycinate","omega-3"]
 ---
 
 For decades, sports nutrition research was conducted almost exclusively on male subjects. Recommendations for female members were extrapolated from male data with the assumption that the principles were universal. They are not.
@@ -21,7 +22,7 @@ Practical implications:
 
 - **Follicular phase:** May be optimal for high-intensity training and carb-heavy fueling
 - **Luteal phase:** Consider slightly increased caloric intake (100-300 kcal/day), moderate carbohydrate reduction, and awareness of GI changes
-- **Premenstrual symptoms:** Adequate calcium, magnesium, and omega-3 intake may help manage symptoms
+- **Premenstrual symptoms:** Adequate calcium, [magnesium](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-for-the-female-member), and [omega-3](https://scythene.com/products/omega-3?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-for-the-female-member) intake may help manage symptoms
 
 ## Relative Energy Deficiency in Sport (RED-S)
 
@@ -63,7 +64,7 @@ Female members, particularly those with menstrual irregularities, are at elevate
 Daily calcium targets for female members:
 
 - **1,000-1,300 mg/day** from food sources (dairy, fortified alternatives, leafy greens)
-- **Vitamin D:** 1,000-2,000 IU/day to support calcium absorption. Many members are deficient, especially those training indoors or in northern latitudes.
+- **[Vitamin D](https://scythene.com/products/vitamin-d3-k2?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-for-the-female-member):** 1,000-2,000 IU/day to support calcium absorption. Many members are deficient, especially those training indoors or in northern latitudes.
 
 ## Practical Recommendations
 
@@ -73,7 +74,3 @@ Daily calcium targets for female members:
 - **Individualize:** Cycle-based nutrition adjustments are an emerging area of practice. While the evidence is still developing, awareness of phase-related changes can improve member experience and buy-in.
 
 For dietitians managing female member rosters, [Calsanova](/signup?role=dietitian) supports individualized macro targets by day type, body composition tracking, and clinical notes — the tools needed to identify and address RED-S early.
-
----
-
-**Built to this standard:** [Scythene Multivitamin](https://scythene.com/products/multivitamin) with chelated iron and methylated B vitamins, plus [Scythene Vitamin D3 + K2](https://scythene.com/products/vitamin-d3-k2) for bone health and hormone support in female athletes. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

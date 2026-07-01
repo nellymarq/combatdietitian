@@ -4,6 +4,7 @@ description: "Fight week is not a single nutrition plan — it is six different 
 date: 2026-05-21
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Fight Week","Weight Cutting","Combat Sports","Fueling","Periodization"]
+products: ["electrolytes-berry"]
 ---
 
 Most fighters eat fight week the way they eat camp week: same calorie target Monday through Friday, then "whatever feels right" on weigh-in day and fight day. That pattern is how fighters arrive at weigh-in 1.5 lb over with a depleted glycogen tank, then arrive at the cage on Saturday night still trying to refill a system that never got the right inputs at the right time.
@@ -107,7 +108,7 @@ Step-off the scale is the inflection point. The next 24 hours are not a continua
 **Carbs:** 1.0–1.5 g/kg per hour for the first 4 hours.
 **Protein:** 0.3–0.5 g/kg per meal, every 3 hours.
 **Fat:** keep moderate — 30–60 g across the rehydration window.
-**Fluids:** start with 500 mL of a sodium-glucose-electrolyte solution within 5 minutes of step-off, then 200–400 mL every 15 minutes for the first 90 minutes, then sip continuously.
+**Fluids:** start with 500 mL of a [sodium-glucose-electrolyte solution](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=calorie-cycling-across-fight-week) within 5 minutes of step-off, then 200–400 mL every 15 minutes for the first 90 minutes, then sip continuously.
 **Sodium:** 700–1,000 mg per liter of fluid, plus salting all food liberally.
 
 The 24-hour weigh-in gives a real rehydration window. The mechanics are the [post-weigh-in protocol](/blog/how-to-rehydrate-after-weigh-in) — but in calorie-cycling language, this is the day the deficit ends and the supercompensation refill begins.

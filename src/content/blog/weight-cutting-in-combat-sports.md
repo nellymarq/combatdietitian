@@ -4,6 +4,7 @@ description: "Weight cutting is deeply embedded in combat sports culture. Here i
 date: 2026-02-21
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Weight Cutting","Combat Sports","MMA","Body Composition"]
+products: ["electrolytes-berry","creatine-monohydrate"]
 ---
 
 Weight cutting in combat sports is not going away. Fighters, wrestlers, boxers, and judokas have been manipulating body weight to compete in lower weight classes for as long as these sports have existed. The practice ranges from strategic fat loss over weeks to dangerous acute dehydration in the final 24-48 hours before weigh-in.
@@ -34,7 +35,7 @@ Strategies in the acute phase:
 
 The weigh-in to competition window (typically 16-30 hours in MMA, 2-24 hours in wrestling) is critical. The goals are:
 
-- **Restore fluid:** Drink 1.5 L per kg of body weight lost, with sodium (electrolyte drinks, salty foods) to enhance fluid retention
+- **Restore fluid:** Drink 1.5 L per kg of body weight lost, with sodium ([electrolyte drinks](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=weight-cutting-in-combat-sports), salty foods) to enhance fluid retention
 - **Restore glycogen:** Consume 8-10 g/kg of carbohydrate in the hours after weigh-in
 - **Avoid GI overload:** Eat frequent small meals rather than one massive meal. The gut has been stressed by the cut and may not tolerate a large bolus.
 - **Familiar foods only:** This is not the time for experimentation
@@ -55,7 +56,3 @@ The best weight cut is the one that requires the least acute manipulation. If an
 For the underlying physiology, see [The Science of Weight Cutting](/blog/weight-cut-science). The dietitian's long-term role is helping the member maintain a walk-around weight that is within 5-7% of their competition weight class. This means managing off-season nutrition to prevent excessive weight gain and having honest conversations about whether the member is competing in the right weight class.
 
 [Calsanova's body composition tracking and macro management tools](/signup?role=dietitian) give dietitians the data needed to plan weight cuts precisely — from long-range fat loss phases to acute manipulation protocols.
-
----
-
-**Support the protocol:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rehydration window, and [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to restore phosphocreatine stores after weigh-in. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

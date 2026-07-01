@@ -4,6 +4,7 @@ description: "Most fighters walk into the first week of an 8-12 week camp withou
 date: 2026-06-16
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Fight Camp", "Performance", "Body Composition", "Combat Sports", "Recovery"]
+products: ["creatine-monohydrate", "pre-workout", "electrolytes-berry"]
 ---
 
 The fighter walks into the gym on day one of a 10-week camp. He hasn't weighed himself in three weeks. He thinks he's "about 5 kg over" the contract number, which usually turns out to be 7 or 8 kg. He's been eating "pretty clean" for the last two weeks, which means three of seven dinners were takeout. He hasn't slept seven hours in a row in a month. He's taking five supplements from the last camp and isn't sure which ones are still on the list. His last bloodwork was eighteen months ago. The corner asks how the cut is going to look this time, and the fighter says "yeah, should be fine."
@@ -48,7 +49,7 @@ Why pre-camp and not mid-camp: any iron, vitamin D, or thyroid issue caught in t
 
 List every supplement on the shelf. For each one, write three pieces of information: what it's for, what dose is on the label, and what dose the trial literature supports. The output is a three-bucket sort:
 
-**Keep.** The supplement has a defensible mechanism, the dose matches the trial literature, and the cost is reasonable. Creatine monohydrate at 3-5 g/day, vitamin D3 if serum 25(OH)D was below 30, fish oil at a documented EPA+DHA dose, magnesium glycinate at 200-400 mg elemental, caffeine in the form and dose the fighter has tested in training. See [supplements combat athletes actually need](/blog/supplements-combat-athletes-actually-need).
+**Keep.** The supplement has a defensible mechanism, the dose matches the trial literature, and the cost is reasonable. [Creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-camp-nutrition-audit-12-checks-before-fight-camp) at 3-5 g/day, vitamin D3 if serum 25(OH)D was below 30, fish oil at a documented EPA+DHA dose, magnesium glycinate at 200-400 mg elemental, [caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-camp-nutrition-audit-12-checks-before-fight-camp) in the form and dose the fighter has tested in training. See [supplements combat athletes actually need](/blog/supplements-combat-athletes-actually-need).
 
 **Reassess.** The supplement has plausible evidence but the dose on the label is below or above the trial range, or the form is suboptimal. Most multi-ingredient pre-workouts, most "test booster" stacks, most adrenal-support blends. Either find a single-ingredient product at a defensible dose or drop it.
 
@@ -58,7 +59,7 @@ List every supplement on the shelf. For each one, write three pieces of informat
 
 Run a one-day urine-color audit. Take a photo of every urine sample on a single rest day, against a white-tile background, in natural light. Compare against a 1-8 urine color chart. Healthy hydration sits at color 1-3 across the day. Above color 3 by mid-afternoon is chronic low-grade dehydration; above color 5 at any point is a real water deficit.
 
-Also weigh in before and after one moderate training session — same day-clothing, same scale. The weight difference (corrected for any fluid intake during the session) is the sweat rate for that session, scaled to that intensity and temperature. Use the number to set the camp's hydration target. A fighter losing 1.5 kg per session needs to replace 1.5 L per session with intelligent electrolyte support, not "drink when thirsty."
+Also weigh in before and after one moderate training session — same day-clothing, same scale. The weight difference (corrected for any fluid intake during the session) is the sweat rate for that session, scaled to that intensity and temperature. Use the number to set the camp's hydration target. A fighter losing 1.5 kg per session needs to replace 1.5 L per session with intelligent [electrolyte support](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-camp-nutrition-audit-12-checks-before-fight-camp), not "drink when thirsty."
 
 ## Check 8: GI tolerance check
 

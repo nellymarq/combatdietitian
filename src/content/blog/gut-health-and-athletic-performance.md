@@ -4,6 +4,7 @@ description: "GI distress is one of the top reasons members underperform on race
 date: 2026-02-23
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Gut Health","GI Distress","Endurance","Sports Nutrition"]
+products: ["l-glutamine"]
 ---
 
 Ask any endurance member about their worst race, and there is a good chance the story involves their stomach. GI distress — nausea, cramping, bloating, diarrhea — affects 30-70% of endurance members during competition and is one of the most common reasons for DNF (did not finish) in marathons, triathlons, and ultra-endurance events.
@@ -60,7 +61,3 @@ GI issues in members are treatable and often preventable. The dietitian should:
 The gut is a trainable organ. Treat it like one.
 
 [Calsanova's meal planning tools](/signup?role=dietitian) support pre-competition meal templates that dietitians can customize for members with GI sensitivities — including day-type-specific plans for training, travel, and competition days.
-
----
-
-**Built to this standard:** [Scythene L-Glutamine](https://scythene.com/products/l-glutamine) — pharmaceutical-grade, supports enterocyte fuel supply and gut barrier integrity during periods of high training load, caloric restriction, or weight cutting. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

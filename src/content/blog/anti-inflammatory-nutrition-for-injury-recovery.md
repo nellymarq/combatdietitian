@@ -4,6 +4,7 @@ description: "When members get injured, nutrition shifts from performance fuel t
 date: 2026-02-15
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Injury","Recovery","Anti-Inflammatory","Rehabilitation"]
+products: ["collagen-peptides-vitamin-c","omega-3","vitamin-d3-k2"]
 ---
 
 When an member gets injured, the first instinct is often to slash calories. The reasoning seems logical: less activity means less energy expenditure, so eat less to avoid gaining weight.
@@ -37,7 +38,7 @@ Targets:
 
 - **1.6-2.5 g/kg/day** distributed across four to five meals
 - **Leucine-rich sources** at each meal to maximize MPS despite reduced mechanical stimulus
-- **Collagen-specific nutrition:** 15-20g of hydrolyzed collagen or gelatin, combined with 50mg vitamin C, consumed 30-60 minutes before rehabilitation exercises may support tendon and ligament repair (evidence from Keith Baar's lab at UC Davis)
+- **Collagen-specific nutrition:** 15-20g of [hydrolyzed collagen](https://scythene.com/products/collagen-peptides-vitamin-c?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=anti-inflammatory-nutrition-for-injury-recovery) or gelatin, combined with 50mg vitamin C, consumed 30-60 minutes before rehabilitation exercises may support tendon and ligament repair (evidence from Keith Baar's lab at UC Davis)
 
 ## Anti-Inflammatory Foods
 
@@ -45,7 +46,7 @@ The inflammatory response to injury is necessary for healing — the goal is not
 
 **Foods that support resolution of inflammation:**
 
-- **Omega-3 fatty acids:** Fatty fish (salmon, mackerel, sardines) two to three times per week, or 2-3g/day EPA+DHA from fish oil
+- **[Omega-3 fatty acids](https://scythene.com/products/omega-3?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=anti-inflammatory-nutrition-for-injury-recovery):** Fatty fish (salmon, mackerel, sardines) two to three times per week, or 2-3g/day EPA+DHA from fish oil
 - **Fruits and vegetables:** Rich in polyphenols and antioxidants. Berries, cherries, leafy greens, and cruciferous vegetables are particularly potent.
 - **Turmeric/curcumin:** Anti-inflammatory properties are well-documented, though bioavailability is limited. Pair with black pepper (piperine) or use a bioavailability-enhanced formulation.
 - **Extra virgin olive oil:** Contains oleocanthal, which has ibuprofen-like anti-inflammatory activity
@@ -64,7 +65,7 @@ Several micronutrients play direct roles in tissue repair:
 - **Vitamin C:** Essential for collagen synthesis. 200-500 mg/day from food and/or supplementation.
 - **Vitamin A:** Supports immune function and cell differentiation. Found in liver, sweet potato, carrots, spinach.
 - **Zinc:** Required for cell division and immune function. 15-25 mg/day. Found in red meat, shellfish, pumpkin seeds.
-- **Vitamin D:** Supports bone healing and immune modulation. 2,000-4,000 IU/day, particularly if the member is unable to get sun exposure during recovery.
+- **[Vitamin D](https://scythene.com/products/vitamin-d3-k2?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=anti-inflammatory-nutrition-for-injury-recovery):** Supports bone healing and immune modulation. 2,000-4,000 IU/day, particularly if the member is unable to get sun exposure during recovery.
 - **Calcium:** Essential for bone repair. 1,000-1,500 mg/day from food sources.
 
 ## Managing the Psychological Component
@@ -79,7 +80,3 @@ The dietitian's role extends beyond macros:
 - **Monitor for disordered eating patterns:** Injury is a high-risk period for the development of eating disorders in members
 
 [Calsanova's member management tools](/signup?role=dietitian) allow dietitians to adjust macro targets, track body composition changes, and maintain clinical notes through the injury and rehabilitation process — keeping nutrition aligned with the recovery timeline.
-
----
-
-**Built to this standard:** [Scythene Omega-3](https://scythene.com/products/omega-3) — triglyceride-form EPA/DHA, molecularly distilled. And [Scythene Collagen Peptides + Vitamin C](https://scythene.com/products/collagen-peptides-vitamin-c) — dosed for pre-rehab tendon and ligament synthesis per the Australian Institute of Sport protocol. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -4,6 +4,7 @@ description: "Most camps wait for symptoms before pulling blood. The smarter pat
 date: 2026-05-20
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Bloodwork","Labs","Iron","Vitamin D","Weight Cutting","Recovery"]
+products: ["electrolytes-berry","vitamin-d3-k2"]
 ---
 
 Most fight camps treat bloodwork the same way they treat the dentist: an appointment you make after something hurts. The fighter feels flat in week 6 of camp, the coach assumes overtraining, and nobody draws blood until either the body composition test goes sideways or the doctor signs off the pre-fight medical four days before weigh-in. By then the camp is over and the labs are a post-mortem.
@@ -50,7 +51,7 @@ Targets for combat athletes, which run higher than the general adult reference r
 
 - **30–50 ng/mL: sufficient for general adult health.** Acceptable floor for fighters in light training.
 - **40–60 ng/mL: my target for fighters in active camp.** The range associated with the strongest immune outcomes and the upper end of testosterone support in supplementation trials.
-- **Below 30 ng/mL: insufficient.** Begin correction at 4,000–5,000 IU D3 daily with fat-containing meals, recheck at 8 weeks. Most fighters in northern latitudes during winter camps land here without supplementation.
+- **Below 30 ng/mL: insufficient.** Begin correction at 4,000–5,000 IU [D3](https://scythene.com/products/vitamin-d3-k2?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=mid-camp-bloodwork-for-fighters) daily with fat-containing meals, recheck at 8 weeks. Most fighters in northern latitudes during winter camps land here without supplementation.
 - **Above 80 ng/mL: pull back the supplement dose.** Not toxic in itself, but a fighter pushing past 80 ng/mL is usually overdosing and not bothering to test.
 
 Vitamin D status pairs directly with the [brain health nutrition baseline for combat athletes](/blog/brain-health-nutrition-for-combat-athletes) — a fighter taking head contact in camp with serum 25(OH)D in the low 20s is not getting the protective benefit the daily nutrition work is supposed to deliver.
@@ -155,7 +156,7 @@ The right adjustments before continuing to push toward weigh-in:
 1. **Calories up immediately.** The fighter has been pushing into the deficit too early in camp. Add 300–500 kcal/day to slow the cut and refill energy availability.
 2. **Iron supplementation: 65 mg elemental iron every other day with vitamin C and away from training and dairy.** Recheck ferritin at 8 weeks.
 3. **Vitamin D3: 5,000 IU daily with fat-containing meals.** Recheck at 8 weeks.
-4. **Hydration protocol audit.** Adding 500–700 mg sodium/L to in-session fluid and an extra 1 L/day total volume. Recheck BUN/creatinine at the pre-weigh-in draw.
+4. **[Hydration protocol](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=mid-camp-bloodwork-for-fighters) audit.** Adding 500–700 mg sodium/L to in-session fluid and an extra 1 L/day total volume. Recheck BUN/creatinine at the pre-weigh-in draw.
 5. **Sleep audit and training-load conversation with the head coach.** Cortisol elevation in a fighter who is already in LEA is a setup for the camp coming apart in week 4–5 of the remaining 6 weeks.
 6. **Reconsider the cut depth.** A fighter walking into weigh-in week with low ferritin, borderline-low free T3, and a testosterone that started below the camp target is the fighter who underperforms. The 10% cut should probably become a 7% cut and the fighter accepts a one-weight-class adjustment for the next fight.
 

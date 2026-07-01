@@ -4,6 +4,7 @@ description: "Nutrition strategies for police officers and SWAT operators — sh
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["tactical nutrition", "law enforcement", "SWAT", "performance"]
+products: ["electrolytes-berry", "pre-workout", "multivitamin"]
 ---
 
 Law enforcement nutrition advice usually sounds like it was written by someone who has never worn a duty belt for 12 hours. Eat more vegetables. Drink more water. Pack healthy snacks. That advice is not wrong — it is just useless without context. The nutritional demands of a police officer are shaped by rotating shifts, sustained hypervigilance, body armor that changes your metabolic equation, and an operational tempo that makes consistent eating nearly impossible.
@@ -67,13 +68,13 @@ This does not require elaborate meal prep. Cook protein in bulk on days off. Kee
 
 ### 4. Hydration With a Duty Belt
 
-Most officers are chronically dehydrated because drinking water means having to use the bathroom, which is not always operationally feasible. The solution is front-loading hydration: consume 24-32 ounces of water with electrolytes in the 2 hours before shift, then sip strategically during the shift rather than chugging large volumes.
+Most officers are chronically dehydrated because drinking water means having to use the bathroom, which is not always operationally feasible. The solution is front-loading hydration: consume 24-32 ounces of water with [electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-for-police-officers-and-swat) in the 2 hours before shift, then sip strategically during the shift rather than chugging large volumes.
 
 Electrolyte packets (LMNT, Drip Drop, Liquid IV) added to water improve retention and reduce the volume needed to maintain hydration status. A 16-ounce electrolyte drink is more effective than 32 ounces of plain water for maintaining plasma volume.
 
 ### 5. Caffeine Strategy
 
-Most LEOs run on caffeine. That is fine — caffeine is an evidence-based performance enhancer. But the strategy matters. Front-load caffeine early in the shift (200-400mg in the first 2-3 hours) and cut off intake at the midpoint. For a 1800-0600 shift, no caffeine after midnight. Stacking energy drinks through the back half of a shift guarantees poor sleep quality, which accelerates every metabolic problem in this article.
+Most LEOs run on [caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-for-police-officers-and-swat). That is fine — caffeine is an evidence-based performance enhancer. But the strategy matters. Front-load caffeine early in the shift (200-400mg in the first 2-3 hours) and cut off intake at the midpoint. For a 1800-0600 shift, no caffeine after midnight. Stacking energy drinks through the back half of a shift guarantees poor sleep quality, which accelerates every metabolic problem in this article.
 
 ## The Career-Length Perspective
 
@@ -84,5 +85,3 @@ This is not about being perfect. It is about building a sustainable system that 
 ---
 
 **Need a nutrition plan built for law enforcement?** [Combat Dietitian](https://combatdietitian.com) works with LEO and tactical operators nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Field-ready supplements:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for duty-belt hydration, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for pre-shift focus and cognitive output, and [Scythene Multivitamin](https://scythene.com/products/multivitamin) to cover the micronutrient gaps shift schedules create. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

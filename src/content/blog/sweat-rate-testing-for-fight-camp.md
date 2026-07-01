@@ -4,6 +4,7 @@ description: "Most camps run hydration on a guess. The fighter drinks what they 
 date: 2026-06-18
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Hydration","Fight Camp","Sweat Testing","Corner Work"]
+products: ["electrolytes-berry"]
 ---
 
 Ask a fight team what their athlete's sweat rate is and you will get one of three answers. The honest one is "I don't know." The hopeful one is "a lot, he's a heavy sweater." The dangerous one is a confident number pulled from a wearable that estimated it from heart rate and skin temperature. None of those answers gets you the corner-bottle math right on fight night.
@@ -67,7 +68,7 @@ The cornerman bottle is the single decision the sweat-rate test most directly in
 - **Sodium replacement**: 60–80% of measured per-hour sodium loss. A heavy 1.8 L/hour sweater at 1,200 mg/L is losing 2,160 mg sodium/hour and should be drinking a fluid with roughly 900–1,300 mg sodium per liter.
 - **Carbohydrate**: 30–60 g/hour during a session over 60 minutes, scaled to intensity. Most sport drinks at 6–8% carbohydrate hit this range at the same fluid volume.
 
-A typical commercial sport drink at 230 mg sodium per 500 mL serving is dosed at 460 mg/L. That works for a low–moderate sweater. It is structurally underdosed for the heavy sweater. The corner mix for the heavy sweater needs an additional 800–1,000 mg of sodium per liter — typically achieved by mixing a sport drink at standard dilution and adding 1/4–1/2 teaspoon of table salt per 500 mL bottle, or by switching to a high-sodium electrolyte formulation dosed for the heavy-sweater bucket.
+A typical commercial sport drink at 230 mg sodium per 500 mL serving is dosed at 460 mg/L. That works for a low–moderate sweater. It is structurally underdosed for the heavy sweater. The corner mix for the heavy sweater needs an additional 800–1,000 mg of sodium per liter — typically achieved by mixing a sport drink at standard dilution and adding 1/4–1/2 teaspoon of table salt per 500 mL bottle, or by switching to a [high-sodium electrolyte formulation](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=sweat-rate-testing-for-fight-camp) dosed for the heavy-sweater bucket.
 
 The cornerman who pours a generic flavored sport drink into a heavy sweater between rounds in August in Vegas is not the cornerman who wins the fifth round.
 

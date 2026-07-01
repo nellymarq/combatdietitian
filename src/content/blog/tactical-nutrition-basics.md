@@ -4,6 +4,7 @@ description: "A practical introduction to nutrition principles for military, law
 date: 2026-02-24
 author: "Nelson Marques, RD, CSSD"
 tags: ["tactical nutrition", "military", "law enforcement", "performance"]
+products: ["electrolytes-berry", "whey-protein-vanilla"]
 ---
 
 Tactical operators face nutritional challenges that most athletes never encounter. Unpredictable schedules, limited food access during missions, extreme environmental conditions, and the simultaneous demand for strength, endurance, and cognitive sharpness create a fueling problem that generic meal plans cannot solve.
@@ -26,7 +27,7 @@ Muscle protein synthesis peaks when protein is distributed in 30-40 gram doses a
 Carbohydrates are the primary fuel for high-intensity work and the brain's preferred energy source. Training days demand 5-8 grams per kilogram. Rest days can taper to 3-4 grams per kilogram. During sustained operations, easily digestible carbohydrate sources — dates, rice cakes, sports drinks — keep blood glucose stable without GI distress.
 
 **4. Hydration as a Tactical Advantage**
-A 2% body mass loss from dehydration reduces cognitive performance by up to 20% and physical output by 10-15%. In hot environments, sweat rates can exceed 2 liters per hour. Operators should aim for a pre-shift urine specific gravity below 1.020 and consume 500-750 ml of fluid with electrolytes per hour of activity in the heat.
+A 2% body mass loss from dehydration reduces cognitive performance by up to 20% and physical output by 10-15%. In hot environments, sweat rates can exceed 2 liters per hour. Operators should aim for a pre-shift urine specific gravity below 1.020 and consume 500-750 ml of fluid with [electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=tactical-nutrition-basics) per hour of activity in the heat.
 
 ## Making It Work in the Real World
 
@@ -39,5 +40,3 @@ Tactical nutrition is not about perfection — it is about consistency under imp
 For law enforcement-specific protocols including body armor metabolic cost and shift-work meal plans, see [Nutrition for Police Officers and SWAT](/blog/nutrition-for-police-officers-and-swat).
 
 **Need a tactical nutrition plan?** [Combat Dietitian](https://combatdietitian.com) works with operators and first responders nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Field-ready supplements:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for operational hydration under load, [Scythene Pre-Workout](https://scythene.com/products/pre-workout) for pre-shift cognitive and physical output, and [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) for repeated high-output efforts. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

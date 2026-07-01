@@ -4,6 +4,7 @@ description: "Caffeine on fight day is timing, not just dose. The 5-6 hour half-
 date: 2026-05-28
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Caffeine","Pre-Fight","Sleep","Recovery","Supplements","Fight Prep"]
+products: ["pre-workout","electrolytes-berry","magnesium-bisglycinate"]
 ---
 
 A fighter's caffeine routine in training and a fighter's caffeine routine on fight day are not the same problem. In camp, the goal is sustained alertness across a 4 PM strength session and an 8 PM technical drill, and the half-life math forgives a fourth cup of coffee at 2 PM. On fight day, the goal is a sharp ergogenic peak during the 5-15 minutes of actual combat, followed by a body that can crash hard enough to start tissue repair, hormonal recovery, and the rehydration cycle that the cut depleted.
@@ -51,7 +52,7 @@ The default sequence below assumes a typical pro main-card fighter with a walkou
 
 ### Dose 1: Morning Wake-Up (8-9 AM)
 
-**Dose:** 100 mg. One small cup of coffee or 1/2 a typical pre-workout serving.
+**Dose:** 100 mg. One small cup of coffee or 1/2 a typical [pre-workout serving](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-half-life-fight-day).
 
 The morning dose is not for performance. It is for the headache prevention and circadian alignment of a fighter who routinely runs on 200-400 mg/day during camp. A zero-caffeine day on fight day produces a withdrawal headache by mid-afternoon that is worse than the alternative of a small morning dose. Skip the morning coffee entirely only if the fighter is a non-habitual user.
 
@@ -107,12 +108,12 @@ Both pivots assume the fighter has used citrulline malate in camp and knows thei
 
 A fighter walking out at 10 PM with 200-300 mg of caffeine still half-circulating at 1 AM cannot just lie down and fall asleep. The recovery protocol after the fight has three layers.
 
-**1. Post-fight hydration and refueling first.** The 60-90 minute window after the fight is for rehydration, electrolytes, and 1-2 g/kg of carbohydrate to start glycogen replenishment. The caffeine wind-down does not start until this is in motion. The [post-weigh-in mistakes](/blog/post-weigh-in-mistakes-24-hours-that-lose-fights) post covers the rehydration math; the same principles apply in the post-fight window even though the fight is over.
+**1. Post-fight hydration and refueling first.** The 60-90 minute window after the fight is for rehydration, [electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-half-life-fight-day), and 1-2 g/kg of carbohydrate to start glycogen replenishment. The caffeine wind-down does not start until this is in motion. The [post-weigh-in mistakes](/blog/post-weigh-in-mistakes-24-hours-that-lose-fights) post covers the rehydration math; the same principles apply in the post-fight window even though the fight is over.
 
 **2. Caffeine antagonists at 12-1 AM.** The two practical levers:
 
 - **L-theanine 200-400 mg.** A naturally occurring amino acid in tea leaves. Crosses the blood-brain barrier, increases alpha-wave activity, and counters caffeine-induced jitter without sedating. The combination of caffeine + L-theanine produces alertness without the agitation; a post-fight L-theanine dose pulls the same lever in reverse, calming the residual caffeine load.
-- **Glycine 3 g + magnesium bisglycinate 200 mg.** Glycine lowers core body temperature 0.2°C — the sleep onset trigger — and reduces sleep latency by 4-5 minutes in poor sleepers. Magnesium bisglycinate calms NMDA receptor activity via a second mechanism. The stack pulls down the sympathetic tone that caffeine kept elevated. Take 30-60 minutes before intended sleep.
+- **Glycine 3 g + [magnesium bisglycinate](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=caffeine-half-life-fight-day) 200 mg.** Glycine lowers core body temperature 0.2°C — the sleep onset trigger — and reduces sleep latency by 4-5 minutes in poor sleepers. Magnesium bisglycinate calms NMDA receptor activity via a second mechanism. The stack pulls down the sympathetic tone that caffeine kept elevated. Take 30-60 minutes before intended sleep.
 
 **3. Skip melatonin.** Tempting on a night when sleep latency is going to be a problem. Don't. Melatonin chronic-use suppresses endogenous production and produces grogginess on a body that needs to be ambulatory for medicals, post-fight interviews, and travel the next day. Reserve melatonin for jet lag, 0.3-0.5 mg, not for fight night.
 

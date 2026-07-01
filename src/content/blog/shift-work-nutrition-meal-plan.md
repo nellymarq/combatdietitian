@@ -4,6 +4,7 @@ description: "Shift work nutrition strategies for first responders and night shi
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["tactical nutrition", "shift work", "first responders", "meal planning"]
+products: ["electrolytes-berry","magnesium-bisglycinate","multivitamin"]
 ---
 
 You downloaded a meal plan from a fitness influencer. It says eat breakfast at 7 AM, lunch at noon, dinner at 6 PM. You work 1800 to 0600. The plan is useless before you open the first meal prep container.
@@ -66,5 +67,3 @@ Shift work nutrition requires a different framework, not just a different schedu
 ---
 
 **Need a nutrition plan built for your shift schedule?** [Combat Dietitian](https://combatdietitian.com) works with tactical operators and first responders nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Built for the shift:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for hydration without sugar crash, [Scythene Magnesium Bisglycinate](https://scythene.com/products/magnesium-bisglycinate) for post-shift sleep quality, and [Scythene Multivitamin](https://scythene.com/products/multivitamin) to cover the micronutrient gaps rotating schedules create. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

@@ -4,6 +4,7 @@ description: "An evidence-based look at acute weight loss strategies used in com
 date: 2026-03-10
 author: "Nelson Marques, RD, CSSD"
 tags: ["weight cutting", "combat sports", "hydration", "performance"]
+products: ["electrolytes-berry"]
 ---
 
 Weight cutting is one of the most misunderstood and mismanaged aspects of combat sports. Every fight week, athletes push their bodies through acute dehydration protocols that can range from methodical to reckless. The difference between the two usually comes down to planning, nutrition science, and a qualified professional guiding the process.
@@ -23,7 +24,7 @@ This is where the real work happens. Gradual fat loss through a moderate caloric
 Water loading begins at roughly 8 liters per day, then tapers sharply. Sodium intake follows a similar pattern — high early, eliminated in the final 24-48 hours. A low-fiber, low-residue diet reduces gut content by 1-2 pounds. These manipulations leverage the body's hormonal lag in aldosterone and vasopressin regulation.
 
 **Phase 3: Rehydration and Refueling (post weigh-in)**
-This is arguably the most critical phase. Oral rehydration solutions with sodium, glucose, and potassium restore plasma volume faster than water alone. Glycogen replenishment requires 7-10 grams of carbohydrate per kilogram of body weight in the 24 hours following weigh-in. Getting this wrong means stepping into the cage dehydrated, glycogen-depleted, and neurologically compromised.
+This is arguably the most critical phase. [Oral rehydration solutions](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=weight-cut-science) with sodium, glucose, and potassium restore plasma volume faster than water alone. Glycogen replenishment requires 7-10 grams of carbohydrate per kilogram of body weight in the 24 hours following weigh-in. Getting this wrong means stepping into the cage dehydrated, glycogen-depleted, and neurologically compromised.
 
 ## When Weight Cuts Go Wrong
 
@@ -36,5 +37,3 @@ A well-executed weight cut is a science-driven protocol that starts weeks before
 ---
 
 **Need a weight cut protocol?** [Combat Dietitian](https://combatdietitian.com) works with fighters nationwide. [Book a consultation →](https://combatdietitian.com/contact)
-
-**Fuel the cut and the rehydration:** [Scythene Electrolytes](https://scythene.com/products/electrolytes-berry) for the rebound, [Scythene Creatine Monohydrate](https://scythene.com/products/creatine-monohydrate) to reload phosphocreatine stores post-weigh-in. Code **MPS20** for 20% off. [Shop Scythene →](https://scythene.com)

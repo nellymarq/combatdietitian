@@ -4,6 +4,7 @@ description: "Most fighters eat the same way on Monday — a heavy drilling day 
 date: 2026-05-28
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Fueling","Periodization","Carbohydrates","Practical Nutrition"]
+products: ["electrolytes-berry"]
 ---
 
 Most fighters eat the same way on Monday — a heavy drilling day at 50% intensity — as they do on Wednesday — a hard sparring round followed by conditioning at 90% intensity. They hit the same macros. They eat the same pre-workout meal. They take the same post-workout shake. And then they wonder why their Wednesday session feels like they are moving through mud by round three.
@@ -56,7 +57,7 @@ Each intensity has its own pre-session structure.
 
 **Pre-mixed day:** 1.5-2.0 g/kg of carbs 2-3 hours pre-session, plus a 30-60 g carb top-off 30-45 minutes before stepping on the mat or in the room. For a 75 kg fighter: a 110-130 g carb meal, then a banana or a 30 g sports drink right before warmup.
 
-**Pre-sparring day:** 2.0-2.5 g/kg of carbs 2-3 hours pre-session, plus 60-90 g of fast carbs 30-45 minutes pre-session. For a 75 kg fighter: a 150-180 g carb meal (rice bowl, large pasta serving), then a sports drink or energy gel plus a piece of fruit immediately pre-warmup. Sessions over 75 minutes also benefit from 30-60 g of carbs mid-session — a small electrolyte-carb drink between rounds, a half a gel between sparring blocks.
+**Pre-sparring day:** 2.0-2.5 g/kg of carbs 2-3 hours pre-session, plus 60-90 g of fast carbs 30-45 minutes pre-session. For a 75 kg fighter: a 150-180 g carb meal (rice bowl, large pasta serving), then a sports drink or energy gel plus a piece of fruit immediately pre-warmup. Sessions over 75 minutes also benefit from 30-60 g of carbs mid-session — a small [electrolyte-carb drink](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=drilling-day-vs-sparring-day-fueling) between rounds, a half a gel between sparring blocks.
 
 The structure matters because the substrate available during the session is largely a function of what's been eaten in the preceding 3 hours and what's circulating right now. A fighter who eats a "normal-sized" lunch at 11 a.m. and steps on the mat for hard sparring at 5 p.m. is running on fumes by round three, regardless of how well they ate yesterday.
 
