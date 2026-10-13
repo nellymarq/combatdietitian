@@ -123,7 +123,7 @@ export default function Quiz({ moduleSlug, questions, passingScore, previousScor
         <button
           onClick={handleSubmit}
           disabled={!allAnswered}
-          className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-lg text-lg transition-colors"
+          className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 disabled:cursor-not-allowed text-brand-900 font-semibold py-3.5 rounded-lg text-lg transition-colors"
         >
           {allAnswered ? 'Submit Quiz' : `Answer all questions (${Object.keys(answers).length}/${questions.length})`}
         </button>
@@ -141,7 +141,7 @@ export default function Quiz({ moduleSlug, questions, passingScore, previousScor
             {!passed && (
               <button
                 onClick={retake}
-                className="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-colors"
+                className="bg-accent-500 hover:bg-accent-600 text-brand-900 font-semibold px-6 py-2.5 rounded-lg transition-colors"
               >
                 Retake Quiz
               </button>

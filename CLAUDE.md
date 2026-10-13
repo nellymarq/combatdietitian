@@ -37,6 +37,7 @@ scripts/
 - Masters: `OneDrive/Documents/Marques Performance Systems/Combat Dietitian/{Logo,Icon}/` (Aug-2026 lockups), `.../Scythene/{Logo,Icon}/`, `OneDrive/Documents/Calsanova/{Logo,Icon}/`.
 - `cd-lockup.png` (icon + wordmark, transparent) · `cd-lockup-tagline.png` (+ "Science-Driven. Battle-Tested.") · `cd-icon.png` (octagon mark, 1024) · `scythene-logo-white.png` · `scythene-icon-white.png` · `calsanova-logo.png` · `calsanova-icon.png`.
 - Favicons (`favicon-16/32/192`, `apple-touch-icon`, `favicon.ico`) + `og-image.png` derive from the CD icon/lockup. Nav uses icon + typeset wordmark (the lockup is illegible at 64px nav height); Footer/OG/Ecosystem use the lockups.
+- **Theme (2026-10-13): black + gold** to match the lockup. Tokens in `src/styles/global.css`: `brand-*` = near-black/charcoal neutrals, `accent-*`/`gold-*` = logo gold (solid gold buttons use `text-brand-900`, never white), `signal-*` = the lockup's deep red, used ONLY for thin rules (SectionHeading divider). Calsanova + Scythene pages show their logo in the Hero via the `logo` prop; don't repeat the brand name in the title.
 - Lockup masters are on opaque black — the transparent versions were produced with a luma-key (black → alpha) that keeps the octagon's black fill. Re-run that pipeline (not a plain magic-wand) if the masters change.
 
 ## Commands

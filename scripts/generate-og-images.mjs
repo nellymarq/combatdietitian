@@ -99,9 +99,9 @@ function escapeXml(str) {
 const BACKGROUND = `
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0f0f1a"/>
-      <stop offset="50%" stop-color="#141428"/>
-      <stop offset="100%" stop-color="#0f0f1a"/>
+      <stop offset="0%" stop-color="#0a0a0b"/>
+      <stop offset="50%" stop-color="#151517"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
@@ -125,7 +125,7 @@ function generateSvg(title) {
   return `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   ${BACKGROUND}
   <!-- Red accent bar at top -->
-  <rect x="80" y="60" width="80" height="5" rx="2" fill="#e74c3c"/>
+  <rect x="80" y="60" width="80" height="5" rx="2" fill="#d4a843"/>
   <!-- Title -->
   ${titleLines}
   <!-- Bottom divider -->

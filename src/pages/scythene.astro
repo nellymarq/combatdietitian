@@ -39,7 +39,8 @@ const shopUrl = scytheneShopUrl('scythene-page', 'store-page');
   <Nav />
 
   <Hero
-    title='<span class="text-gold-400">Scythene</span><br />Supplements'
+    logo={{ src: '/brand/scythene-logo-white.png', alt: 'Scythene Supplements', width: 1200, height: 610, class: 'h-36 sm:h-48 md:h-56' }}
+    title='Evidence-Based <span class="text-gold-400">Supplements</span>'
     subtitle="Evidence-based supplements with transparent labels, manufactured in GMP-certified US facilities. Curated by a registered dietitian for athletes who demand to see every dose."
     cta={{ label: 'Shop Now', href: shopUrl }}
     secondaryCta={{ label: 'View Products Below', href: '#products' }}
@@ -48,8 +49,7 @@ const shopUrl = scytheneShopUrl('scythene-page', 'store-page');
   <!-- Intro -->
   <section class="py-16 px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <img src="/brand/scythene-logo-white.png" alt="Scythene Supplements" width="1200" height="610" class="mx-auto h-28 sm:h-32 w-auto" loading="lazy" decoding="async" />
-      <p class="mt-8 text-lg text-white/70 leading-relaxed text-left">
+      <p class="text-lg text-white/70 leading-relaxed text-left">
         Scythene is the supplement line curated by the registered dietitian behind Combat Dietitian. Every product is chosen because the research supports the ingredient, labeled so you can see what you're taking, and manufactured in GMP-certified US facilities. <a href={shopUrl} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">Scythene's evidence-based supplement line at scythene.com</a> is built for combat athletes, tactical operators, and performance athletes who refuse to guess what's in their stack.
       </p>
     </div>

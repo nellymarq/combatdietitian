@@ -2,23 +2,33 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-900: #1a1a2e;
-  --color-brand-800: #16213e;
-  --color-brand-700: #0f3460;
-  --color-brand-600: #1a5276;
-  --color-brand-500: #2471a3;
-  --color-brand-400: #5dade2;
-  --color-brand-300: #85c1e9;
-  --color-brand-200: #aed6f1;
-  --color-brand-100: #d6eaf8;
-  --color-brand-50: #eaf2f8;
+  /* Black + gold theme (2026-10-13) — matched to the Combat Dietitian lockup:
+     near-black field, metallic-gold octagon, silver monogram, thin red rule.
+     `brand-*` = neutral blacks/charcoals; `accent-*` and `gold-*` = logo gold;
+     `signal-*` = the lockup's deep red, used only for thin rules/highlights. */
+  --color-brand-900: #0a0a0b;
+  --color-brand-800: #141416;
+  --color-brand-700: #1e1e22;
+  --color-brand-600: #2a2a30;
+  --color-brand-500: #3a3a42;
+  --color-brand-400: #6b6b75;
+  --color-brand-300: #9a9aa3;
+  --color-brand-200: #c4c4ca;
+  --color-brand-100: #e2e2e6;
+  --color-brand-50: #f2f2f4;
 
-  --color-accent-600: #c0392b;
-  --color-accent-500: #e74c3c;
-  --color-accent-400: #ec7063;
+  --color-accent-600: #b88d2c;
+  --color-accent-500: #d4a843;
+  --color-accent-400: #e2be63;
+  --color-accent-300: #ecd18f;
 
+  --color-gold-600: #b88d2c;
   --color-gold-500: #d4a843;
   --color-gold-400: #e2be63;
+  --color-gold-300: #ecd18f;
+
+  --color-signal-600: #8f0f16;
+  --color-signal-500: #b3141c;
 
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;

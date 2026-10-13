@@ -92,7 +92,7 @@ export default function AuthForm({ mode, redirectTo = '/academy/dashboard' }: Pr
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-white font-semibold py-3 rounded-lg transition-colors"
+              className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-brand-900 font-semibold py-3 rounded-lg transition-colors"
             >
               {loading ? 'Sending...' : 'Send Reset Link'}
             </button>
@@ -179,7 +179,7 @@ export default function AuthForm({ mode, redirectTo = '/academy/dashboard' }: Pr
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-white font-semibold py-3.5 rounded-lg text-lg transition-colors"
+        className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-brand-900 font-semibold py-3.5 rounded-lg text-lg transition-colors"
       >
         {loading ? 'Please wait...' : mode === 'register' ? 'Create Account' : 'Log In'}
       </button>

@@ -52,7 +52,7 @@ export default function CredentialVerify() {
         <button
           type="submit"
           disabled={loading || !code.trim()}
-          className="bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+          className="bg-accent-500 hover:bg-accent-600 disabled:opacity-50 text-brand-900 font-semibold px-6 py-3 rounded-lg transition-colors"
         >
           {loading ? 'Checking...' : 'Verify'}
         </button>

@@ -202,7 +202,7 @@ const userName = user.user_metadata?.full_name || user.email?.split('@')[0] || '
                     <span class="text-white font-bold">${COMBAT_TRACK.price} <span class="text-white/40 text-sm font-normal">+ 1 month Calsanova</span></span>
                     <form action="/api/stripe/checkout" method="POST">
                       <input type="hidden" name="course" value={COMBAT_TRACK.slug} />
-                      <button type="submit" class="bg-accent-500 hover:bg-accent-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+                      <button type="submit" class="bg-accent-500 hover:bg-accent-600 text-brand-900 text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
                         Enroll
                       </button>
                     </form>
