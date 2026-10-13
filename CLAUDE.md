@@ -1,6 +1,6 @@
 # Combat Dietitian — Project Instructions
 
-Site: https://combatdietitian.com — MPS LLC's tactical/combat dietitian site (Astro + Tailwind, Vercel-hosted). Primary content surface is the blog (55 posts as of 2026-10-13).
+Site: https://combatdietitian.com — MPS LLC's tactical/combat dietitian site (Astro + Tailwind, Vercel-hosted). Primary content surface is the blog (82 posts as of 2026-10-13).
 
 ## Stack
 - **Framework:** Astro 6 + Tailwind CSS 4 (`@tailwindcss/vite`), React islands for Academy forms, `@astrojs/vercel` adapter (`output: 'server'`, marketing pages `prerender = true`)

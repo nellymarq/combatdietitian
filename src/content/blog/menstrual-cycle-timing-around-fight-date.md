@@ -4,7 +4,7 @@ description: "Fight cards do not schedule around menstrual cycles, but camps can
 date: 2026-08-04
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Female Athletes","Weight Cutting","Fight Camp","Hormones","Menstrual Cycle"]
-products: ["magnesium-bisglycinate"]
+products: ["magnesium-glycinate"]
 ---
 
 Female fighters are handed the same fight-week weight-cut playbook as their male teammates and told to run it. The playbook was built on male physiology, tested on male fighters, and does not account for the single largest recurring physiological variable in the cycling female athlete's month — where the cycle falls on fight week. Fight camps that don't program around it end up running an aggressive water-and-carb cut into a fighter who is already retaining 2 to 4 pounds of premenstrual fluid, blunted on glycogen storage, and coping with a GI tract that just changed its motility pattern. The cut fails, or it succeeds and the fighter is shelled by the second round.
@@ -57,7 +57,7 @@ Total daily caloric intake needs to move with the cycle, and most female fighter
 
 **Iron intake needs to stay adequate across menses.** Female fighters who menstruate heavily (heavier than average, or clot passage, or bleeding past day 5) are running a meaningful monthly iron loss that the camp-diet needs to cover. Aim for 18 mg/day of dietary iron minimum from a mix of heme sources (beef, chicken thigh, sardines) and plant sources with vitamin C for absorption. Ferritin should be checked at the start of camp and again mid-camp — see [mid-camp bloodwork for fighters](/blog/mid-camp-bloodwork-for-fighters) for the panel.
 
-**Magnesium supports luteal-phase muscle cramping and sleep quality.** For female fighters who cramp on the luteal-phase training block, or who sleep worse across days 22-28, 200-400 mg of [magnesium as bisglycinate](https://scythene.com/products/magnesium-bisglycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=menstrual-cycle-timing-around-fight-date) taken in the evening across the second half of the cycle is a reasonable intervention with a decent evidence base for PMS-symptom modulation. Not a fix-all; part of the toolkit.
+**Magnesium supports luteal-phase muscle cramping and sleep quality.** For female fighters who cramp on the luteal-phase training block, or who sleep worse across days 22-28, 200-400 mg of [magnesium as bisglycinate](https://scythene.com/supplements/magnesium-glycinate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=menstrual-cycle-timing-around-fight-date) taken in the evening across the second half of the cycle is a reasonable intervention with a decent evidence base for PMS-symptom modulation. Not a fix-all; part of the toolkit.
 
 ## The cut week when the phase works against you
 

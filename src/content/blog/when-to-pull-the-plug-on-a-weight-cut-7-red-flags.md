@@ -4,7 +4,7 @@ description: "A flyweight is 7 lbs over 72 hours out. The coach is pushing the s
 date: 2026-10-06
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Weight Cuts","Combat Sports","Fight Camp","Coaching","Safety"]
-products: ["electrolytes-berry","magnesium-bisglycinate"]
+products: ["electrolytes", "magnesium-glycinate"]
 ---
 
 It is Wednesday afternoon. The flyweight is 7 lbs over the 125-lb mark. Weigh-in is Friday at 9 a.m. The coach is running the sauna rotation. The fighter is in the shower, has been in it for 20 minutes, and when he came out of the sauna for the second round he was walking like a drunk and his voice was off a half-step. The cornerman tells you he threw up water on the walk from the hotel. The strength and conditioning coach says to push through — "he always finds a way."

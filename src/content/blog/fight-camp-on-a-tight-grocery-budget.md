@@ -4,7 +4,7 @@ description: "Most fight-camp nutrition writing assumes an unlimited grocery bud
 date: 2026-09-15
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Fight Camp","Practical Nutrition","Budget","Amateur Fighters","Meal Prep"]
-products: ["whey-protein-vanilla","electrolytes-berry","creatine-monohydrate"]
+products: ["whey-protein", "electrolytes", "creatine-monohydrate"]
 ---
 
 Most fight-camp nutrition writing has an unspoken assumption sitting underneath it: the fighter has a personal chef, an unlimited grocery budget, a $400/month supplement stack, and access to a chest freezer full of grass-fed ribeye. That fighter exists. Most amateurs do not live in that world.
@@ -22,7 +22,7 @@ The single biggest lever on the amateur budget is the protein source ranking. Mo
 - **Dry beans and lentils.** 15 g protein per cooked cup at a raw cost of roughly $0.20-$0.40 per cooked cup. That is $0.02-$0.03 per gram — the cheapest protein on the list, though not a complete amino-acid profile on its own. Paired with rice, wheat, or corn, the profile becomes complete. **The 1-lb bag of dry black beans at $1.50 is the amateur fighter's secret weapon.**
 - **Whole chicken (not breast).** A 5-lb whole chicken at $1.20-$1.80/lb yields roughly 2.5 lb of usable cooked meat with 25 g protein per 4-oz portion. That works out to $0.07-$0.10 per gram of protein. **The whole bird is 40-60% cheaper per gram of protein than boneless-skinless chicken breast**, and the carcass makes 2-3 quarts of stock for free.
 - **Ground beef 80/20.** 22 g protein per 4-oz cooked portion at $4-$6/lb. That is $0.10-$0.15 per gram of protein. Fine as a rotation protein but not the workhorse.
-- **[Whey protein powder](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget).** 25 g protein per scoop at $0.75-$1.20 per scoop from a bulk 5-lb tub. That is $0.03-$0.05 per gram — competitive with eggs on unit cost, and the highest leucine-per-serving option on the list for the post-training MPS trigger.
+- **[Whey protein powder](https://scythene.com/supplements/whey-protein?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget).** 25 g protein per scoop at $0.75-$1.20 per scoop from a bulk 5-lb tub. That is $0.03-$0.05 per gram — competitive with eggs on unit cost, and the highest leucine-per-serving option on the list for the post-training MPS trigger.
 - **Chicken breast (boneless-skinless).** 26 g protein per 4-oz cooked at $4.50-$7/lb. That is $0.15-$0.20 per gram of protein. **This is where most amateur fighters overspend.** Rotate it in, do not build the camp around it.
 - **Sirloin, ribeye, salmon fillet.** $0.20-$0.40 per gram of protein at $9-$15/lb. Special-occasion meals or reward meals, not the daily build.
 
@@ -62,8 +62,8 @@ The $30-$40/week produce budget above delivers the vitamin C, potassium, magnesi
 
 The supplement industry is designed to extract money from ambitious amateurs. The honest ranking of what actually earns its slot in the amateur fighter's budget:
 
-- **[Creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget).** $15-$20 for a 500-g tub that lasts 4-5 months at 3-5 g/day. Best-studied performance supplement in sports, safe, cheap, real. **Non-negotiable if the money exists at all.**
-- **[Electrolytes](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget) for hard sessions and weight-cut work.** $25-$35 for a 30-serving tub. **Actually needed** during two-a-days and any sauna work.
+- **[Creatine monohydrate](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget).** $15-$20 for a 500-g tub that lasts 4-5 months at 3-5 g/day. Best-studied performance supplement in sports, safe, cheap, real. **Non-negotiable if the money exists at all.**
+- **[Electrolytes](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=fight-camp-on-a-tight-grocery-budget) for hard sessions and weight-cut work.** $25-$35 for a 30-serving tub. **Actually needed** during two-a-days and any sauna work.
 - **Vitamin D3 (2,000-5,000 IU/day).** $8-$15 for a 6-month supply. Almost every fighter training in a windowless gym in a northern climate is underdosed on D. Cheap fix.
 - **Whey protein.** Not a supplement in the strict sense — it is a bulk food source that happens to come in a tub. Earns its slot on cost-per-gram-protein grounds. See section above.
 

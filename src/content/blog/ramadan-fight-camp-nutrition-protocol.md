@@ -4,7 +4,7 @@ description: "A wrestler is nine weeks out from a national qualifier that lands 
 date: 2026-07-07
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Fight Camp","Fasting","Combat Sports","Hydration","Cultural Practice"]
-products: ["electrolytes-berry","creatine-monohydrate","whey-protein-vanilla"]
+products: ["electrolytes", "creatine-monohydrate", "whey-protein"]
 ---
 
 Every year around the second week of March, a set of athletes shows up at the office with a version of the same question: "How do I train through Ramadan without losing the camp?" A wrestler on a March-April national qualifier lands the event in the second week of the fast. A pro fighter with a booking six weeks after Eid is trying to hit the last week of a hard camp inside the last week of the fast. A BJJ athlete who trains after work at 4 pm has an iftar at 7:42 pm and does not eat or drink from 5:20 am to that 7:42 pm mark. The advice these athletes get from most coaches, most training partners, and most nutrition blogs is one of three things: take the month off, just train fasted, or eat everything you can at suhoor and iftar. None of those is a protocol.
@@ -37,7 +37,7 @@ Iftar and suhoor are not the same meal repeated at two ends of the fast. They ha
 
 - **Breaking dates and water (traditional and physiologically correct):** 2-3 dates, 400-500 mL of water, and a pause of 10-15 minutes before the main meal. The dates supply about 30-50 g of easy carbohydrate that starts refilling glycogen and blunts the hypoglycemic hunger drive that leads to over-eating.
 - **Main meal at 20-30 minutes after breaking:** 100-150 g of complex carbohydrate (rice, bread, oats, potato), 40-60 g of high-quality protein (chicken, beef, lamb, fish, or a plant equivalent), a large vegetable portion, and 20-30 g of fat. Sodium is deliberately at the meal — this is not the meal to run bland.
-- **A second, smaller meal or a large snack 2-3 hours later:** Another 30-40 g of protein and 40-60 g of carbohydrate, plus continued fluid. This is where a [whey protein](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) shake or a cottage-cheese-and-fruit bowl fits well because the athlete's appetite is usually starting to drop and a compact protein delivery is easier than another full plate.
+- **A second, smaller meal or a large snack 2-3 hours later:** Another 30-40 g of protein and 40-60 g of carbohydrate, plus continued fluid. This is where a [whey protein](https://scythene.com/supplements/whey-protein?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) shake or a cottage-cheese-and-fruit bowl fits well because the athlete's appetite is usually starting to drop and a compact protein delivery is easier than another full plate.
 
 **Suhoor (pre-dawn meal).** This meal has to last 15-16 hours. It is not a training meal — it is a slow-release fueling meal that carries the athlete through a fasted day. The composition looks different from iftar:
 
@@ -55,7 +55,7 @@ Ideally suhoor is eaten close to the pre-dawn cutoff, not two hours early. An at
 The 9-15 hour fluid gap is the single largest performance risk of the fast. Most athletes who report feeling flat through Ramadan are under-hydrated, not under-fueled. The counterintuitive fix: fluid volume in the eight-hour window has to be higher than it would be on a non-fasting day of comparable training load, and it has to be paced rather than chugged.
 
 - **Iftar to sleep (approximately 4-5 hours):** 1.5-2 L of fluid across the window. Break it up — do not front-load it at iftar (nausea) or back-load it right before sleep (interrupted sleep from bathroom trips).
-- **Suhoor (approximately 30-60 minutes):** 500-800 mL of fluid, including 15-20 g of sodium-containing food and a pinch of salt on eggs or in the oats. Adding an [electrolyte drink](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) with 500-750 mg of sodium at suhoor is a defensible practice for a hard-training athlete, especially in warmer months.
+- **Suhoor (approximately 30-60 minutes):** 500-800 mL of fluid, including 15-20 g of sodium-containing food and a pinch of salt on eggs or in the oats. Adding an [electrolyte drink](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) with 500-750 mg of sodium at suhoor is a defensible practice for a hard-training athlete, especially in warmer months.
 - **Total daily fluid target:** 3-4 L across the eight-hour window on training days, adjusted upward for sweat-heavy sessions and hot climates. This is more than the athlete drinks on a normal day and it takes 3-5 days of the month for the stomach and bladder to adjust.
 
 Sodium intake in the eating window should sit at 4-6 g/day on training days — a level higher than most people default to when eating at compressed timing. Under-salting is the reliable way to end up cramping in the last two hours of the fast and gassing out in the training session.
@@ -90,7 +90,7 @@ Salt cycling still applies inside the Ramadan cut window — hold sodium at 4-6 
 
 ## The three supplements that matter
 
-**[Creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) at 3-5 g/day.** Continue if the athlete was already on it. Take it at iftar or suhoor — the timing does not matter for a daily maintenance dose. Creatine saturation attenuates the strength drop most athletes see through the fast and is one of the few supplements with real evidence in the Ramadan-training literature.
+**[Creatine](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=ramadan-fight-camp-nutrition-protocol) at 3-5 g/day.** Continue if the athlete was already on it. Take it at iftar or suhoor — the timing does not matter for a daily maintenance dose. Creatine saturation attenuates the strength drop most athletes see through the fast and is one of the few supplements with real evidence in the Ramadan-training literature.
 
 **Electrolytes (sodium primarily, with potassium and magnesium as adjuncts).** Not because sodium is a magic performance lever but because the fluid-and-sodium loss across a 15-hour fasted day is real and the food intake at iftar and suhoor rarely covers it. A pinch of salt on suhoor eggs plus a 500-mg-sodium electrolyte drink at either meal covers the base.
 

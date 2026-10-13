@@ -4,7 +4,7 @@ description: "You stepped on the scale and it read half a pound over. The commis
 date: 2026-08-06
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Weight Cutting","Fight Week","Weigh-In","Practical Nutrition"]
-products: ["electrolytes-berry"]
+products: ["electrolytes"]
 ---
 
 You stepped off the scale at half a pound over. The commission is giving you two hours to make weight. The corner is looking at you. The opponent is somewhere in the back with their team, already hydrated and eating. The camp put you here, but the next 120 minutes are yours to solve, and the tools you have are half of what you had 24 hours ago because you already used them getting to the number you missed.
@@ -72,7 +72,7 @@ The re-cut moment is the moment the worst supplement, diuretic, and heat-strain 
 
 Making weight on attempt 2 is a different physiological state than making it on attempt 1. You have run through a second heat exposure on top of an already depleted athlete. Plasma volume is deeper in the hole. Cellular electrolyte gradients are more distorted. Gastric motility is slower. The rehydration plan you rehearsed for a normal weigh-in has to be modified.
 
-**First 30 minutes off the scale:** small volumes only. 4 to 6 ounces of an [electrolyte solution](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=second-attempt-weigh-in-emergency-cut-protocol) with 500 to 700 mg sodium per 8 oz, sip slowly. Do not chug. Do not follow with plain water in the first 30 minutes — the intracellular sodium and osmolality gradients are the fragile part and dumping plain water in on top of a depleted athlete drops serum sodium fast.
+**First 30 minutes off the scale:** small volumes only. 4 to 6 ounces of an [electrolyte solution](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=second-attempt-weigh-in-emergency-cut-protocol) with 500 to 700 mg sodium per 8 oz, sip slowly. Do not chug. Do not follow with plain water in the first 30 minutes — the intracellular sodium and osmolality gradients are the fragile part and dumping plain water in on top of a depleted athlete drops serum sodium fast.
 
 **Minutes 30 to 90:** graduated volume, still electrolyte-forward. Continue the electrolyte solution at 8 to 12 oz every 15 minutes as tolerated. Introduce simple carbohydrate (a sports drink, a small amount of fruit, a rice-based carb source) once you have had at least 30 minutes of tolerated electrolyte intake and you can urinate.
 

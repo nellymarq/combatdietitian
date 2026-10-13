@@ -4,7 +4,7 @@ description: "A cold in week 4 of an 8-week camp is not a rest week. It is a fue
 date: 2026-09-10
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Fight Camp","Immune Recovery","Illness Management","Practical Nutrition","Combat Sports"]
-products: ["vitamin-d3-k2","multivitamin","collagen-peptides-vitamin-c"]
+products: ["vitamin-d3", "multivitamin", "collagen-peptides"]
 ---
 
 A fighter walks into the gym in week 4 of an 8-week camp with a scratchy throat, a fatigue level that reads two shades above baseline, and a resting heart rate 10 beats per minute over their morning number. The coach's instinct is one of two extremes — send them home for the week, or push them through the session because "it's just a cold." Both extremes cost the camp.

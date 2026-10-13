@@ -4,7 +4,7 @@ description: "The chokes that stop working in round three. The wrist grip that o
 date: 2026-08-11
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Grip","BJJ","Wrestling","Nutrition","Recovery"]
-products: ["creatine-monohydrate","electrolytes-berry"]
+products: ["creatine-monohydrate", "electrolytes"]
 ---
 
 The choke stops working in round three. The wrist grip you had for two minutes opens in the last thirty seconds. Your forearms pump up in the second scramble of a bracket day and never come back. If you have grappled at any level, you know this failure mode.
@@ -66,7 +66,7 @@ The forearm and hand perfusion story runs through plasma volume and electrolyte 
 Working numbers for a training day:
 
 - **Fluid across the day**: 30 to 40 mL/kg for a sedentary baseline, plus sweat replacement (weigh in and out of hard sessions to estimate). Most grapplers underestimate fluid needs on a two-a-day training week.
-- **Sodium**: 3 to 5 g per day for grapplers in hot training environments, higher on heavy-sweat days. A 500 mg sodium tablet or [an electrolyte drink with 500 to 1,000 mg sodium per liter](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=grip-endurance-nutrition-for-grapplers) taken during hard sessions is more useful than another glass of water.
+- **Sodium**: 3 to 5 g per day for grapplers in hot training environments, higher on heavy-sweat days. A 500 mg sodium tablet or [an electrolyte drink with 500 to 1,000 mg sodium per liter](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=grip-endurance-nutrition-for-grapplers) taken during hard sessions is more useful than another glass of water.
 - **Pre-session**: 5 to 7 mL/kg of fluid in the 2 hours before rolling, with about 300 to 500 mg sodium if the session will exceed 60 minutes.
 
 The bracket-day version: between matches on a competition day, keep fluid intake steady with a sodium-containing beverage rather than pounding water in the 20-minute intervals. Water without sodium during a bracket day is one of the most common reasons a grappler grips well in the first two matches and folds in match four.
@@ -75,7 +75,7 @@ The bracket-day version: between matches on a competition day, keep fluid intake
 
 **Creatine** is the most-studied ergogenic aid in sport, and its relevance for grappling is straightforward. Creatine loads the intramuscular phosphocreatine pool, which is the substrate for the ATP-CP energy system that powers the first 10 to 15 seconds of any high-intensity effort. Every hard scramble, every grip-fight for underhooks, every explosive posture-break is drawing from that pool. Creatine saturation raises the ceiling.
 
-Loading: 20 g per day split into 4 doses for 5 days, or 3 to 5 g per day for 4 weeks to reach the same saturation more slowly. Maintenance: 3 to 5 g per day thereafter. The most-researched form is [creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=grip-endurance-nutrition-for-grapplers) — every other form is more expensive with weaker evidence.
+Loading: 20 g per day split into 4 doses for 5 days, or 3 to 5 g per day for 4 weeks to reach the same saturation more slowly. Maintenance: 3 to 5 g per day thereafter. The most-researched form is [creatine monohydrate](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=grip-endurance-nutrition-for-grapplers) — every other form is more expensive with weaker evidence.
 
 The weight-cut nuance: creatine holds about 1 to 2 kg of intracellular water in a fully loaded athlete. Fighters on the edge of a division sometimes pull creatine 7 to 10 days before weigh-in to lose the water weight, then reload after the weigh-in. The reload is not fast — expect only partial resaturation across a 24-hour post-weigh-in window. If your division margin is tight, work with a coach on whether the water weight is worth the acute drop in phosphocreatine substrate.
 
