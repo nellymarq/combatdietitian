@@ -7,7 +7,7 @@ tags: ["Supplements","Creatine","Performance","Evidence-Based"]
 products: ["creatine-monohydrate"]
 ---
 
-[Creatine monohydrate](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=creatine-the-most-researched-supplement-in-sports) is the single most studied ergogenic supplement in the history of sports nutrition. Over 500 peer-reviewed papers have examined its effects on performance, body composition, and health. The International Society of Sports Nutrition (ISSN), the American College of Sports Medicine (ACSM), and the IOC have all recognized its efficacy and safety.
+[Creatine monohydrate](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=creatine-the-most-researched-supplement-in-sports) is the single most studied ergogenic supplement in the history of sports nutrition. Over 500 peer-reviewed papers have examined its effects on performance, body composition, and health. The International Society of Sports Nutrition (ISSN), the American College of Sports Medicine (ACSM), and the IOC have all recognized its efficacy and safety.
 
 Despite this, misinformation persists. Athletes worry about kidney damage, water retention, and hair loss. Some avoid it entirely because they associate supplements with risk. As a dietitian, clarifying the evidence is part of the job.
 

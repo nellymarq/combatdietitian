@@ -4,7 +4,7 @@ description: "Evidence-based rehydration protocol for combat athletes after weig
 date: 2026-03-31
 author: "Nelson Marques, RD, CSSD"
 tags: ["rehydration", "weigh-in", "combat sports", "weight cutting", "fight night"]
-products: ["electrolytes-berry"]
+products: ["electrolytes"]
 ---
 
 You made weight. Now what?
@@ -29,7 +29,7 @@ Why 150% and not 100%? Because your kidneys are still excreting fluid. You lose 
 
 **Hour 0-1 (Immediately Post Weigh-In)**
 
-Start with an [oral rehydration solution](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=how-to-rehydrate-after-weigh-in) (ORS), not plain water. The ideal composition:
+Start with an [oral rehydration solution](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=how-to-rehydrate-after-weigh-in) (ORS), not plain water. The ideal composition:
 
 - **Sodium:** 40-80 mmol/L (roughly 1,000-2,000 mg/L)
 - **Glucose:** 2-5% concentration

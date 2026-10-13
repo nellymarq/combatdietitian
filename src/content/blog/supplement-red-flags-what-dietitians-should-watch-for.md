@@ -4,7 +4,7 @@ description: "The supplement industry is loosely regulated and full of misleadin
 date: 2026-02-25
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Supplements","Safety","Anti-Doping","Dietitian"]
-products: ["creatine-monohydrate","pre-workout","electrolytes-berry"]
+products: ["creatine-monohydrate", "pre-workout", "electrolytes"]
 ---
 
 The dietary supplement industry generates over $60 billion annually in the United States alone. It is also one of the most loosely regulated consumer product categories. Under the Dietary Supplement Health and Education Act (DSHEA) of 1994, supplements do not require FDA approval before going to market. Manufacturers are responsible for their own safety testing.

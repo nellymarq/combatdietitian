@@ -13,24 +13,24 @@ const brands = [
     id: 'combat-dietitian',
     name: 'Combat Dietitian',
     href: '/services',
-    description: 'Evidence-based nutrition consulting for fighters and operators.',
-    color: 'text-accent-500',
+    logo: { src: '/brand/cd-lockup.png', width: 1600, height: 441, class: 'h-12' },
+    description: 'Performance nutrition consulting for fighters, operators, and weight-class athletes.',
     border: 'hover:border-accent-500/30',
   },
   {
     id: 'calsanova',
     name: 'Calsanova',
     href: '/calsanova',
-    description: 'AI-powered nutrition platform for tracking, planning, and analytics.',
-    color: 'text-gold-400',
+    logo: { src: '/brand/calsanova-logo.png', width: 1200, height: 293, class: 'h-9' },
+    description: 'AI performance optimization platform — nutrition, training, recovery, and analytics in one system.',
     border: 'hover:border-gold-500/30',
   },
   {
     id: 'scythene',
     name: 'Scythene',
     href: '/scythene',
-    description: 'Third-party tested supplements at clinical doses.',
-    color: 'text-white',
+    logo: { src: '/brand/scythene-logo-white.png', width: 1200, height: 610, class: 'h-14' },
+    description: 'Evidence-based supplements with transparent labels, made in GMP-certified US facilities.',
     border: 'hover:border-white/20',
   },
 ];
@@ -40,22 +40,36 @@ const brands = [
   <div class="max-w-4xl mx-auto text-center">
     <SectionHeading
       label="The MPS Ecosystem"
-      title="Nutrition Consulting + AI Platform + Supplements"
+      title="Consulting + Performance Platform + Supplements"
       subtitle="Everything under Marques Performance Systems — built to work together."
     />
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
       {brands.map(brand => {
         const isCurrent = brand.id === current;
+        const card = (
+          <>
+            <div class="h-16 flex items-center justify-center">
+              <img
+                src={brand.logo.src}
+                alt={brand.name}
+                width={brand.logo.width}
+                height={brand.logo.height}
+                class:list={['w-auto max-w-full', brand.logo.class]}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="text-white/50 text-sm mt-4">{brand.description}</p>
+          </>
+        );
         return isCurrent ? (
           <div class="bg-brand-800/40 border border-accent-500/20 rounded-xl p-6">
-            <h3 class:list={['text-lg font-bold', brand.color]}>{brand.name}</h3>
-            <p class="text-white/50 text-sm mt-2">{brand.description}</p>
+            {card}
             <span class="inline-block mt-3 text-xs text-white/30">You are here</span>
           </div>
         ) : (
-          <a href={brand.href} class:list={['bg-brand-800/40 border border-white/5 rounded-xl p-6 transition-colors', brand.border]}>
-            <h3 class:list={['text-lg font-bold', brand.color]}>{brand.name}</h3>
-            <p class="text-white/50 text-sm mt-2">{brand.description}</p>
+          <a href={brand.href} class:list={['block bg-brand-800/40 border border-white/5 rounded-xl p-6 transition-colors', brand.border]}>
+            {card}
           </a>
         );
       })}

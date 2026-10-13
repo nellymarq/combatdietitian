@@ -11,52 +11,63 @@ import Footer from '../components/Footer.astro';
 const features = [
   {
     icon: '&#128247;',
-    title: 'AI Food Recognition',
-    description: 'Snap a photo of any meal. Our Claude Vision-powered engine instantly identifies foods and estimates macros — no manual logging.',
+    title: 'AI Nutrition Engine',
+    description: 'Photo-based food logging with instant macro estimation, plus AI meal plans periodized to your training day — heavy, light, rest, or fight week.',
   },
   {
-    icon: '&#129370;',
-    title: 'Smart Meal Plans',
-    description: 'Multi-agent AI generates personalized meal plans adapted to your training schedule, goals, dietary preferences, and what\'s in season.',
+    icon: '&#127947;',
+    title: 'Training & Periodization',
+    description: 'Program builder, training log, load management, and deload guidance. Nutrition targets move with the block instead of sitting on a static number.',
   },
   {
-    icon: '&#127909;',
-    title: 'Live Video Consultations',
-    description: 'Meet face-to-face with your dietitian via built-in video. Sessions include real-time transcription and AI-generated follow-up notes.',
-  },
-  {
-    icon: '&#128200;',
-    title: 'Analytics Dashboard',
-    description: 'Track nutrition trends, macro compliance, and goal adherence with interactive charts that surface what matters.',
+    icon: '&#128164;',
+    title: 'Recovery & Readiness',
+    description: 'Sleep, stress, and readiness check-ins that tell you — and your dietitian — when to push and when to back off.',
   },
   {
     icon: '&#9000;',
     title: 'Wearable Integration',
-    description: 'Sync data from Apple Health, Garmin, Oura, Fitbit, Whoop, and Polar for a complete picture of training load and recovery.',
+    description: 'Sync Apple Health, Garmin, Oura, Fitbit, WHOOP, and Polar for a complete picture of training load, HRV, and recovery.',
   },
   {
-    icon: '&#129504;',
-    title: 'Kiwi Research Assistant',
-    description: 'PubMed-integrated AI assistant that answers sports nutrition questions with evidence-based citations. Your personal research analyst.',
+    icon: '&#129514;',
+    title: 'Labs & Body Composition',
+    description: 'Track blood work over time with threshold alerts, log body-composition trends, and forecast weight against a competition date.',
+  },
+  {
+    icon: '&#9878;',
+    title: 'Weight-Cut Tools',
+    description: 'Water-loading, sweat-rate, and weight-prediction calculators built for weight-class athletes — the same math we run in fight camp.',
+  },
+  {
+    icon: '&#128200;',
+    title: 'Performance Analytics',
+    description: 'One dashboard tying intake, training, and recovery together. Your dietitian reviews the same data in real time.',
+  },
+  {
+    icon: '&#127909;',
+    title: 'Video Consults + Kiwi',
+    description: 'Built-in video sessions with AI-generated SOAP notes, plus Kiwi — a PubMed-backed research assistant for evidence-based answers.',
   },
 ];
 ---
 
-<Layout title="Calsanova | AI Nutrition Platform | Combat Dietitian" description="Calsanova AI nutrition platform — photo-based meal logging, adaptive meal plans, and analytics. Included free with every MPS consultation.">
+<Layout title="Calsanova | AI Performance Optimization Platform | Combat Dietitian" description="Calsanova is the AI performance optimization platform behind Combat Dietitian — nutrition, training load, recovery, sleep, wearables, and lab data in one adaptive system. Included with every MPS consultation.">
   <Nav />
 
   <Hero
-    title='<span class="text-gold-400">Calsanova</span><br />AI Nutrition Platform'
-    subtitle="The technology behind Combat Dietitian. Every client gets access to our proprietary AI-powered nutrition tracking, meal planning, and analytics platform."
+    title='<span class="text-gold-400">Calsanova</span><br />AI Performance Optimization Platform'
+    subtitle="The technology behind Combat Dietitian. Nutrition is one input — Calsanova connects it to training load, recovery, sleep, wearables, and lab data, then adapts your plan as the numbers change. Every client gets full access."
     cta={{ label: 'Get Access — Book a Consultation', href: '/contact' }}
     secondaryCta={{ label: 'Explore the Calsanova Platform →', href: 'https://calsanova.com' }}
   />
 
-  <!-- Intro paragraph -->
+  <!-- Intro -->
   <section class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <p class="text-lg text-white/70 leading-relaxed">
-        Calsanova is the AI-powered sports nutrition platform built to support Combat Dietitian clients and the dietitians who work with them. From AI meal planning to photo-based food logging, real-time video consultations, and HIPAA-compliant infrastructure, <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">Calsanova's platform at calsanova.com</a> brings every nutrition tool into one place — so your dietitian can focus on strategy while the software handles the rest.
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="/brand/calsanova-logo.png" alt="Calsanova" width="1200" height="293" class="mx-auto h-12 sm:h-14 w-auto" loading="lazy" decoding="async" />
+      <p class="mt-8 text-lg text-white/70 leading-relaxed text-left">
+        Calsanova is a performance optimization platform, not a food diary. It was built for the athletes Combat Dietitian serves — operators on rotating shifts, fighters cutting weight, athletes whose fueling has to track their training block. From AI meal planning and photo-based logging to training periodization, readiness tracking, blood-work trends, and HIPAA-compliant video consultations, <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">Calsanova's platform at calsanova.com</a> puts every input in one place — so your dietitian can focus on strategy while the software handles the rest.
       </p>
     </div>
   </section>
@@ -66,16 +77,16 @@ const features = [
     <div class="max-w-6xl mx-auto">
       <SectionHeading
         label="Platform Features"
-        title="Everything You Need in One Place"
-        subtitle="Calsanova replaces your food diary, meal planner, macro calculator, and research tools — all powered by AI."
+        title="Everything That Drives Performance, in One System"
+        subtitle="Calsanova replaces your food diary, training log, recovery tracker, and research tools — one adaptive platform powered by AI."
       />
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map(feature => (
-          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-8 hover:border-gold-500/30 transition-colors">
+          <div class="bg-brand-800/40 border border-white/5 rounded-xl p-7 hover:border-gold-500/30 transition-colors">
             <div class="text-3xl mb-4" set:html={feature.icon} />
-            <h3 class="text-xl font-bold mb-3">{feature.title}</h3>
-            <p class="text-white/60 leading-relaxed">{feature.description}</p>
+            <h3 class="text-lg font-bold mb-2">{feature.title}</h3>
+            <p class="text-white/60 text-sm leading-relaxed">{feature.description}</p>
           </div>
         ))}
       </div>
@@ -92,11 +103,11 @@ const features = [
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
           { src: '/athlete-dashboard.jpg', alt: 'Athlete dashboard with nutrition overview and analytics' },
-          { src: '/meal-plan.jpg', alt: 'AI-generated personalized meal plan' },
+          { src: '/meal-plan.jpg', alt: 'AI-generated meal plan periodized to a training day' },
           { src: '/recipes.jpg', alt: 'Recipe library with macro-calculated meals' },
         ].map(img => (
           <div class="bg-brand-800/60 border border-white/10 rounded-xl overflow-hidden">
-            <img src={img.src} alt={img.alt} class="w-full h-auto" />
+            <img src={img.src} alt={img.alt} class="w-full h-auto" loading="lazy" decoding="async" />
           </div>
         ))}
       </div>
@@ -108,14 +119,14 @@ const features = [
     <div class="max-w-4xl mx-auto">
       <SectionHeading
         label="How It Works"
-        title="From Plate to Plan in Seconds"
+        title="From Data to Decision"
       />
 
       <div class="space-y-8">
         {[
-          { step: '01', title: 'Log Your Meals', description: 'Take a photo or quick-enter your food. AI handles the macro math.' },
-          { step: '02', title: 'Get Your Plan', description: 'Receive AI-generated meal plans tailored to your training load, goals, and preferences.' },
-          { step: '03', title: 'Track Progress', description: 'Watch your trends on the analytics dashboard. Your dietitian reviews the same data in real-time.' },
+          { step: '01', title: 'Connect Your Data', description: 'Log meals by photo, sync your wearable, enter training sessions and labs. AI handles the macro math and the trend lines.' },
+          { step: '02', title: 'Get Your Plan', description: 'Receive nutrition and training targets periodized to your block, goals, schedule, and preferences — and re-generated when the block changes.' },
+          { step: '03', title: 'Track Readiness & Adjust', description: 'Watch intake, load, sleep, and recovery on one dashboard. Your dietitian reviews the same data and adjusts in real time.' },
           { step: '04', title: 'Consult Live', description: 'Jump into a video session with your dietitian. AI generates SOAP notes and action items automatically.' },
         ].map(item => (
           <div class="flex items-start gap-6">
@@ -134,7 +145,7 @@ const features = [
   <section class="py-16 px-4 bg-brand-800/30">
     <div class="max-w-4xl mx-auto text-center">
       <p class="text-lg text-white/70 leading-relaxed">
-        Whether you're a competing athlete tracking macros before a fight camp or a dietitian managing a roster of performance clients, you can <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">create your Calsanova account</a> and start using the full platform immediately after booking a Combat Dietitian consultation.
+        Whether you're a competing athlete periodizing a fight camp, an operator fueling around a rotation, or a practitioner managing a roster of performance clients, you can <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">create your Calsanova account</a> and start using the full platform immediately after booking a Combat Dietitian consultation.
       </p>
     </div>
   </section>

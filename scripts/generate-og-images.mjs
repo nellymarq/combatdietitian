@@ -4,7 +4,10 @@ import { join } from 'path';
 
 const SCRIPT_DIR = import.meta.dirname;
 const BLOG_DIR = join(SCRIPT_DIR, '..', 'src', 'content', 'blog');
-const OUTPUT_DIR = join(SCRIPT_DIR, '..', 'public', 'og');
+const PUBLIC_DIR = join(SCRIPT_DIR, '..', 'public');
+const OUTPUT_DIR = join(PUBLIC_DIR, 'og');
+const LOCKUP = join(PUBLIC_DIR, 'brand', 'cd-lockup.png');            // icon + wordmark, transparent
+const LOCKUP_TAGLINE = join(PUBLIC_DIR, 'brand', 'cd-lockup-tagline.png'); // + "Science-Driven. Battle-Tested."
 mkdirSync(OUTPUT_DIR, { recursive: true });
 
 // Minimal frontmatter parser (zero deps)
@@ -93,12 +96,26 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
+const BACKGROUND = `
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="50%" stop-color="#141428"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <line x1="80" y1="0" x2="80" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="1120" y1="0" x2="1120" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="80" x2="1200" y2="80" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>`;
+
+/** Page/post card: title block + brand lockup (composited as a raster layer) + URL. */
 function generateSvg(title) {
   const lines = wrapText(title, 28);
   const fontSize = lines.some(l => l.length > 24) ? 52 : 58;
   const lineHeight = fontSize * 1.25;
   const totalTextHeight = lines.length * lineHeight;
-  const startY = (630 - totalTextHeight) / 2 - 20;
+  const startY = (630 - totalTextHeight) / 2 - 40;
 
   const titleLines = lines.map((line, i) => {
     const y = startY + (i + 1) * lineHeight;
@@ -106,58 +123,55 @@ function generateSvg(title) {
   }).join('\n    ');
 
   return `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0f0f1a"/>
-      <stop offset="50%" stop-color="#141428"/>
-      <stop offset="100%" stop-color="#0f0f1a"/>
-    </linearGradient>
-    <linearGradient id="accent-line" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#e74c3c"/>
-      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.3"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
-
-  <!-- Subtle grid pattern for texture -->
-  <line x1="80" y1="0" x2="80" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
-  <line x1="1120" y1="0" x2="1120" y2="630" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
-  <line x1="0" y1="80" x2="1200" y2="80" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
-
+  ${BACKGROUND}
   <!-- Red accent bar at top -->
   <rect x="80" y="60" width="80" height="5" rx="2" fill="#e74c3c"/>
-
-  <!-- Blog post title -->
+  <!-- Title -->
   ${titleLines}
-
   <!-- Bottom divider -->
-  <line x1="80" y1="520" x2="1120" y2="520" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="80" y1="506" x2="1120" y2="506" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <!-- URL (lockup is composited to the left of this, see render()) -->
+  <text x="1120" y="572" text-anchor="end" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="500" fill="#d4a843" letter-spacing="1">combatdietitian.com</text>
+</svg>`;
+}
 
-  <!-- COMBAT DIETITIAN branding -->
-  <text x="80" y="568" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="3">COMBAT</text>
-  <text x="218" y="568" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#e74c3c" letter-spacing="3">DIETITIAN</text>
-
-  <!-- URL -->
-  <text x="80" y="596" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="#d4a843" letter-spacing="1">combatdietitian.com</text>
+/** Site-wide default card (public/og-image.png): tagline lockup centered. */
+function generateDefaultSvg() {
+  return `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  ${BACKGROUND}
+  <text x="600" y="520" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#ffffff" fill-opacity="0.7" letter-spacing="2">PERFORMANCE NUTRITION FOR FIGHTERS, OPERATORS &amp; WEIGHT-CLASS ATHLETES</text>
+  <text x="600" y="562" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="500" fill="#d4a843" letter-spacing="1">combatdietitian.com</text>
 </svg>`;
 }
 
 async function main() {
-  console.log(`Generating ${allPages.length} OG images (${allPages.length - specialPages.length} blog posts + ${specialPages.length} special pages)...`);
+  // Brand layers, rasterised once.
+  const lockupBottom = await sharp(LOCKUP).resize({ height: 64 }).png().toBuffer();
+  const lockupHero = await sharp(LOCKUP_TAGLINE).resize({ width: 760 }).png().toBuffer();
+  const heroMeta = await sharp(lockupHero).metadata();
+
+  console.log(`Generating ${allPages.length} OG images (${allPages.length - specialPages.length} blog posts + ${specialPages.length} special pages) + default og-image.png...`);
   for (const page of allPages) {
     const svg = generateSvg(page.title);
     const outputPath = join(OUTPUT_DIR, `${page.slug}.png`);
 
     await sharp(Buffer.from(svg))
       .resize(1200, 630)
+      .composite([{ input: lockupBottom, left: 80, top: 526 }])
       .png({ quality: 90 })
       .toFile(outputPath);
 
     console.log(`Generated: ${page.slug}.png`);
   }
+
+  await sharp(Buffer.from(generateDefaultSvg()))
+    .resize(1200, 630)
+    .composite([{ input: lockupHero, left: Math.round((1200 - heroMeta.width) / 2), top: Math.round((470 - heroMeta.height) / 2) + 20 }])
+    .png({ quality: 90 })
+    .toFile(join(PUBLIC_DIR, 'og-image.png'));
+  console.log('Generated: og-image.png (site default)');
+
   console.log(`\nDone! ${allPages.length} OG images written to public/og/`);
 }
 
-main().catch(console.error);
+main().catch((err) => { console.error(err); process.exit(1); });

@@ -4,7 +4,7 @@ description: "Dehydration impairs performance before members feel thirsty. This 
 date: 2026-03-07
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Hydration","Electrolytes","Performance","Sports Nutrition"]
-products: ["electrolytes-berry"]
+products: ["electrolytes"]
 ---
 
 A two percent loss in body mass from dehydration is enough to measurably impair endurance performance, cognitive function, and thermoregulation. By the time an member feels thirsty, they are already behind.
@@ -25,7 +25,7 @@ A typical range is 0.5 to 2.5 liters per hour. Some large members in hot environ
 
 ## Electrolyte Considerations
 
-Water alone is insufficient for prolonged exercise. Sweat contains sodium (the primary [electrolyte](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=hydration-strategies-for-athletic-performance) lost), potassium, chloride, and smaller amounts of calcium and magnesium.
+Water alone is insufficient for prolonged exercise. Sweat contains sodium (the primary [electrolyte](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=hydration-strategies-for-athletic-performance) lost), potassium, chloride, and smaller amounts of calcium and magnesium.
 
 Sodium losses vary widely — from 200 mg/L in dilute sweaters to over 1,500 mg/L in salty sweaters. Individuals with visible salt crust on their skin or clothing, a history of cramping, or those who train in heat are likely high sodium losers and need more aggressive replacement.
 

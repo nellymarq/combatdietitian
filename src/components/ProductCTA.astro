@@ -5,6 +5,9 @@
  *
  * Driven by the post's `products:` frontmatter (array of catalog slugs). Renders
  * nothing if no valid slugs are supplied, so it is safe to always include.
+ *
+ * Claims policy: no testing / certification language here or in catalog blurbs —
+ * see src/data/scythene-catalog.ts. Enforced by scripts/check-funnel.mjs.
  */
 import { getScytheneProduct } from '../data/scythene-catalog';
 import { scytheneProductUrl } from '../lib/affiliate';
@@ -25,11 +28,14 @@ const products = slugs
 
 {products.length > 0 && (
   <aside class="not-prose mt-12 rounded-2xl border border-gold-500/20 bg-brand-800/40 p-6 sm:p-8">
-    <div class="flex items-center gap-2">
-      <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">From Scythene</span>
-      <span class="text-white/30 text-xs">— our own third-party-tested line</span>
+    <div class="flex items-center gap-3">
+      <img src="/brand/scythene-icon-white.png" alt="" width="22" height="34" class="h-8 w-auto opacity-90" loading="lazy" decoding="async" />
+      <div class="flex flex-wrap items-baseline gap-x-2">
+        <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">From Scythene</span>
+        <span class="text-white/30 text-xs">— our own supplement line</span>
+      </div>
     </div>
-    <h2 class="mt-2 text-xl font-bold text-white">Supplements mentioned in this article</h2>
+    <h2 class="mt-3 text-xl font-bold text-white">Supplements mentioned in this article</h2>
 
     <ul class="mt-5 flex flex-col gap-4">
       {products.map((product) => (
@@ -44,6 +50,9 @@ const products = slugs
               )}
             </div>
             <p class="mt-1 text-sm text-white/55 leading-relaxed">{product.blurb}</p>
+            {product.variants && product.variants.length > 1 && (
+              <p class="mt-1 text-xs text-white/35">Available in {product.variants.join(' · ')}</p>
+            )}
           </div>
           <a
             href={scytheneProductUrl(product.slug, postSlug, 'blog-cta')}
@@ -58,7 +67,7 @@ const products = slugs
     </ul>
 
     <p class="mt-5 text-xs text-white/40 italic leading-relaxed">
-      Combat Dietitian and Scythene are both part of Marques Performance Systems. We only link supplements that meet our own clinical-dosing and third-party-testing standards.
+      Combat Dietitian and Scythene are both part of Marques Performance Systems. We only link products we would use ourselves: evidence-based formulas with transparent labels, manufactured in GMP-certified US facilities.
     </p>
   </aside>
 )}

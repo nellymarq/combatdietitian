@@ -4,7 +4,7 @@ description: "Post-training nutrition drives glycogen replenishment, muscle repa
 date: 2026-03-04
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Recovery","Post-Workout","Glycogen","Sports Nutrition"]
-products: ["whey-protein-vanilla","electrolytes-berry"]
+products: ["whey-protein", "electrolytes"]
 ---
 
 Training breaks the body down. Recovery builds it back up. And the fuel you provide in the hours after exercise determines how effectively that rebuilding happens.
@@ -30,7 +30,7 @@ Post-exercise protein recommendations:
 
 - **0.4-0.55 g/kg of high-quality protein** containing at least 2.5g of leucine
 - **Whole food sources** (chicken, eggs, fish, dairy) are as effective as supplements when consumed as part of a meal
-- **[Whey protein](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=recovery-nutrition-what-to-eat-after-training)** is a practical option when whole food is not available — fast-digesting and leucine-rich
+- **[Whey protein](https://scythene.com/supplements/whey-protein?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=recovery-nutrition-what-to-eat-after-training)** is a practical option when whole food is not available — fast-digesting and leucine-rich
 - **Combine with the post-exercise carbohydrate feeding** for a complete recovery meal
 
 ## Practical Recovery Meals
@@ -52,7 +52,7 @@ For members with a longer recovery window (24+ hours to next session), fat conte
 
 ## Rehydration
 
-Fluid and [electrolyte replacement](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=recovery-nutrition-what-to-eat-after-training) is a critical and often overlooked component of recovery nutrition. The guideline is to replace 150% of body mass lost during exercise over the four to six hours after training, with sodium included to enhance fluid retention.
+Fluid and [electrolyte replacement](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=recovery-nutrition-what-to-eat-after-training) is a critical and often overlooked component of recovery nutrition. The guideline is to replace 150% of body mass lost during exercise over the four to six hours after training, with sodium included to enhance fluid retention.
 
 ## The Real-World Challenge
 

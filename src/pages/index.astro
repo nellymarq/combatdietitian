@@ -21,8 +21,9 @@ const services = [
   },
   {
     icon: '&#9881;',
-    title: 'AI-Powered Tracking',
-    description: 'Every client gets access to Calsanova — our proprietary platform with photo-based food logging, AI meal plans, and real-time analytics.',
+    title: 'Performance Optimization Platform',
+    description: 'Every client gets Calsanova — our AI performance platform that connects nutrition, training load, recovery, sleep, and lab data into one adaptive plan.',
+    href: '/calsanova',
   },
 ];
 
@@ -32,7 +33,7 @@ const stats = [
 ];
 ---
 
-<Layout title="Combat Dietitian | Marques Performance Systems" description="Elite nutrition for fighters, tactical operators, and weight-class athletes. UFC-proven protocols powered by Calsanova AI. Book a consultation.">
+<Layout title="Combat Dietitian | Marques Performance Systems" description="Elite nutrition for fighters, tactical operators, and weight-class athletes. UFC-proven protocols powered by Calsanova, our AI performance optimization platform. Book a consultation.">
   <Nav />
 
   <Hero
@@ -40,7 +41,7 @@ const stats = [
     subtitle="Tactical and performance dietitian with USAF Pararescue and professional UFC experience. Elite nutrition consulting for special operators, fighters, and weight-class athletes — backed by science, powered by AI."
     cta={{ label: 'Book a Consultation', href: '/contact' }}
     secondaryCta={{ label: 'Explore Calsanova', href: '/calsanova' }}
-    bgImage="/hero-bg.png"
+    bgImage="/hero-bg.webp"
   />
 
   <!-- Stats bar -->
@@ -95,14 +96,15 @@ const stats = [
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
         <span class="text-accent-500 text-sm font-semibold uppercase tracking-widest">Our Technology</span>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">
-          Meet <span class="text-gold-400">Calsanova</span>
+        <img src="/brand/calsanova-logo.png" alt="Calsanova" width="1200" height="293" class="mt-4 h-9 w-auto" loading="lazy" decoding="async" />
+        <h2 class="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
+          The <span class="text-gold-400">Performance Optimization</span> Platform
         </h2>
         <p class="mt-4 text-white/60 text-lg leading-relaxed">
-          Every MPS client gets access to our proprietary AI nutrition platform. Snap a photo of your meal for instant macro analysis. Get personalized meal plans that adapt to your training schedule. Track everything in one place.
+          Every MPS client gets access to Calsanova — our AI platform that goes beyond nutrition tracking. It connects what you eat to how you train, recover, and sleep, then adapts the plan as your data changes. Your dietitian sees the same picture you do.
         </p>
         <ul class="mt-6 space-y-3">
-          {['AI-powered food recognition', 'Adaptive meal planning', 'Live video consultations', 'Wearable integrations'].map(item => (
+          {['AI nutrition — photo logging and adaptive meal plans', 'Training, periodization, and load management', 'Recovery, sleep, and readiness tracking', 'Wearables, labs, and body composition in one dashboard'].map(item => (
             <li class="flex items-center gap-3 text-white/70">
               <span class="text-accent-500 text-lg">&check;</span>
               {item}
@@ -116,11 +118,11 @@ const stats = [
           Learn More About Calsanova
         </a>
         <p class="mt-4 text-sm text-white/40">
-          Or visit <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">calsanova.com</a> — the AI-powered sports nutrition platform for dietitians and athletes.
+          Or visit <a href="https://calsanova.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">calsanova.com</a> — the AI performance optimization platform for athletes, operators, and the professionals who coach them.
         </p>
       </div>
       <div class="bg-brand-800/60 border border-white/10 rounded-2xl overflow-hidden">
-        <img src="/athlete-dashboard.jpg" alt="Calsanova athlete dashboard" class="w-full h-full object-cover" />
+        <img src="/athlete-dashboard.jpg" alt="Calsanova athlete dashboard" width="1755" height="840" class="w-full h-full object-cover" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -134,10 +136,10 @@ const stats = [
           Meet <span class="text-gold-400">Scythene</span>
         </h2>
         <p class="mt-4 text-white/60 text-lg leading-relaxed">
-          Third-party tested supplements built for athletes and operators who don't have time for guesswork. No proprietary blends. No filler. Every ingredient at its evidence-based dose — the same standards we apply to every protocol at Combat Dietitian.
+          Evidence-based supplements for athletes and operators who don't have time for guesswork. Transparent labels — every ingredient and dose disclosed — manufactured in GMP-certified US facilities. The same standards we apply to every protocol at Combat Dietitian.
         </p>
         <ul class="mt-6 space-y-3">
-          {['Evidence-based dosing', 'Third-party tested', 'No proprietary blends', 'Built for combat & tactical athletes'].map(item => (
+          {['Transparent labels — see every dose', 'Evidence-based formulas', 'GMP-certified US manufacturing', 'Built for combat & tactical athletes'].map(item => (
             <li class="flex items-center gap-3 text-white/70">
               <span class="text-accent-500 text-lg">&check;</span>
               {item}
@@ -151,11 +153,8 @@ const stats = [
           Learn More About Scythene
         </a>
       </div>
-      <div class="bg-brand-800/60 border border-white/10 rounded-2xl overflow-hidden lg:order-1 flex items-center justify-center p-12">
-        <div class="text-center">
-          <span class="text-5xl font-black tracking-tight text-white">SCYTHENE</span>
-          <p class="text-white/40 text-sm mt-2 uppercase tracking-widest">Supplements</p>
-        </div>
+      <div class="bg-brand-800/60 border border-white/10 rounded-2xl overflow-hidden lg:order-1 flex items-center justify-center p-12 min-h-[280px]">
+        <img src="/brand/scythene-logo-white.png" alt="Scythene Supplements" width="1200" height="610" class="w-full max-w-xs h-auto" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -246,7 +245,7 @@ const stats = [
   <!-- CTA -->
   <section class="py-20 px-4">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold">Ready to Optimize Your Nutrition?</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold">Ready to Optimize Your Performance?</h2>
       <p class="mt-4 text-white/60 text-lg">
         Whether you're a tactical operator, combat athlete, or high performer — we'll build a plan that fits your mission.
       </p>

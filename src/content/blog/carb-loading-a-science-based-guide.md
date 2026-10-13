@@ -4,7 +4,7 @@ description: "Carbohydrate loading can increase muscle glycogen by 50-100% — b
 date: 2026-03-03
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Carbohydrates","Endurance","Competition","Glycogen"]
-products: ["electrolytes-berry"]
+products: ["electrolytes"]
 ---
 
 Carbohydrate loading — systematically increasing muscle glycogen stores before competition — is one of the oldest and most validated performance nutrition strategies. When done correctly, it can increase glycogen stores by 50-100% above normal levels and delay fatigue during prolonged exercise by 20-45 minutes.
@@ -36,7 +36,7 @@ Eating 10-12 g/kg of carbohydrate in a day requires intention and planning. The 
 Sample day for a 70 kg member (targeting 770g carbs):
 
 - **Breakfast:** Large bowl of oatmeal with honey and banana, 2 slices toast with jam, orange juice (150g carbs)
-- **Mid-morning snack:** Bagel with jam, [sports drink](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=carb-loading-a-science-based-guide) (80g carbs)
+- **Mid-morning snack:** Bagel with jam, [sports drink](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=carb-loading-a-science-based-guide) (80g carbs)
 - **Lunch:** Large pasta portion with marinara, bread roll, fruit (160g carbs)
 - **Afternoon snack:** Rice cakes with honey, energy bar, juice (100g carbs)
 - **Dinner:** White rice with chicken (small portion), bread, sweetened iced tea (140g carbs)

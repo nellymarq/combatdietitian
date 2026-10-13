@@ -4,7 +4,7 @@ description: "Just as training follows a periodized plan, nutrition should too. 
 date: 2026-02-07
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Periodization","Carbohydrates","Training","Performance"]
-products: ["creatine-monohydrate","whey-protein-vanilla"]
+products: ["creatine-monohydrate", "whey-protein"]
 ---
 
 The concept of training periodization — systematically varying volume, intensity, and frequency across mesocycles — has been a cornerstone of athletic preparation for over 50 years. Yet many members eat the same way regardless of whether they are in a high-volume base phase, an intensity block, a taper, or the off-season.

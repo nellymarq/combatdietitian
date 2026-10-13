@@ -4,7 +4,7 @@ description: "Training camps pull fighters away from home for weeks at a time. H
 date: 2026-04-20
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Combat Sports","Fight Camp","Travel","Weight Management","Practical Nutrition"]
-products: ["creatine-monohydrate","electrolytes-berry","whey-protein-vanilla"]
+products: ["creatine-monohydrate", "electrolytes", "whey-protein"]
 ---
 
 Most fight-camp nutrition advice assumes the fighter is at home. Home kitchen, home grocery store, predictable sleep, a scale they trust. The reality is that camps routinely pull fighters out of that environment — to a training partner's gym in another state, to a weight-cutting facility, to altitude, to a new time zone for a fight week. The plan that worked in their own kitchen falls apart the moment they are living out of a suitcase.
@@ -32,9 +32,9 @@ Before the fighter leaves home, I want three things locked in:
 - Gas-station fallbacks for the days the plan breaks. A fighter needs to know what they will eat when the plan fails, not invent it at 9pm hungry and tired.
 
 **2. A mini supplement kit.** Pre-portioned, in carry-on.
-- [Creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (5g/day — do not skip a training block)
-- [Electrolyte packets](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (dose-per-packet labeled, matching camp sodium targets)
-- [Protein powder](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (single-serve packets or a scoop measured into labeled zip-top bags)
+- [Creatine](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (5g/day — do not skip a training block)
+- [Electrolyte packets](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (dose-per-packet labeled, matching camp sodium targets)
+- [Protein powder](https://scythene.com/supplements/whey-protein?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=travel-nutrition-for-fight-camps) (single-serve packets or a scoop measured into labeled zip-top bags)
 - Whatever the fighter's personal stack is — pre-portioned, not the full tubs
 - A small digital scale for food if the camp is weight-sensitive (a $12 kitchen scale weighs 4 ounces)
 

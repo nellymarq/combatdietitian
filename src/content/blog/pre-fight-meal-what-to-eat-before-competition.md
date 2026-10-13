@@ -4,7 +4,7 @@ description: "What to eat before a fight — a sports dietitian's guide to pre-c
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["fight nutrition", "combat sports", "meal planning", "performance"]
-products: ["whey-protein-vanilla","electrolytes-berry","pre-workout"]
+products: ["whey-protein", "electrolytes", "pre-workout"]
 ---
 
 The 24 hours before competition are not the time to experiment. Every meal, every fluid, and every snack in this window has one job: maximize glycogen stores, optimize hydration status, and avoid anything that could cause GI distress inside the cage.
@@ -29,7 +29,7 @@ Start with an oral rehydration solution — not plain water. Sodium drives fluid
 
 Pair with a moderate, easily digestible meal:
 - White rice (1-2 cups) + grilled chicken (4-6 oz) + banana
-- Or: bagel with honey + [protein shake](https://scythene.com/products/whey-protein-vanilla?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-fight-meal-what-to-eat-before-competition) + [electrolyte drink](https://scythene.com/products/electrolytes-berry?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-fight-meal-what-to-eat-before-competition)
+- Or: bagel with honey + [protein shake](https://scythene.com/supplements/whey-protein?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-fight-meal-what-to-eat-before-competition) + [electrolyte drink](https://scythene.com/supplements/electrolytes?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=pre-fight-meal-what-to-eat-before-competition)
 
 Avoid high-fat, high-fiber foods. Your GI system is not ready for a steak dinner.
 

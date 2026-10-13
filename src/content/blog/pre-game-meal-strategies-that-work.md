@@ -4,7 +4,7 @@ description: "The pre-competition meal can make or break game-day performance. H
 date: 2026-02-27
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Competition","Pre-Game","Carbohydrates","Performance"]
-products: ["pre-workout","electrolytes-berry"]
+products: ["pre-workout", "electrolytes"]
 ---
 
 The pre-game meal is the most scrutinized meal in an member's week — and the one most likely to be improvised. Athletes eat too much, too little, too close to competition, or the wrong foods entirely. The result is GI distress, sluggishness, or insufficient fuel when it matters most.

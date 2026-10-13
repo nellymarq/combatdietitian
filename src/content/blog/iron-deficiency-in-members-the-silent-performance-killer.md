@@ -4,7 +4,7 @@ description: "Iron deficiency is the most common nutrient deficiency in members 
 date: 2026-03-14
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Iron","Micronutrients","Sports Nutrition","Female Athletes","Performance"]
-products: ["multivitamin","b-vitamins"]
+products: ["multivitamin"]
 ---
 
 An member's VO2max is excellent. Their training load is progressing. Their macros are dialed in. And yet they cannot finish a tempo run without feeling like they are breathing through a straw. Their coach says they are overtrained. Their athletic trainer says they need more sleep. Nobody has checked their ferritin.

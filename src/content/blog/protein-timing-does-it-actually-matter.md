@@ -4,7 +4,7 @@ description: "The anabolic window, protein pulsing, pre-sleep casein — the pro
 date: 2026-03-08
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Protein","Sports Nutrition","Recovery","Evidence-Based"]
-products: ["whey-protein-vanilla"]
+products: ["whey-protein"]
 ---
 
 If you have spent any time in a weight room, you have heard some version of the protein timing gospel: you must consume protein within 30 minutes of training or your gains are gone. The so-called "anabolic window" has driven more post-workout shake sales than any other concept in sports nutrition.

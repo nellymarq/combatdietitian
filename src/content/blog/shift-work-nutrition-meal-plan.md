@@ -4,7 +4,7 @@ description: "Shift work nutrition strategies for first responders and night shi
 date: 2026-03-26
 author: "Nelson Marques, RD, CSSD"
 tags: ["tactical nutrition", "shift work", "first responders", "meal planning"]
-products: ["electrolytes-berry","magnesium-bisglycinate","multivitamin"]
+products: ["electrolytes", "magnesium-glycinate", "multivitamin"]
 ---
 
 You downloaded a meal plan from a fitness influencer. It says eat breakfast at 7 AM, lunch at noon, dinner at 6 PM. You work 1800 to 0600. The plan is useless before you open the first meal prep container.

@@ -4,7 +4,7 @@ description: "Why eating the same macros year-round is leaving performance on th
 date: 2026-03-10
 author: "Nelson Marques, MS, RD, LD"
 tags: ["Nutrition","Training","Periodization","S&C","Macros"]
-products: ["creatine-monohydrate","pre-workout","whey-protein-vanilla"]
+products: ["creatine-monohydrate", "pre-workout", "whey-protein"]
 ---
 
 Most members train in phases. They periodize volume, intensity, and exercise selection across mesocycles to drive specific adaptations. Then they eat the same 2,800 calories and the same macro split every single day for the entire year.
@@ -33,7 +33,7 @@ This is a missed opportunity. Just as training demands change across phases, nut
 - **Carbohydrates**: 3-5 g/kg. Glycogen demands are lower per session (fewer total reps), but CNS recovery benefits from adequate carbohydrate availability.
 - **Fats**: 1.0-1.5 g/kg. Can increase slightly as carbohydrate needs decrease.
 
-**Timing**: Prioritize pre-training carbohydrates for CNS performance. [Caffeine](https://scythene.com/products/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-periodization-for-training-phases) (3-6 mg/kg, 30-60 minutes pre-training) has strong evidence for improving maximal strength performance.
+**Timing**: Prioritize pre-training carbohydrates for CNS performance. [Caffeine](https://scythene.com/supplements/pre-workout?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-periodization-for-training-phases) (3-6 mg/kg, 30-60 minutes pre-training) has strong evidence for improving maximal strength performance.
 
 ## Power/Peaking Phase: Precision Fueling
 
@@ -44,7 +44,7 @@ This is a missed opportunity. Just as training demands change across phases, nut
 - **Protein**: 1.6-1.8 g/kg. Maintenance level.
 - **Carbohydrates**: 5-7 g/kg on competition/heavy training days, 3-4 g/kg on lighter days. Carbohydrate loading before competition maximizes glycogen stores for peak output.
 - **Fats**: 1.0-1.2 g/kg.
-- **[Creatine](https://scythene.com/products/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-periodization-for-training-phases)**: If not already supplementing, a loading phase (20g/day for 5 days) 1-2 weeks before competition can increase phosphocreatine stores and improve peak power output.
+- **[Creatine](https://scythene.com/supplements/creatine-monohydrate?utm_source=combatdietitian&utm_medium=blog&utm_campaign=supplement-links&utm_content=nutrition-periodization-for-training-phases)**: If not already supplementing, a loading phase (20g/day for 5 days) 1-2 weeks before competition can increase phosphocreatine stores and improve peak power output.
 
 ## Deload Phase: Active Recovery
 
